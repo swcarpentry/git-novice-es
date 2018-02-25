@@ -31,7 +31,7 @@ y conocer a algunos de los miembros de nuestra comunidad.
 
 ## Donde Contribuir
 
-1. Si deseas cambiar esta lección, por favor trabaje en <https://github.com/swcarpentry/shell-novice-es>, que se puede ver en <https://swcarpentry.github.io/shell-novice-es>.
+1. Si deseas cambiar esta lección, por favor trabaje en <https://github.com/swcarpentry/git-novice-es>, que se puede ver en <https://swcarpentry.github.io/git-novice-es>.
 
 2. Si deseas cambiar la lección de ejemplo, por favor trabaje en <https://github.com/swcarpentry/lesson-example>, que documenta el formato de nuestras lecciones y se puede ver en <https://swcarpentry.github.io/lesson-example>.
 
