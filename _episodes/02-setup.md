@@ -39,6 +39,38 @@ lo que significa que cualquier cambio realizado en
 otro servidor de Git 
 en una lección posterior incluirá esta información.
 
+> ## Finales de línea
+>
+> Al igual que con otras teclas, cuando haces click en la tecla 'Enter' de tu teclado,
+> tu computadora codifica este input como un caracter.
+> Por razones que son demasiado largas para explicar aquí, diferentes sistemas operativos 
+> usan diferentes caracteres para representar el final de una línea.
+> (También son conocidas como *newlines* o *line breaks*.)
+> Como git usa éstos caracteres para comparar archivos,
+> esto puede causar problemas inesperados cuando se edita un archivo en máquinas diferentes. 
+> 
+> Puedes cambiar el modo en que git reconoce y codifica finales de línea
+> usando el comando `core.autocrlf` con `git config`.
+> Se recomiendan las siguientes configuraciones:
+>
+> En OS X y Linux:
+>
+> ~~~
+> $ git config --global core.autocrlf input
+> ~~~
+> {: .bash}
+>
+> Y en Windows:
+>
+> ~~~
+> $ git config --global core.autocrlf true
+> ~~~
+> {: .bash}
+> 
+> Puedes leer más sobre este tema 
+> [en esta página de GitHub](https://help.github.com/articles/dealing-with-line-endings/).
+{: .callout}
+
 Para estas lecciones, estaremos interactuando con [GitHub] (http://github.com/), por lo tanto la dirección de correo electrónico utilizada debe ser la misma que utilizaste al configurar tu cuenta de GitHub. Si te preocupa la privacidad, revisa [las instrucciones de GitHub para mantener tu dirección de correo electrónico privada] [git-privacy].
 Si eliges utilizar una dirección de correo electrónico privada con GitHub, usa la misma dirección de correo electrónico para el valor `user.email`, por ejemplo, `username@users.noreply.github.com`  reemplazando` username` con tu nombre de usuario de GitHub. Puedes cambiar la dirección de correo electrónico posteriormente utilizando el comando `git config` nuevamente.
 
