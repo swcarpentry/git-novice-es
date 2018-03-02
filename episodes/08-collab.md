@@ -15,7 +15,7 @@ Para el siguiente paso, formen parejas. Una persona será el "dueño" y la otra 
 > ## Practicando por tu cuenta
 >
 > Si estás trabajando en esta lección por tu cuenta, puedes hacerlo abriendo una segunda sesión en la 
-> ventana de la terminal. Esta ventana representará a tu compañero trabajando en otra computadora. No necesitas darle acceso a nadie en GitHub, pues tu serás ambos "compañeros".
+> ventana de la terminal. Esta ventana representará a tu compañero trabajando en otra computadora. No necesitas darle acceso a nadie en GitHub, pues tú serás ambos "compañeros".
 {: .callout}
 
 El dueño debe dar acceso al colaborador. En GitHub, haz clic en el botón de configuración arriba a la derecha,
@@ -34,7 +34,7 @@ $ git clone https://github.com/vlad/planets.git ~/Desktop/vlad-planets
 ~~~
 {: .bash}
 
-Remplazar 'vlad' con el nombre de usuario del dueño.
+Reemplaza 'vlad' con el nombre de usuario del dueño.
 
 ![After Creating Clone of Repository](../fig/github-collaboration.svg)
 
@@ -84,9 +84,9 @@ To https://github.com/vlad/planets.git
 
 Nota que no es necesario crear un directorio remoto llamado `origin`: Git utiliza este nombre de manera automática cuando clonamos un repositorio. (Esta es la razón por la cual `origin` era una opción sensata a la hora de configurar directorios remotos a mano).
 
-Ahora echa un vistazo al repositorio del dueño en su sitio de Github (quizás debas actualizar la página). Deberás ver el nuevo **commit** hecho por el colaborador.
+Ahora echa un vistazo al repositorio del dueño en su sitio de Github (quizá debas actualizar la página). Deberás ver el nuevo **commit** hecho por el colaborador.
 
-Para descargar los cambios hechos por el colaborador desde GitHub, el dueño corre las siguientes líneas:
+Para descargar los cambios hechos por el colaborador desde GitHub, el dueño debe correr las siguientes líneas:
 
 ~~~
 $ git pull origin master
