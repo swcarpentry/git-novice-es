@@ -10,7 +10,7 @@ objectives:
 - "Explicar las diferencias en licencias y algunas expectativas sociales."
 keypoints:
 - "Las personas que usan la licencia **GPL** en su software tienen que asegurarse de que toda la estructura esté bajo ésta licencia; muchas otras licencias no requieren esto."
-- La familia de licencias **Creative Commons** permite a las personas adaptarse a varios requerimientos y restricciones de atribución, la creación de trabajo derivado, compartir el trabajo, y comercialización."
+- "La familia de licencias **Creative Commons** permite a las personas adaptarse a varios requerimientos y restricciones de atribución, la creación de trabajo derivado, compartir el trabajo, y comercialización."
 - "Personas sin conocimientos de leyes no deberían tratar de escribir nuevas licencias desde cero."
 ---
 
@@ -30,7 +30,7 @@ Este artículo sobre [licencias de software](https://doi.org/10.1371/journal.pcb
 
 Al fin de cuentas, lo que importa es que haya información clara sobre cuál es la licencia. Además, es mejor elegir la licencia desde el principio, incluso si se trata de un repositorio que no es público. Retrasar la decisión de sobre qué licencia elegir sólo complica las cosas más adelante, porque cada vez que un nuevo colaborador comienza a contribuir, ellos también tienen derechos de autor y, por lo tanto, se les debe pedir aprobación una vez que se elige una licencia.
 
-> ## ¿Puedes usar **Open License**?
+> ## ¿Puedo usar una **Open License**?
 >
 > Investiga si puedes usar una **Open license** o "Licencia Abierta" en tu **software**. ¿Puedes hacer eso por tí mismo?, ¿o necesitas permiso de alguien dentro de tu institución? Si necesitas permiso, ¿de quién?
 {: .challenge}
@@ -41,7 +41,7 @@ Al fin de cuentas, lo que importa es que haya información clara sobre cuál es 
 > **open-source software**. Escoge uno de los proyectos de GitHub de la lista de abajo, o algún otro que te interese. Encuentra la licencia (usualmente es un archivo que se llama `LICENSE` o `COPYING`) y luego habla con tus compañeros sobre como ésta licencia te permite o te restringe el uso del **software**. ¿Es una de las licencias que hemos visto en esta sesión? ¿Qué tan diferente es ésta licencia?
 > - [Git](https://github.com/git/git), herramientas para el manejo de código fuente.
 > - [CPython](https://github.com/python/cpython), implementación estándar del lenguaje Python.
-> - [Jupyter](https://github.com/jupyter), proyectos web en Python para **notebooks**.
+> - [Jupyter](https://github.com/jupyter), el proyecto que implementa **notebooks** para correr Python en la **web** que usaremos en este **workshop**.
 > - [EtherPad](https://github.com/ether/etherpad-lite), un editor colaborativo en tiempo real.
 {: .challenge}
 
