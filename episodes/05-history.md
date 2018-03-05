@@ -59,7 +59,7 @@ index b36abfd..0848c8d 100644
 ~~~
 {: .output}
 
-Lo mismo obtendrías si omites 'HEAD` (intentalo). 
+Lo mismo obtendrías si omites `HEAD` (intentalo). 
 La verdadera bondad en todo esto es cuando puedes referirte a **commits** previos. Hacemos
 esto agregando `~1` para referirnos al **commit** anterior de `HEAD`.
 
@@ -280,7 +280,7 @@ $ git checkout -f master mars.txt
 ~~~
 {: .bash}
 
-> ## No puierdas tu HEAD
+> ## No pierdas tu HEAD
 >
 > Arriba usamos
 >
@@ -291,7 +291,7 @@ $ git checkout -f master mars.txt
 >
 > para revertir `mars.txt` a su estado después del **commit** `f22b25e`.
 > Si olvidas `mars.txt` en ese comando, Git te dirá que "You are in
-> 'detached HEAD' state". En este estado, no dno podrías hacer ningún cambio.
+> 'detached HEAD' state". En este estado, no podrías hacer ningún cambio.
 > Puedes arreglar esto volviendo a conectar tu **head** usando ``git checkout master``
 {: .callout}
 
