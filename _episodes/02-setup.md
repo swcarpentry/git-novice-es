@@ -3,7 +3,7 @@ title: Configurando Git
 teaching: 5
 exercises: 0
 questions:
-- "Cómo me preparo para utilizar Git?"
+- "¿Cómo me preparo para utilizar Git?"
 objectives:
 - "Configurar `git` la primera vez que utilice la computadora."
 - "Comprender el significado de la bandera de configuración `--global`."
@@ -17,7 +17,7 @@ de configuraciones que estableceremos a medida que trabajemos con Git:
 
 *   nombre y correo electrónico,
 *   color de nuestra salida,
-*   cual es nuestro editor de texto preferido,
+*   cuál es nuestro editor de texto preferido,
 *   y que queremos utilizar éstos ajustes globalmente (es decir, para cada proyecto)
 
 En línea de comandos, los comandos de Git se escriben como `git verb`, 
@@ -101,7 +101,7 @@ Puedes cambiar la configuración tantas veces como quieras: sólo usa los mismos
 
 > ## Ayuda y manual de Git
 >
-> Ten presente que si no recuerdas algún comando de  `git`, puedes acceder a la lista de comando utilizando la opción `-h` y al manual de Git con la opción `--help` :
+> Ten presente que si no recuerdas algún comando de  `git`, puedes acceder a la lista de comandos utilizando la opción `-h` y al manual de Git con la opción `--help` :
 >
 > ~~~
 > $ git config -h
