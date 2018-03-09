@@ -3,7 +3,7 @@ title: Ignorando cosas
 teaching: 5
 exercises: 0
 questions:
-- "¿Cómo puedo decirle a Git que ignore los archivos que no quiero rastrear?"
+- "¿Cómo puedo indicarle a Git que ignore los archivos que no quiero rastrear?"
 objectives:
 - "Configure Git para ignorar archivos específicos."
 - "Explica por qué ignorar los archivos puede ser útil."
@@ -13,7 +13,7 @@ keypoints:
 
 ¿Qué pasa si tenemos archivos que no queremos que Git rastree,
 como archivos de copia de seguridad creados por nuestro editor
-o archivos intermedios creados durante el análisis de datos?.
+o archivos intermedios creados durante el análisis de datos?
 Vamos a crear algunos archivos ficticios:
 
 ~~~
@@ -181,11 +181,11 @@ nothing to commit, working directory clean
 >
 > > ## Solución
 > >
-> > Agrega las siguientes dos líneas a tu .gitignore:
+> > Agrega las siguientes dos líneas a tu archivo .gitignore:
 > >
 > > ~~~
-> > *.data # ignora todo los archivos .data
-> > !final.data # excepto final.data
+> > *.data # ignora todos los archivos .data
+> > !final.data # excepto el archivo final.data
 > > ~~~
 > > {: .bash}
 > >
@@ -242,17 +242,17 @@ nothing to commit, working directory clean
 >
 > Supón que escribiste un **script** que crea muchos archivos de registro con la estructura `log_01`, `log_02`, `log_03`, etc. Deseas conservarlos pero no rastrearlos a través de `git`.
 >
-> 1. Escribe **una entrada** `.gitignore` que excluya los archivos con estructura `log_01`, `log_02`, etc.
+> 1. Escribe **una entrada** en tu archivo `.gitignore` que excluya los archivos con estructura `log_01`, `log_02`, etc.
 >
 > 2. Prueba tu "patrón de ignorar" creando algunos archivos ficticios `log_01`, etc.
 >
 > 3. Te das cuenta de que el archivo `log_01` es muy importante después de todo, así que lo tienes que agregar a los archivos rastreados sin cambiar el` .gitignore` de nuevo
 >
-> 4. Discute con tu compañero de al lado qué otros tipos de archivos podrían residir en tu directorio que no deseas seguir y por tanto excluir a través de `.gitignore`.
+> 4. Discute con tu compañero de a lado qué otros tipos de archivos podrían residir en tu directorio que no deseas seguir y por tanto excluir a través de `.gitignore`.
 >
 > > ## Solución
 > >
-> > 1. Agrega `log_*` o `log*` como nueva entrada en tu .gitignore
+> > 1. Agrega `log_*` o `log*` como nueva entrada en tu archivo .gitignore
 > > 3. Rastrea `log_01` usando `git add -f log_01`
 > {: .solution}
 {: .challenge}
