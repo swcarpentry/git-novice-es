@@ -7,19 +7,19 @@ questions:
 - "¿Cómo reviso el estatus de mi repositorio de control de versiones?"
 - "¿Cómo registro notas acerca de los cambios que he hecho y por qué?"
 objectives:
-- "Ir a traves del ciclo modificar-agregar-commit para uno o más archivos."
-- "Explicar donde se almacena la información en cada etapa del flujo de trabajo de un **commit** de Git."
+- "Ir a través del ciclo modificar-agregar-commit para uno o más archivos."
+- "Explicar dónde se almacena la información en cada etapa del flujo de trabajo de un **commit** de Git."
 - "Distinguir entre mensajes descriptivos y no-descriptivos de un **commit**."
 keypoints:
 - "`git status` muestra el estatus de un repositorio."
-- "Los archivos pueden ser almacenados en un directorio de trabajo del proyecto (el cual ven los usuarios), el área de ensayo (donde el siguiente **commit** está siendo construido) y el repositorio local (donde los **commits** son registrados permanentemente)."
-- "`git add` pone archivos en el área de ensayo."
+- "Los archivos pueden ser almacenados en un directorio de trabajo del proyecto (el cual ven los usuarios), el **staging area** (donde el siguiente **commit** está siendo construido) y el repositorio local (donde los **commits** son registrados permanentemente)."
+- "`git add` pone archivos en el **staging area**."
 - "`git commit` guarda el contenido del **staging area** como un nuevo **commit** en el repositorio local."
 - "Siempre escribe un mensaje de registro cuando hagas un **commit** con cambios."
 ---
 
 Primero asegúrate que estamos aún en el directorio correcto.
-Tú deberías estar en el directorio `planets`.
+Deberías estar en el directorio `planets`.
 
 ~~~
 $ pwd
@@ -102,7 +102,7 @@ $ git add mars.txt
 ~~~
 {: .bash}
 
-y luego verifica que pasó lo correcto:
+y luego verifica que hizo lo correcto:
 
 ~~~
 $ git status
@@ -123,7 +123,7 @@ Changes to be committed:
 {: .output}
 
 Git ahora sabe que tiene que seguir la pista de `mars.tx`,
-pero no ha registrado estos cambios con un **commit** aún.
+pero no ha registrado los cambios con un **commit** aún.
 Para que lo haga,
 necesitamos ejecutar un comando más:
 
@@ -149,7 +149,7 @@ Esta copia permanente es llamada un [commit]({{ page.root }}/reference/#commit)
 Usamos la bandera `-m` (de "message")
 para registrar un comentario corto, descriptivo y específico que nos ayudará a recordar más tarde lo que hicimos y por qué.
 Si ejecutamos `git commit` sin  la opción `-m`,
-Git ejecutará `nano` (o cualquier otro editor que configuramos como `core.editor`)
+Git ejecutará `nano` (o cualquier otro editor que configuremos como `core.editor`)
 así que podemos escribir un mensaje más largo.
 
 [Los Buenos mensajes en un **commit**][commit-messages] inician con un breve resumen (<50 caracteres) de los
@@ -207,7 +207,7 @@ y el mensaje de registro que se le dio a Git cuando el **commit** fue creado.
 
 Ahora supón que Dracula agrega más información al archivo.
 (Otra vez, editaremos con `nano` y luego con  `cat` mostraremos el contenido del archivo;
-podrías usar un editor diferente y no necesitar a `cat`.)
+podrías usar un editor diferente y no necesitar `cat`.)
 
 ~~~
 $ nano mars.txt
@@ -275,7 +275,7 @@ Si lo dividimos en pedazos:
 
 1.  La primera línea nos dice que Git está produciendo una salida similar a la del comando Unix `diff`
     comparando las versiones anterior y nueva del archivo.
-2.  La segunda línea dice exactamente cuáles versiones del archivo
+2.  La segunda línea dice exactamente qué versiones del archivo
     está comparando Git;
     `df0654a` y `315bf3a` son etiquetas únicas generadas por computadora para esas versiones.
 3.  Las líneas tercera y cuarta muestran una vez más el nombre del archivo que se está cambiando.
@@ -320,13 +320,13 @@ $ git commit -m "Add concerns about effects of Mars' moons on Wolfman"
 ~~~
 {: .output}
 
-Git insiste en que agreguemos archivos al conjunto que queremos hacer **commit**
-antes de hacer **commit** real de alguna cosa. Esto permite hacer **commit** de nuestros
-cambios en etapas y atrapar cambios en porciones lógicas en lugar de
+Git insiste en que agreguemos el archivo para el conjunto de cambios que queremos hacer
+antes de hacer **commit** de alguna cosa. Esto permite hacer **commit** de nuestros
+cambios en etapas y capturarlos en porciones lógicas en lugar de
 solo lotes grandes.
 Por ejemplo,
 supongamos que agregamos pocas citas para nuestro supervisor de trabajo
-en nuestra tesis.
+de nuestra tesis.
 Podríamos querer hacer **commit** a esas adiciones,
 y su correspondiente adición a la bibliografía,
 pero *no* hacer **commit** del trabajo que estamos haciendo en la conclusión
@@ -362,7 +362,7 @@ pero aún no se hace **commit**.
 ![The Git Staging Area](../fig/git-staging-area.svg)
 
 Veamos cómo nuestros cambios a un archivo se mueven de nuestro editor
-al área de ensayo
+al **staging area**
 y  luego al almacenamiento de largo plazo.
 Primero,
 agregamos otra línea al archivo:
@@ -516,7 +516,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 >
 > Para evitar que `git log` cubra toda la pantalla de tu terminal, puedes limitar el
 > número de **commits** que Git lista usando `-N`, donde `N` es el número de
-> **commits** que tu quieres ver. Por ejemplo, si sólo quieres información de
+> **commits** que quieres ver. Por ejemplo, si sólo quieres información de
 > el último **commit**, puedes usar:
 >
 > ~~~
@@ -596,7 +596,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 {: .callout}
 
 Recapitulando, cuando queremos agregar cambios a nuestro repositorio,
-primero necesitamos agregar los archivos cambiados al área de ensayo
+primero necesitamos agregar los archivos cambiados al **staging area**
 (`git add`) y luego hacer un **commit** de los cambios al
 repositorio (`git commit`):
 
@@ -645,7 +645,7 @@ repositorio (`git commit`):
 > ## Haciendo **Commit** a Multiples Archivos
 >
 > El **staging area** puede tener cambios de cualquier número de archivos
-> que quieras hacer **commit** como una sóla instantanea.
+> que quieras hacer **commit** como una sóla instantánea.
 >
 > 1. Agrega algún texto a `mars.txt` anotando tu decisión
 > para considerar Venus como base
