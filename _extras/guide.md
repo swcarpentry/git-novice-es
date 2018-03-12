@@ -184,7 +184,7 @@ Enseñamos sobre licencias porque preguntas sobre quién posee qué o qué puede
 
 Una preocupación común para los estudiantes es tener su trabajo a disposición del público en GitHub. Si bien fomentamos la ciencia abierta, a veces los repos privados son única opción. Siempre es interesante mencionar las opciones para tener repositorios privados alojados en la web.
 
-[escuela de código]: https://www.codeschool.com/
+[code-school]: https://www.codeschool.com/
 [diffmerge]: https://sourcegear.com/diffmerge/
 [dibujos]: https://marklodato.github.io/visual-git-guide/index-en.html
 [git-it]: https://github.com/jlord/git-it
