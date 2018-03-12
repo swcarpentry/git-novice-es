@@ -114,3 +114,5 @@ Hay muchas más opciones que se pueden encontrar en la interfaz de RStudio,
 pero las que hemos visto son suficientes para comenzar.
 
 [rstudio-projects]: https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects
+
+{% include links.md %}

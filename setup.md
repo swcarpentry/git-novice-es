@@ -13,6 +13,6 @@ Haremos nuestro trabajo en la carpeta `Desktop`. Por favor asegúrese de cambiar
 $ cd
 $ cd Desktop
 ~~~
-{: .bash}
+{: .language-bash}
 
 [workshop-setup]: https://swcarpentry.github.io/workshop-template/#git

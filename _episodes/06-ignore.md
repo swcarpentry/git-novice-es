@@ -20,14 +20,14 @@ Vamos a crear algunos archivos ficticios:
 $ mkdir results
 $ touch a.dat b.dat c.dat results/a.out results/b.out
 ~~~
-{: .bash}
+{: .language-bash}
 
 Mira lo que Git dice:
 
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -53,7 +53,7 @@ Lo hacemos creando un archivo en el directorio raíz de nuestro proyecto llamado
 $ nano .gitignore
 $ cat .gitignore
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 *.dat
@@ -72,7 +72,7 @@ la salida de `git status` es mucho más limpia:
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -95,7 +95,7 @@ $ git add .gitignore
 $ git commit -m "Add the ignore file"
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 # On branch master
@@ -108,7 +108,7 @@ Como ventaja, usar `.gitignore` nos ayuda a evitar agregar accidentalmente al re
 ~~~
 $ git add a.dat
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 The following paths are ignored by one of your .gitignore files:
@@ -125,7 +125,7 @@ También podemos ver siempre el estado de los archivos ignorados si queremos:
 ~~~
 $ git status --ignored
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -149,7 +149,7 @@ nothing to commit, working directory clean
 > results/data
 > results/plots
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > ¿Cómo ignorarías sólo `results/plots` y no `results/data`?
 >
@@ -187,7 +187,7 @@ nothing to commit, working directory clean
 > > *.data # ignora todos los archivos .data
 > > !final.data # excepto el archivo final.data
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > El signo de exclamación incluirá una entrada previamente excluida.
 > {: .solution}
@@ -204,7 +204,7 @@ nothing to commit, working directory clean
 > results/data/position/gps/info.txt
 > results/plots
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > ¿Cuál es la regla más corta en `.gitignore` para ignorar todos los archivos `.data`
 > en `result/data/position/gps`? No ignores el archivo `info.txt`.
@@ -225,7 +225,7 @@ nothing to commit, working directory clean
 > *.data
 > !*.data
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > ¿Cuál será el resultado?
 >
@@ -256,3 +256,6 @@ nothing to commit, working directory clean
 > > 3. Rastrea `log_01` usando `git add -f log_01`
 > {: .solution}
 {: .challenge}
+
+
+{% include links.md %}
