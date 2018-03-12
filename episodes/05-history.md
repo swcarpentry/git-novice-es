@@ -94,7 +94,7 @@ También podríamos usar `git show`, que nos muestra qué cambios hemos realizad
 ~~~
 $ git show HEAD~2 mars.txt
 ~~~
-{: ..language-bash}
+{: .language-bash}
 
 ~~~
 commit 34961b159c27df3b475cfe4415d94a6d1fcd064d

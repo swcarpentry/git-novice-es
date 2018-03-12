@@ -89,7 +89,7 @@ trabajando en equipo o no, porque es
 $ mv .git temp_git
 $ rm -rf temp_git
 ~~~
-{: .language.language-bash}
+{: .language-bash}
 
     El desafío sugiere que es una mala idea crear un repositorio de Git dentro de otro repositorio.
     Para obtener más información sobre este tema, consulte [este número][repos-in-repos].
