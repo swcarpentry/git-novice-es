@@ -37,7 +37,7 @@ $ mkdir planets
 $ cd planets
 $ git init
 ~~~
-{: .bash}
+{: .language-bash}
 
 Nuestro repositorio local contiene nuestro trabajo previo en `mars.txt`, pero el repositorio remoto en GitHub todavía no contiene ningún archivo:
 
@@ -67,7 +67,7 @@ Copia dicha URL desde el navegador, ve al repositorio local `planets` y ejecuta 
 ~~~
 $ git remote add origin https://github.com/vlad/planets.git
 ~~~
-{: .bash}
+{: .language-bash}
 
 Asegúrate de usar la URL de tu repositorio en lugar de la de vlad: la única diferencia debería ser tu nombre de usuario en lugar de `vlad`.
 
@@ -76,7 +76,7 @@ Podemos comprobar que el comando ha funcionado bien ejecutando `git remote -v`:
 ~~~
 $ git remote -v
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 origin   https://github.com/vlad/planets.git (push)
@@ -91,7 +91,7 @@ Una vez seleccionado el apodo local `origin`, el siguiente comando enviará los 
 ~~~
 $ git push origin master
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Counting objects: 9, done.
@@ -115,7 +115,7 @@ Branch master set up to track remote branch master from origin.
 > $ git config --global http.proxy http://user:password@proxy.url
 > $ git config --global https.proxy http://user:password@proxy.url
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > Si después te conectas a otra red que no usa un proxy es necesario decirle
 > a Git que deshabilite el proxy:
@@ -124,14 +124,14 @@ Branch master set up to track remote branch master from origin.
 > $ git config --global --unset http.proxy
 > $ git config --global --unset https.proxy
 > ~~~
-> {: .bash}
+> {: .language-bash}
 {: .callout}
 
 > ## Gestores de contraseñas
 >
 > Si tu sistema operativo tiene un gestor de contraseñas configurado, `git push`
 > intentará usarlo cuando necesite un nombre de usuario y contraseña. Al menos
-> ese es el comportamiento por defecto para Git Bash en Windows.
+> ese es el comportamiento por defecto para Git.language-bash en Windows.
 > Si quieres que haya que introducir el nombre de usuario y contraseña en la terminal,
 > en lugar de usar el gestor de contraseñas, hay que ejecutar el siguiente
 > comando en la terminal antes de lanzar `git push`:
@@ -139,7 +139,7 @@ Branch master set up to track remote branch master from origin.
 > ~~~
 > $ unset SSH_ASKPASS
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > A pesar de lo que se podría deducir por el nombre, [git usa `SSH_ASKPASS`
 > para todas las peticiones de credenciales](http://git-scm.com/docs/gitcredentials#_requesting_credentials),
@@ -168,7 +168,7 @@ También podemos hacer **pull**, es decir, traernos cambios desde el repositorio
 ~~~
 $ git pull origin master
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 From https://github.com/vlad/planets
@@ -228,7 +228,7 @@ En este caso, hacer **pull** no ha tenido ningún efecto porque los dos reposito
 > ~~~
 > git remote add broken https://github.com/this/url/is/invalid
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > ¿Obtienes un error al añadir el repositorio remoto? ¿Se te ocurre algún
 > comando que hiciera obvio que la URL de tu repositorio remoto no es 
@@ -251,3 +251,6 @@ En este caso, hacer **pull** no ha tenido ningún efecto porque los dos reposito
 > > En este caso, puesto que ya teníamos un fichero README en nuestro propio repositorio (local), habríamos visto un conficto de unión, conocido como **merge conflict** (que es cuando git se da cuenta de que hay dos versiones de un mismo fichero y nos pide que resolvamos las diferencias).
 > {: .solution}
 {: .challenge}
+
+
+{% include links.md %}

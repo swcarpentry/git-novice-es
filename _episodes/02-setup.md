@@ -29,7 +29,7 @@ $ git config --global user.name "Vlad Dracula"
 $ git config --global user.email "vlad@tran.sylvan.ia"
 $ git config --global color.ui "auto"
 ~~~
-{: .bash}
+{: .language-bash}
 
 Utiliza tu propio nombre y dirección de correo electrónico en lugar del de Drácula. El nombre de usuario y el correo electrónico se asociarán con tu actividad posterior de Git, 
 lo que significa que cualquier cambio realizado en
@@ -58,14 +58,14 @@ en una lección posterior incluirá esta información.
 > ~~~
 > $ git config --global core.autocrlf input
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > Y en Windows:
 >
 > ~~~
 > $ git config --global core.autocrlf true
 > ~~~
-> {: .bash}
+> {: .language-bash}
 > 
 > Puedes leer más sobre este tema 
 > [en esta página de GitHub](https://help.github.com/articles/dealing-with-line-endings/).
@@ -106,7 +106,7 @@ Puedes comprobar tu configuración en cualquier momento:
 ~~~
 $ git config --list
 ~~~
-{: .bash}
+{: .language-bash}
 
 Puedes cambiar la configuración tantas veces como quieras: sólo usa los mismos comandos para elegir otro editor o actualizar tu correo electrónico.
 
@@ -120,7 +120,7 @@ Puedes cambiar la configuración tantas veces como quieras: sólo usa los mismos
 > $ git config --global http.proxy proxy-url
 > $ git config --global https.proxy proxy-url
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > Para deshabilitar el proxy, utiliza
 >
@@ -128,7 +128,7 @@ Puedes cambiar la configuración tantas veces como quieras: sólo usa los mismos
 > $ git config --global --unset http.proxy
 > $ git config --global --unset https.proxy
 > ~~~
-> {: .bash}
+> {: .language-bash}
 {: .callout}
 
 > ## Ayuda y manual de Git
@@ -139,7 +139,10 @@ Puedes cambiar la configuración tantas veces como quieras: sólo usa los mismos
 > $ git config -h
 > $ git config --help
 > ~~~
-> {: .bash}
+> {: .language-bash}
 {: .callout}
 
 [git-privacy]: https://help.github.com/articles/keeping-your-email-address-private/
+
+
+{% include links.md %}
