@@ -91,7 +91,8 @@ RStudio crea algunos archivos que le ayudan a mantener un control de los cambios
 > y directorios. 
 {: .callout}
 
-> ## Challenge  
+> ## Challenge
+>
 > 1. Crear un directorio dentro de tu proyecto llamado `graphs`.
 > 2. Modificar el archivo `.gitignore`  para que contenga `graphs/`
 > entonces este output desechable no estara **versioned**.
