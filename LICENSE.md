@@ -72,10 +72,10 @@ CON EL SOFTWARE O EL USO U OTROS TRATOS EN EL SOFTWARE.
 ## Marca registrada
 
 "Software Carpentry" y "Data Carpentry" y sus respectivos logos
-son marcas registradas de [NumFOCUS][numfocus].
+son marcas registradas de [Community Initiatives][ci-site].
 
 [cc-por-humano]: https://creativecommons.org/licenses/by/4.0/
 [cc-by-legal]: https://creativecommons.org/licenses/by/4.0/legalcode
 [mit-license]: https://opensource.org/licenses/mit-license.html
-[numfocus]: https://numfocus.org/
+[ci-site]: http://communityin.org/
 [osi]: https://opensource.org
