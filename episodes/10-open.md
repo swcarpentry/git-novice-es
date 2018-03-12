@@ -69,3 +69,5 @@ Este modelo abierto acelera la investigación: el trabajo abierto [se cita y se 
 >
 > Hay nuevas maneras de publicar código y hacer que sea citable. Uno de ellos se describe [en la página principal del mismo GitHub](https://guides.github.com/activities/citable-code/). Básicamente es una combinación de GitHub (donde está el código) y Zenodo (el repositorio que crea el DOI). Lee esta página mientras sabes que ésta es sólo una de las muchas maneras de hacer tu código citable.
 {: .challenge}
+
+{% include links.md %}

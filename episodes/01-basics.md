@@ -68,3 +68,6 @@ en diferentes computadoras, facilitando así la colaboración entre diferentes p
 > Si usas LibreOffice Writer o Microsoft Word, ¿qué sucede si aceptas los cambios realizados con la opción 
 > ` Track Changes`? ¿Tienes un historial de esos cambios? 
 {: .challenge}
+
+
+{% include links.md %}
