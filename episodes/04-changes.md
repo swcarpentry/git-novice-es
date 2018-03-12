@@ -737,8 +737,15 @@ repositorio (`git commit`):
 > > [master 4162a51] Update Vlad's bio.
 > > Author: Frank N. Stein <franky@monster.com>
 > > 1 file changed, 2 insertions(+), 2 deletions(-)
+> > ~~~
+> > {: .output}
 > >
+> > ~~~
 > > $ git log --format=full
+> > ~~~
+> > {: .language-bash}
+> >
+> > ~~~
 > > commit 4162a51b273ba799a9d395dd70c45d96dba4e2ff
 > > Author: Frank N. Stein <franky@monster.com>
 > > Commit: Vlad Dracula <vlad@tran.sylvan.ia>
@@ -751,8 +758,8 @@ repositorio (`git commit`):
 > >
 > > Vlad's initial bio.
 > > ~~~
-> > 
 > > {: .output}
+> > 
 > {: .solution}
 {: .challenge}
 
