@@ -29,7 +29,7 @@ hagamos un cambio en `mars.txt`.
 $ nano mars.txt
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Cold and dry, but everything is my favorite color
@@ -44,7 +44,7 @@ Ahora, veamos lo que tenemos.
 ~~~
 $ git diff HEAD mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 diff --git a/mars.txt b/mars.txt
@@ -66,7 +66,7 @@ esto agregando `~1` para referirnos al **commit** anterior de `HEAD`.
 ~~~
 $ git diff HEAD~1 mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 Si queremos ver las diferencias entre **commits** anteriores podemos usar `git diff`
 nuevamente, pero con la notación `HEAD~1`,`HEAD~2`, y así sucesivamente, para referirse a ellos:
@@ -74,7 +74,7 @@ nuevamente, pero con la notación `HEAD~1`,`HEAD~2`, y así sucesivamente, para 
 ~~~
 $ git diff HEAD~2 mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 diff --git a/mars.txt b/mars.txt
@@ -94,7 +94,7 @@ También podríamos usar `git show`, que nos muestra qué cambios hemos realizad
 ~~~
 $ git show HEAD~2 mars.txt
 ~~~
-{: .bash}
+{: ..language-bash}
 
 ~~~
 commit 34961b159c27df3b475cfe4415d94a6d1fcd064d
@@ -136,7 +136,7 @@ así que probemos esto:
 ~~~
 $ git diff f22b25e3233b4645dabd0d81e651fe074bd8e73b mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 diff --git a/mars.txt b/mars.txt
@@ -158,7 +158,7 @@ entonces Git nos permite usar solo los primeros caracteres:
 ~~~
 $ git diff f22b25e mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 diff --git a/mars.txt b/mars.txt
@@ -182,7 +182,7 @@ Supongamos que accidentalmente sobrescribimos nuestro archivo:
 $ nano mars.txt
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 We will need to manufacture our own oxygen
@@ -196,7 +196,7 @@ pero esos cambios no se han realizado:
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -218,7 +218,7 @@ usando `git checkout`:
 $ git checkout HEAD mars.txt
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Cold and dry, but everything is my favorite color
@@ -239,12 +239,12 @@ podemos usar un identificador de **commit** en su lugar:
 ~~~
 $ git checkout f22b25e mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Cold and dry, but everything is my favorite color
@@ -254,7 +254,7 @@ Cold and dry, but everything is my favorite color
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 # On branch master
@@ -278,7 +278,7 @@ usando `git checkout`:
 ~~~
 $ git checkout -f master mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 > ## No pierdas tu HEAD
 >
@@ -287,7 +287,7 @@ $ git checkout -f master mars.txt
 > ~~~
 > $ git checkout f22b25e mars.txt
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > para revertir `mars.txt` a su estado después del **commit** `f22b25e`.
 > Si olvidas `mars.txt` en ese comando, Git te dirá que "You are in
@@ -321,7 +321,7 @@ aqui esta como Git trabaja en forma de dibujo:
 > ~~~
 > (use "git checkout -- <file>..." to discard changes in working directory)
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > Como deciamos,
 > `git checkout` sin un identificador de versión restaura los archivos al estado guardado en `HEAD`.
@@ -399,7 +399,7 @@ retroceder y avanzar en el tiempo se vuelve mucho más fácil.
 > $ git checkout HEAD venus.txt
 > $ cat venus.txt #esto imprimirá el contenido de venus.txt en la pantalla
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > 1.
 >
@@ -436,43 +436,43 @@ retroceder y avanzar en el tiempo se vuelve mucho más fácil.
 > > ~~~
 > > $ cd planets
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > > Entra al directorio 'planets'
 > >
 > > ~~~
 > > $ nano venus.txt #agrega el siguiente texto: Venus is beautiful and full of love
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > > Creamos un nuevo archivo y escribimos una oración, pero el archivo no es rastreado por git.
 > >
 > > ~~~
 > > $ git add venus.txt
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > > Ahora el archivo está en escena. Los cambios que se han realizado en el archivo hasta ahora se confirmarán en el siguiente **commit**.
 > >
 > > ~~~
 > > $ nano venus.txt #agrega el siguiente texto: Venus is too hot to be suitable as a base
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > > El archivo ha sido modificado. Los nuevos cambios no se realizan porque no hemos agregado el archivo.
 > >
 > > ~~~
 > > $ git commit -m "Comment on Venus as an unsuitable base"
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > > Los cambios que se incluyeron (Venus is beautiful and full of love) se han confirmado. Los cambios que no se realizaron (Venus is too hot to be suitable as a base) no. Nuestra copia de trabajo local es diferente a la copia en nuestro repositorio local.
 > >
 > > ~~~
 > > $ git checkout HEAD venus.txt
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > > Con el **checkout**, descartamos los cambios en el directorio de trabajo para que nuestra copia local sea exactamente la misma que nuestra HEAD, el más reciente **commit**.
 > >
 > > ~~~
 > > $ cat venus.txt #esto imprimirá el contenido de venus.txt a la pantalla
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > > Si imprimirmos venus.txt obtendremos la respuesta 2.
 > >
 > {: .solution}
@@ -511,7 +511,7 @@ retroceder y avanzar en el tiempo se vuelve mucho más fácil.
 > ~~~
 > $ git log mars.txt
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > Desafortunadamente, algunos de estos mensajes de los **commits** son muy ambiguos, p. Ej. `update files`.
 > ¿Cómo puedes buscar a través de estos archivos?
@@ -522,7 +522,7 @@ retroceder y avanzar en el tiempo se vuelve mucho más fácil.
 > ~~~
 > $ git log --patch mars.txt
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > Deberías obtener una larga lista de resultados, y deberías poder ver los dos mensajes del **commit** y la diferencia entre cada 
 > **commit**.
@@ -532,5 +532,5 @@ retroceder y avanzar en el tiempo se vuelve mucho más fácil.
 > ~~~
 > $ git log --patch HEAD~3 *.txt
 > ~~~
-> {: .bash}
+> {: .language-bash}
 {: .challenge}

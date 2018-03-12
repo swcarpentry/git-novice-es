@@ -20,7 +20,7 @@ Para ver cómo podemos resolver conflictos, primero debemos crear uno. Actualmen
 ~~~
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 
 ~~~
@@ -36,7 +36,7 @@ Agreguemos una línea únicamente a la copia de uno de los dos compañeros:
 $ nano mars.txt
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 
 ~~~
@@ -55,7 +55,7 @@ y luego hacer `push` al cambio en GitHub:
 $ git add mars.txt
 $ git commit -m "Add a line in our home copy"
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 [master 5ae9631] Add a line in our home copy
@@ -66,7 +66,7 @@ $ git commit -m "Add a line in our home copy"
 ~~~
 $ git push origin master
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Counting objects: 5, done.
@@ -87,7 +87,7 @@ haga un cambio diferente a su copia
 $ nano mars.txt
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 
 ~~~
@@ -105,7 +105,7 @@ Podemos hacer **commit** del cambio localmente
 $ git add mars.txt
 $ git commit -m "Add a line in my copy"
 ~~~
-{: .bash}
+{: .language-bash}
 
 
 ~~~
@@ -120,7 +120,7 @@ pero Git no nos dejará hacer **push** en GitHub:
 ~~~
 $ git push origin master
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 To https://github.com/vlad/planets.git
@@ -145,7 +145,7 @@ Empecemos haciendo  `pull` a lo siguiente:
 ~~~
 $ git pull origin master
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 remote: Counting objects: 5, done.
@@ -166,7 +166,7 @@ y marca ese conflicto en el archivo afectado:
 ~~~
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Cold and dry, but everything is my favorite color
@@ -196,7 +196,7 @@ Reemplacemos ambos de manera que el archivo quede así:
 ~~~
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Cold and dry, but everything is my favorite color
@@ -214,7 +214,7 @@ y luego hacemos 'commit':
 $ git add mars.txt
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -231,7 +231,7 @@ Changes to be committed:
 ~~~
 $ git commit -m "Merge changes from GitHub"
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 [master 2abf2b1] Merge changes from GitHub
@@ -243,7 +243,7 @@ Ahora podemos hacer 'push' a nuestros cambios en GitHub:
 ~~~
 $ git push origin master
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Counting objects: 10, done.
@@ -263,7 +263,7 @@ cuando el colaborador que hizo el primer cambio hace **pull** de nuevo:
 ~~~
 $ git pull origin master
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 remote: Counting objects: 10, done.
@@ -284,7 +284,7 @@ Obtenemos el archivo unificado:
 ~~~
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Cold and dry, but everything is my favorite color
@@ -343,7 +343,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > $ head --bytes 1024 /dev/urandom > mars.jpg
 > > $ ls -lh mars.jpg
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > ~~~
 > > -rw-r--r-- 1 vlad 57095 1.0K Mar  8 20:24 mars.jpg
@@ -359,7 +359,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > $ git add mars.jpg
 > > $ git commit -m "Add picture of Martian surface"
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > ~~~
 > > [master 8e4115c] Add picture of Martian surface
@@ -375,7 +375,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > ~~~
 > > $ git push origin master
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > ~~~
 > > To https://github.com/vlad/planets.git
@@ -394,7 +394,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > ~~~
 > > $ git pull origin master
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > Cuando hay un conflicto en una imagen u otro archivo binario, git imprime
 > > un mensaje así:
@@ -437,7 +437,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > $ git add mars.jpg
 > > $ git commit -m "Use image of surface instead of sky"
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > ~~~
 > > [master 21032c3] Use image of surface instead of sky
@@ -452,7 +452,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > $ git add mars.jpg
 > > $ git commit -m "Use image of sky instead of surface"
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > ~~~
 > > [master da21b34] Use image of sky instead of surface
@@ -469,7 +469,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > $ git checkout 439dc8c0 mars.jpg
 > > $ mv mars.jpg mars-sky.jpg
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > Luego, elimina la vieja imagen `mars.jpg` y agrega los dos archivos nuevos:
 > >
@@ -479,7 +479,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > $ git add mars-sky.jpg
 > > $ git commit -m "Use two images: surface and sky"
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > ~~~
 > > [master 94ae08c] Use two images: surface and sky

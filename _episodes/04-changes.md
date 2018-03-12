@@ -24,14 +24,14 @@ Deberías estar en el directorio `planets`.
 ~~~
 $ pwd
 ~~~
-{: .bash}
+{: .language-bash}
 
 Si aún estás en `moons` navega de regreso a `planets`
 
 ~~~
 $ cd ..
 ~~~
-{: .bash}
+{: .language-bash}
 
 Vamos a crear un archivo llamado `mars.txt` que contiene algunas notas
 sobre Red Planet's suitability como base.
@@ -42,7 +42,7 @@ En particular, éste no tiene que ser el `core.editor` que definiste globalmente
 ~~~
 $ nano mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 Teclea el texto siguiente en el archivo `mars.txt`:
 
@@ -56,7 +56,7 @@ Cold and dry, but everything is my favorite color
 ~~~
 $ ls
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 mars.txt
@@ -66,7 +66,7 @@ mars.txt
 ~~~
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Cold and dry, but everything is my favorite color
@@ -79,7 +79,7 @@ Git nos dice que ha notado el nuevo archivo:
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -100,14 +100,14 @@ que Git no le está siguiendo la pista. Podemos decirle a Git que le siga la pis
 ~~~
 $ git add mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 y luego verifica que hizo lo correcto:
 
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -130,7 +130,7 @@ necesitamos ejecutar un comando más:
 ~~~
 $ git commit -m "Start notes on Mars as a base"
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 [master (root-commit) f22b25e] Start notes on Mars as a base
@@ -161,7 +161,7 @@ Si ejecutamos `git status` ahora:
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -176,7 +176,7 @@ podemos pedir a Git  que nos muestre la historia del proyecto usando `git log`:
 ~~~
 $ git log
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
@@ -213,7 +213,7 @@ podrías usar un editor diferente y no necesitar `cat`.)
 $ nano mars.txt
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Cold and dry, but everything is my favorite color
@@ -227,7 +227,7 @@ nos dice que un archivo ya sabe que ha sido modificado:
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -255,7 +255,7 @@ del archivo y la versión guardada más reciente:
 ~~~
 $ git diff
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 diff --git a/mars.txt b/mars.txt
@@ -290,7 +290,7 @@ Después de revisar nuestro cambio, es tiempo de hacer un **commit** de eso:
 $ git commit -m "Add concerns about effects of Mars' moons on Wolfman"
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -312,7 +312,7 @@ Arreglemos esto:
 $ git add mars.txt
 $ git commit -m "Add concerns about effects of Mars' moons on Wolfman"
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 [master 34961b1] Add concerns about effects of Mars' moons on Wolfman
@@ -371,7 +371,7 @@ agregamos otra línea al archivo:
 $ nano mars.txt
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Cold and dry, but everything is my favorite color
@@ -383,7 +383,7 @@ But the Mummy will appreciate the lack of humidity
 ~~~
 $ git diff
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 diff --git a/mars.txt b/mars.txt
@@ -408,7 +408,7 @@ y veamos lo que reporta `git diff`:
 $ git add mars.txt
 $ git diff
 ~~~
-{: .bash}
+{: .language-bash}
 
 No hay salida:
 en lo que Git puede decir,
@@ -420,7 +420,7 @@ si hacemos esto:
 ~~~
 $ git diff --staged
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 diff --git a/mars.txt b/mars.txt
@@ -442,7 +442,7 @@ Guardemos nuestros cambios:
 ~~~
 $ git commit -m "Discuss concerns about Mars' climate for Mummy"
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 [master 005937f] Discuss concerns about Mars' climate for Mummy
@@ -455,7 +455,7 @@ revisa nuestro estatus:
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -468,7 +468,7 @@ y mira en la historia lo que hemos hecho hasta aquí:
 ~~~
 $ git log
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
@@ -522,7 +522,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ~~~
 > $ git log -1
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > ~~~
 > commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
@@ -539,7 +539,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ~~~
 > $ git log --oneline
 > ~~~
-> {: .bash}
+> {: .language-bash}
 > ~~~
 > * 005937f Discuss concerns about Mars' climate for Mummy
 > * 34961b1 Add concerns about effects of Mars' moons on Wolfman
@@ -553,7 +553,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ~~~
 > $ git log --oneline --graph --all --decorate
 > ~~~
-> {: .bash}
+> {: .language-bash}
 > ~~~
 > * 005937f Discuss concerns about Mars' climate for Mummy (HEAD, master)
 > * 34961b1 Add concerns about effects of Mars' moons on Wolfman
@@ -575,7 +575,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > $ git add directory
 > $ git status
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > Nota, nuestro nuevo y vació directorio  `directory` no aparece en
 > la lista de archivos no rastreados aún si nosotros explícitamente lo agregamos(_via_ `git add`) a nuestro
@@ -591,7 +591,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ~~~
 > git add 1
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 {: .callout}
 
@@ -661,7 +661,7 @@ repositorio (`git commit`):
 > > $ nano mars.txt
 > > $ cat mars.txt
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > > ~~~
 > > Maybe I should start with a base on Venus.
 > > ~~~
@@ -670,7 +670,7 @@ repositorio (`git commit`):
 > > $ nano venus.txt
 > > $ cat venus.txt
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > > ~~~
 > > Venus is a nice planet and I definitely should consider it as a base.
 > > ~~~
@@ -680,18 +680,18 @@ repositorio (`git commit`):
 > > ~~~
 > > $ git add mars.txt venus.txt
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > > O con varios comandos:
 > > ~~~
 > > $ git add mars.txt
 > > $ git add venus.txt
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > > Ahora los archivos están listos para hacer **commit**. Puedes verificar esto usando `git status`. Si estás listo para hacer **commit** usa:
 > > ~~~
 > > $ git commit -m "Write plans to start a base on Venus"
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > > ~~~
 > > [master cc127c2]
 > >  Write plans to start a base on Venus
@@ -711,14 +711,14 @@ repositorio (`git commit`):
 > ~~~
 > $ git log --format=full
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > Cuando haces **commit** puedes nombrar a alguien más como el **author**:
 >
 > ~~~
 > $ git commit --author="Vlad Dracula <vlad@tran.sylvan.ia>"
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > Crea un nuevo repositorio y crea dos **commits**: uno sin la
 > opción `--author` y uno nombrando a un colega tuyo como el
@@ -731,7 +731,7 @@ repositorio (`git commit`):
 > > $ git add me.txt
 > > $ git commit -m "Update Vlad's bio." --author="Frank N. Stein <franky@monster.com>"
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > > 
 > > ~~~
 > > [master 4162a51] Update Vlad's bio.
