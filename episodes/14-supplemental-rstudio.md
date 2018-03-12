@@ -88,10 +88,10 @@ RStudio crea algunos archivos que le ayudan a mantener un control de los cambios
 >
 > Generalmente tu no quieres hacer control de cambios o versiones de tus output desechables  (o solo datos de lectura).
 > Entonces, tu debes modificar el archivo `.gitignore` para decirle a Git que ignore estos archivos
-> y directorios. {: .callout}
+> y directorios. 
+{: .callout}
 
 > ## Challenge  
-
 > 1. Crear un directorio dentro de tu proyecto llamado `graphs`.
 > 2. Modificar el archivo `.gitignore`  para que contenga `graphs/`
 > entonces este output desechable no estara **versioned**.
