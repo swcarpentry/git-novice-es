@@ -1,5 +1,5 @@
 ---
-title: Explorando el **History**
+title: Explorando el "History"
 teaching: 25
 exercises: 0
 questions:
