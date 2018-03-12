@@ -143,3 +143,6 @@ Puedes cambiar la configuración tantas veces como quieras: sólo usa los mismos
 {: .callout}
 
 [git-privacy]: https://help.github.com/articles/keeping-your-email-address-private/
+
+
+{% include links.md %}

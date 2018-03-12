@@ -251,3 +251,6 @@ En este caso, hacer **pull** no ha tenido ningún efecto porque los dos reposito
 > > En este caso, puesto que ya teníamos un fichero README en nuestro propio repositorio (local), habríamos visto un conficto de unión, conocido como **merge conflict** (que es cuando git se da cuenta de que hay dos versiones de un mismo fichero y nos pide que resolvamos las diferencias).
 > {: .solution}
 {: .challenge}
+
+
+{% include links.md %}
