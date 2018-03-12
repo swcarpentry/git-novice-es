@@ -757,3 +757,6 @@ repositorio (`git commit`):
 {: .challenge}
 
 [commit-messages]: http://chris.beams.io/posts/git-commit/
+
+
+{% include links.md %}

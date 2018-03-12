@@ -153,3 +153,6 @@ El dueño hace un **push** de los **commits** al repositorio sin dar informació
 > 
 > Algunos softwares que permiten hacer **backups** también permiten guardar un historial de versiones y recuperar versiones específicas. ¿Cómo es esta funcionalidad distinta del control de versiones? ¿Cuáles son los beneficios de usar control de versiones, Git y GitHub? 
 {: .challenge}
+
+
+{% include links.md %}

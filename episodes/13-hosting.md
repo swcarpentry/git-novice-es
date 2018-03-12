@@ -83,3 +83,5 @@ disponibles para repositorios privados por una cuota.
 > artículos, datos y software? ¿Cómo los repositorios institucionales
 > difieren de servicios como [arXiV](http://arxiv.org/), [figshare](http://figshare.com/) y [GitHub](http://github.com/)?
 {: .challenge}
+
+{% include links.md %}

@@ -256,3 +256,6 @@ nothing to commit, working directory clean
 > > 3. Rastrea `log_01` usando `git add -f log_01`
 > {: .solution}
 {: .challenge}
+
+
+{% include links.md %}
