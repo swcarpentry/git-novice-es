@@ -89,7 +89,7 @@ trabajando en equipo o no, porque es
 $ mv .git temp_git
 $ rm -rf temp_git
 ~~~
-{: .bash}
+{: .language.language-bash}
 
     El desafío sugiere que es una mala idea crear un repositorio de Git dentro de otro repositorio.
     Para obtener más información sobre este tema, consulte [este número][repos-in-repos].
@@ -133,7 +133,7 @@ Solo recuerda que puedes usar comodines y expresiones regulares para ignorar un 
 ~~~
 $ git clone https://github.com/vlad/planets.git planets-at-work
 ~~~
-{: .bash}
+{: .language-bash}
 
 * Es muy común que los alumnos escriban mal el alias remoto o la URL remota cuando se agrega un control remoto, entonces no pueden 'presionar'. Puedes diagnosticar esto con `git remote -v` y comprobando cuidadosamente si hay errores tipográficos.
     - Para arreglar un alias incorrecto, puedes hacer `git remote rename <old><new>`.
@@ -146,7 +146,7 @@ $ git clone https://github.com/vlad/planets.git planets-at-work
 ~~~
 $ git clone https://github.com/vlad/planets.git vlad-planet
 ~~~
-{: .bash}
+{: .language-bash}
 
 * El error más común es que los estudiantes "empujan" antes de "tirar". Si ellos `pull` después, pueden tener un conflicto.
 
