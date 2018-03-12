@@ -53,7 +53,7 @@ Git almacena información sobre el proyecto en este subdirectorio especial.
 Si alguna vez lo borramos,
 perderemos la historia del proyecto.
 
-Podemos revisar que todo está configurado correctamente
+Podemos revisar que todo esté configurado correctamente
 pidiendo a Git que nos informe el estado de nuestro proyecto:
 
 ~~~
@@ -70,7 +70,7 @@ nothing to commit (create/copy files and use "git add" to track)
 ~~~
 {: .output}
 
-> ## Lugares para crear repositorio Git
+> ## Lugares para crear un repositorio Git
 >
 > Dracula comienza un nuevo proyecto, `moons`, relacionado a su proyecto `planets`.
 > A pesar de las preocupaciones de Wolfman, él ingresa la siguiente secuencia de comandos 
@@ -87,7 +87,7 @@ nothing to commit (create/copy files and use "git add" to track)
 > ~~~
 > {: .bash}
 >
-> ¿Por qué es una mala idea hacer esto? (Observa aquí que el proyecto `planets` ahora también se encuentra controlando el repositorio completo de `moons`.)
+> ¿Por qué es una mala idea hacer esto? (Observa que el proyecto `planets` ahora también se encuentra controlando el repositorio completo de `moons`.)
 > ¿Cómo puede Dracula deshacer su último `git init`?
 >
 > > ## Solución
@@ -134,7 +134,7 @@ nothing to commit (create/copy files and use "git add" to track)
 > > ~~~
 > > {: .output}
 > >
-> > Para recuperarse de este pequeño error, Dracula puede simplemente eliminar el directorio `.git`
+> > Para deshacerse de este pequeño error, Dracula puede simplemente eliminar el directorio `.git`
 > > del subdirectorio moons. Para ello puede ejecutar el siguiente comando desde el interior del directorio 'moons':
 > >
 > > ~~~
