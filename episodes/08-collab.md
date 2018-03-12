@@ -32,7 +32,7 @@ Luego, el colaborador debe descargar una copia del repositorio del dueño a su m
 ~~~
 $ git clone https://github.com/vlad/planets.git ~/Desktop/vlad-planets
 ~~~
-{: .bash}
+{: .language-bash}
 
 Reemplaza 'vlad' con el nombre de usuario del dueño.
 
@@ -45,7 +45,7 @@ $ cd ~/Desktop/vlad-planets
 $ nano pluto.txt
 $ cat pluto.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 It is so a planet!
@@ -56,7 +56,7 @@ It is so a planet!
 $ git add pluto.txt
 $ git commit -m "Add notes about Pluto"
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
  1 file changed, 1 insertion(+)
@@ -69,7 +69,7 @@ Luego enviar, **push**, los cambios hacia el *repositorio del dueño* en GitHub:
 ~~~
 $ git push origin master
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Counting objects: 4, done.
@@ -91,7 +91,7 @@ Para descargar los cambios hechos por el colaborador desde GitHub, el dueño deb
 ~~~
 $ git pull origin master
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 remote: Counting objects: 4, done.
@@ -153,3 +153,6 @@ El dueño hace un **push** de los **commits** al repositorio sin dar informació
 > 
 > Algunos softwares que permiten hacer **backups** también permiten guardar un historial de versiones y recuperar versiones específicas. ¿Cómo es esta funcionalidad distinta del control de versiones? ¿Cuáles son los beneficios de usar control de versiones, Git y GitHub? 
 {: .challenge}
+
+
+{% include links.md %}

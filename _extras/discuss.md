@@ -21,7 +21,7 @@ en un archivo de texto sin formato llamado `.gitconfig`.
 ~~~
 $ cat ~/.gitconfig
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 [user]
@@ -45,7 +45,7 @@ Las opciones disponibles se describen en el manual:
 ~~~
 $ git config --help
 ~~~
-{: .bash}
+{: .language-bash}
 
 En particular, puede resultarle útil agregar alias.
 Estos son como accesos directos para comandos de git más largos.
@@ -55,21 +55,21 @@ podrías ejecutar el comando:
 ~~~
 $ git config --global alias.co checkout
 ~~~
-{: .bash}
+{: .language-bash}
 
 Ahora, si volvemos al ejemplo de [Explorando el historial]({{ page.root }}/05-history/) where we ran:
 
 ~~~
 $ git checkout f22b25e mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ahora podríamos escribir:
 
 ~~~
 $ git co f22b25e mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ## Diseñando el registro de Git
 
@@ -88,7 +88,7 @@ $ git config --global log.abbrevCommit true
 $ git config --global format.pretty oneline
 $ git lg
 ~~~
-{: .bash}
+{: .language-bash}
 
 Si no te gustan los efectos,
 puedes deshacerlos con:
@@ -98,7 +98,7 @@ $ git config --global --unset alias.lg
 $ git config --global --unset log.abbrevCommit
 $ git config --global --unset format.pretty
 ~~~
-{: .bash}
+{: .language-bash}
 
 > ## Deshacer cambios en la configuración de Git
 >
@@ -146,7 +146,7 @@ Crea un nuevo directorio y entra en él:
 $ mkdir planets-nontext
 $ cd planets-nontext
 ~~~
-{: .bash}
+{: .language-bash}
 
 Use un programa como Microsoft Word o LibreOffice Writer para crear un documento nuevo.
 Ingrese el mismo texto con el que comenzamos antes:
@@ -164,7 +164,7 @@ $ git init
 $ git add mars.doc
 $ git commit -m "Starting to think about Mars"
 ~~~
-{: .bash}
+{: .language-bash}
 
 Luego haga los mismos cambios a `mars.doc` que nosotros (o Vlad) previamente hicimos a `mars.txt`.
 
@@ -180,7 +180,7 @@ Ahora mira lo que Git piensa de tus cambios:
 ~~~
 $ git diff
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 diff --git a/mars.doc b/mars.doc
@@ -230,7 +230,7 @@ Crea un nuevo archivo para el planeta Nibiru:
 ~~~
 $ echo "This is another name for fake planet X" > nibiru.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 Ahora agregue al repositorio como lo aprendió anteriormente:
 
@@ -239,7 +239,7 @@ $ git add nibiru.txt
 $ git commit -m 'adding info on nibiru'
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -254,7 +254,7 @@ desde el disco y deja que Git lo sepa:
 $ git rm nibiru.txt
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -274,7 +274,7 @@ tener el archivo, si fueras a recuperar esa confirmación específica.
 ~~~
 $ git commit -m 'Removing info on Nibiru.  It is not a real planet!'
 ~~~
-{: .bash}
+{: .language-bash}
 
 ## Eliminar un archivo con Unix
 
@@ -288,7 +288,7 @@ $ echo "This is another name for fake planet X" > nibiru.txt
 $ git add nibiru.txt
 $ git commit -m 'adding nibiru again'
 ~~~
-{: .bash}
+{: .language-bash}
 
 Ahora eliminamos el archivo con Unix `rm`:
 
@@ -296,7 +296,7 @@ Ahora eliminamos el archivo con Unix `rm`:
 $ rm nibiru.txt
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -319,7 +319,7 @@ antes de.
 $ git rm nibiru.txt
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -337,7 +337,7 @@ comprometido.
 ~~~
 $ git commit -m 'Removing info on Nibiru, again!'
 ~~~
-{: .bash}
+{: .language-bash}
 
 ## Renombrar un archivo
 
@@ -348,7 +348,7 @@ Crea un archivo para el planeta Krypton:
 ~~~
 $ echo "Superman's home planet" > krypton.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 Añádalo al repositorio:
 
@@ -356,7 +356,7 @@ Añádalo al repositorio:
 $ git add krypton.txt
 $ git commit -m 'Adding planet Krypton'
 ~~~
-{: .bash}
+{: .language-bash}
 
 Todos sabemos que Superman se mudó a la Tierra. No es que tuviera mucho
 elección. Ahora su planeta de origen es la Tierra.
@@ -367,7 +367,7 @@ Cambie el nombre del archivo `krypton.txt` a` earth.txt` con Git:
 $ git mv krypton.txt earth.txt
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 # On branch master
@@ -384,7 +384,7 @@ El último paso es comprometer nuestro cambio al repositorio:
 ~~~
 $ git commit -m 'Superman's home is now Earth'
 ~~~
-{: .bash}
+{: .language-bash}
 
 ## Renombrar un archivo con Unix
 
@@ -399,14 +399,14 @@ $ echo "Superman's home planet" > krypton.txt
 $ git add krypton.txt
 $ git commit -m 'Adding planet Krypton again.'
 ~~~
-{: .bash}
+{: .language-bash}
 
 Vamos a renombrar el archivo y ver lo que Git puede descifrar por sí mismo:
 ~~~
 $ mv krypton.txt earth.txt
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -434,7 +434,7 @@ Agregue esos cambios al área de ensayo:
 $ git add krypton.txt earth.txt
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -454,5 +454,5 @@ El último paso, como antes, es comprometer nuestro cambio al repositorio:
 ~~~
 $ git commit -m 'Superman's home is Earth, told you before.'
 ~~~
-{: .bash}
+{: .language-bash}
 	
