@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/122202135.svg)](https://zenodo.org/badge/latestdoi/122202135)
+
 git-novice
 ==========
 

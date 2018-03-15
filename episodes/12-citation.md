@@ -1,5 +1,5 @@
 ---
-title: Citas
+title: Ejemplo de Referencia o cita
 teaching: 2
 exercises: 0
 questions:
@@ -7,12 +7,12 @@ questions:
 objectives:
 - "Haz que tu trabajo sea más fácil de citar"
 keypoints:
-- "Agrega un archivo CITATION a el repositorio y explica cómo quieres que tu trabajo sea citado."
+- "Agrega un archivo CITATION al repositorio y explica cómo quieres que tu trabajo sea citado."
 ---
 
-Puedes incluir un archivo llamado `CITATION` o `CITATION.txt`
-que describa cómo referenciar tu proyecto;
-el siguiente es el de 
+Te recomendamos que incluyas un archivo llamado `CITATION` o `CITATION.txt`
+que describa cómo citar o referenciar tu proyecto.
+La siguiente cita es de 
 [Software Carpentry](https://github.com/swcarpentry/website/blob/gh-pages/CITATION):
 
 ~~~
@@ -43,3 +43,6 @@ July 2013.
 }
 ~~~
 {: .source}
+
+
+{% include links.md %}

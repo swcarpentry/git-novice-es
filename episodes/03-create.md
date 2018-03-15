@@ -18,7 +18,7 @@ Vamos a crear un directorio para nuestro trabajo y nos movemos dentro de ese dir
 $ mkdir planets
 $ cd planets
 ~~~
-{: .bash}
+{: .language-bash}
 
 Después le indicamos a Git hacer de `planets` un [repository]({{ page.root }}/reference/#repository)—lugar donde
 Git puede almacenar las versiones de nuestros archivos:
@@ -26,7 +26,7 @@ Git puede almacenar las versiones de nuestros archivos:
 ~~~
 $ git init
 ~~~
-{: .bash}
+{: .language-bash}
 
 Si usamos `ls` para mostrar el contenido del directorio,
 parece que nada ha cambiado:
@@ -34,7 +34,7 @@ parece que nada ha cambiado:
 ~~~
 $ ls
 ~~~
-{: .bash}
+{: .language-bash}
 
 Pero si agregamos la opción `-a` para mostrar todo,
 podemos ver que Git ha creado un directorio oculto dentro de `planets` llamado `.git`:
@@ -42,7 +42,7 @@ podemos ver que Git ha creado un directorio oculto dentro de `planets` llamado `
 ~~~
 $ ls -a
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 .	..	.git
@@ -53,13 +53,13 @@ Git almacena información sobre el proyecto en este subdirectorio especial.
 Si alguna vez lo borramos,
 perderemos la historia del proyecto.
 
-Podemos revisar que todo está configurado correctamente
+Podemos revisar que todo esté configurado correctamente
 pidiendo a Git que nos informe el estado de nuestro proyecto:
 
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 # On branch master
@@ -70,7 +70,7 @@ nothing to commit (create/copy files and use "git add" to track)
 ~~~
 {: .output}
 
-> ## Lugares para crear repositorio Git
+> ## Lugares para crear un repositorio Git
 >
 > Dracula comienza un nuevo proyecto, `moons`, relacionado a su proyecto `planets`.
 > A pesar de las preocupaciones de Wolfman, él ingresa la siguiente secuencia de comandos 
@@ -85,9 +85,9 @@ nothing to commit (create/copy files and use "git add" to track)
 > $ cd moons       # entrar al directorio planets/moons
 > $ git init       # hacer del subdirectorio moons un repositorio Git
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
-> ¿Por qué es una mala idea hacer esto? (Observa aquí que el proyecto `planets` ahora también se encuentra controlando el repositorio completo de `moons`.)
+> ¿Por qué es una mala idea hacer esto? (Observa que el proyecto `planets` ahora también se encuentra controlando el repositorio completo de `moons`.)
 > ¿Cómo puede Dracula deshacer su último `git init`?
 >
 > > ## Solución
@@ -103,7 +103,7 @@ nothing to commit (create/copy files and use "git add" to track)
 > > ~~~
 > > $ git status
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > > ~~~
 > > fatal: Not a git repository (or any of the parent directories): .git
 > > ~~~
@@ -119,7 +119,7 @@ nothing to commit (create/copy files and use "git add" to track)
 > > $ git status                        # mostrar los archivos moons en el área de almacenamiento
 > > $ git commit -m "add moon files"    # ingresar planets/moons al repositorio Git planets 
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > De manera similar, podemos ignorar (como comentamos anteriormente) directorios completos, como el directorio `moons`:
 > >
@@ -127,23 +127,26 @@ nothing to commit (create/copy files and use "git add" to track)
 > > $ nano .gitignore # abrir el archivo .gitignore en un editor para agregar el directorio moons
 > > $ cat .gitignore # si después se ejecuta el comando cat, debería verse así:
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > ~~~
 > > moons
 > > ~~~
 > > {: .output}
 > >
-> > Para recuperarse de este pequeño error, Dracula puede simplemente eliminar el directorio `.git`
+> > Para deshacerse de este pequeño error, Dracula puede simplemente eliminar el directorio `.git`
 > > del subdirectorio moons. Para ello puede ejecutar el siguiente comando desde el interior del directorio 'moons':
 > >
 > > ~~~
 > > $ rm -rf moons/.git
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > !Pero ten cuidado! Ejecutar este comando en el directorio incorrecto, eliminará
 > > toda la historia git de un proyecto que tú habrías querido conservar. Por lo tanto, revisa siempre tu directorio actual usando el comando
 > > command `pwd`.
 > {: .solution}
 {: .challenge}
+
+
+{% include links.md %}
