@@ -3,7 +3,7 @@ title: Ignorando cosas
 teaching: 5
 exercises: 0
 questions:
-- "¿Cómo puedo decirle a Git que ignore los archivos que no quiero rastrear?"
+- "¿Cómo puedo indicarle a Git que ignore los archivos que no quiero rastrear?"
 objectives:
 - "Configure Git para ignorar archivos específicos."
 - "Explica por qué ignorar los archivos puede ser útil."
@@ -13,21 +13,21 @@ keypoints:
 
 ¿Qué pasa si tenemos archivos que no queremos que Git rastree,
 como archivos de copia de seguridad creados por nuestro editor
-o archivos intermedios creados durante el análisis de datos?.
+o archivos intermedios creados durante el análisis de datos?
 Vamos a crear algunos archivos ficticios:
 
 ~~~
 $ mkdir results
 $ touch a.dat b.dat c.dat results/a.out results/b.out
 ~~~
-{: .bash}
+{: .language-bash}
 
 Mira lo que Git dice:
 
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -53,7 +53,7 @@ Lo hacemos creando un archivo en el directorio raíz de nuestro proyecto llamado
 $ nano .gitignore
 $ cat .gitignore
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 *.dat
@@ -72,7 +72,7 @@ la salida de `git status` es mucho más limpia:
 ~~~
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -95,7 +95,7 @@ $ git add .gitignore
 $ git commit -m "Add the ignore file"
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 # On branch master
@@ -108,7 +108,7 @@ Como ventaja, usar `.gitignore` nos ayuda a evitar agregar accidentalmente al re
 ~~~
 $ git add a.dat
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 The following paths are ignored by one of your .gitignore files:
@@ -125,7 +125,7 @@ También podemos ver siempre el estado de los archivos ignorados si queremos:
 ~~~
 $ git status --ignored
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -149,7 +149,7 @@ nothing to commit, working directory clean
 > results/data
 > results/plots
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > ¿Cómo ignorarías sólo `results/plots` y no `results/data`?
 >
@@ -181,13 +181,13 @@ nothing to commit, working directory clean
 >
 > > ## Solución
 > >
-> > Agrega las siguientes dos líneas a tu .gitignore:
+> > Agrega las siguientes dos líneas a tu archivo .gitignore:
 > >
 > > ~~~
-> > *.data # ignora todo los archivos .data
-> > !final.data # excepto final.data
+> > *.data # ignora todos los archivos .data
+> > !final.data # excepto el archivo final.data
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > El signo de exclamación incluirá una entrada previamente excluida.
 > {: .solution}
@@ -204,7 +204,7 @@ nothing to commit, working directory clean
 > results/data/position/gps/info.txt
 > results/plots
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > ¿Cuál es la regla más corta en `.gitignore` para ignorar todos los archivos `.data`
 > en `result/data/position/gps`? No ignores el archivo `info.txt`.
@@ -225,7 +225,7 @@ nothing to commit, working directory clean
 > *.data
 > !*.data
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > ¿Cuál será el resultado?
 >
@@ -242,17 +242,20 @@ nothing to commit, working directory clean
 >
 > Supón que escribiste un **script** que crea muchos archivos de registro con la estructura `log_01`, `log_02`, `log_03`, etc. Deseas conservarlos pero no rastrearlos a través de `git`.
 >
-> 1. Escribe **una entrada** `.gitignore` que excluya los archivos con estructura `log_01`, `log_02`, etc.
+> 1. Escribe **una entrada** en tu archivo `.gitignore` que excluya los archivos con estructura `log_01`, `log_02`, etc.
 >
 > 2. Prueba tu "patrón de ignorar" creando algunos archivos ficticios `log_01`, etc.
 >
 > 3. Te das cuenta de que el archivo `log_01` es muy importante después de todo, así que lo tienes que agregar a los archivos rastreados sin cambiar el` .gitignore` de nuevo
 >
-> 4. Discute con tu compañero de al lado qué otros tipos de archivos podrían residir en tu directorio que no deseas seguir y por tanto excluir a través de `.gitignore`.
+> 4. Discute con tu compañero de a lado qué otros tipos de archivos podrían residir en tu directorio que no deseas seguir y por tanto excluir a través de `.gitignore`.
 >
 > > ## Solución
 > >
-> > 1. Agrega `log_*` o `log*` como nueva entrada en tu .gitignore
+> > 1. Agrega `log_*` o `log*` como nueva entrada en tu archivo .gitignore
 > > 3. Rastrea `log_01` usando `git add -f log_01`
 > {: .solution}
 {: .challenge}
+
+
+{% include links.md %}

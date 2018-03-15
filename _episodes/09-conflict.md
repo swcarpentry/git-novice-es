@@ -6,7 +6,7 @@ questions:
 - "¿Qué hago cuando mis cambios entran en conflicto con los de otra persona?"
 objectives:
 - "Explicar qué son los conflictos y cuándo pueden ocurrir."
-- "Resolver conflictos resultantes de una fusión."
+- "Resolver conflictos resultado de una fusión."
 keypoints:
 - "Los conflictos ocurren cuando dos o más personas cambian el mismo archivo(s) al mismo tiempo."
 - "El sistema de control de versiones no permite a las personas sobreescribir ciegamente los
@@ -15,12 +15,12 @@ cambios del otro, pero resalta los conflictos para poder resolverlos."
 
 Tan pronto como podemos trabajar en paralelo, es probable que alquien deshaga lo que otro hizo. Esto incluso es probable con una única persona: si estamos trabajando en un software al mismo tiempo en nuestra computadora portátil y un servidor en el laboratorio, podríamos hacer cambios diferentes a cada copia del trabajo. El control de versiones nos ayuda a manejar estos [confictos]({{ page.root }}/reference/#conflicts) al darnos herramientas para [resolver]({{ page.root }}/reference/#resolve) cambios que se hayan sobrelapado. 
 
-Para ver cómo podemos resolver conflictos, primero debemos crear uno. Actualmente, el archivo `mars.txt` luce de la siguiente manera en dos copias de diferentes compañeros en nuestro repositorio `planetas`:
+Para ver cómo podemos resolver conflictos, primero debemos crear uno. Actualmente, el archivo `mars.txt` se ve de la siguiente manera en dos copias de diferentes compañeros en nuestro repositorio `planetas`:
 
 ~~~
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 
 ~~~
@@ -36,7 +36,7 @@ Agreguemos una línea únicamente a la copia de uno de los dos compañeros:
 $ nano mars.txt
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 
 ~~~
@@ -48,14 +48,14 @@ This line added to Wolfman's copy
 {: .output}
 
 
-y luego hacer `push` al cambio a GitHub:
+y luego hacer `push` al cambio en GitHub:
 
 
 ~~~
 $ git add mars.txt
 $ git commit -m "Add a line in our home copy"
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 [master 5ae9631] Add a line in our home copy
@@ -66,7 +66,7 @@ $ git commit -m "Add a line in our home copy"
 ~~~
 $ git push origin master
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Counting objects: 5, done.
@@ -87,7 +87,7 @@ haga un cambio diferente a su copia
 $ nano mars.txt
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 
 ~~~
@@ -105,22 +105,22 @@ Podemos hacer **commit** del cambio localmente
 $ git add mars.txt
 $ git commit -m "Add a line in my copy"
 ~~~
-{: .bash}
+{: .language-bash}
 
 
 ~~~
 [master 07ebc69] Add a line in my copy
  1 file changed, 1 insertion(+)
- ~~~
+~~~
 {: .output}
 
 
-pero Git no ns dejará hacer **push** a GitHub:
+pero Git no nos dejará hacer **push** en GitHub:
 
 ~~~
 $ git push origin master
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 To https://github.com/vlad/planets.git
@@ -135,8 +135,8 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 ![The Conflicting Changes](../fig/conflict.svg)
 
-Git detecta que los cambios hechos en una copia se solapan con los cambios hechos en la otra
-y nos impide pisotear nuestro trabajo previo.
+Git detecta que los cambios hechos en una copia se sobrelapan con los cambios hechos en la otra
+y nos impide destruir nuestro trabajo previo.
 Lo que debemos hacer es traer -`pull`- los cambios desde GitHub,
 [unirlos]({{ page.root }}/reference/#merge) dentro de la copia en la que estamos trabajando actualmente,
 y luego hacer  `push` al resultado.
@@ -145,7 +145,7 @@ Empecemos haciendo  `pull` a lo siguiente:
 ~~~
 $ git pull origin master
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 remote: Counting objects: 5, done.
@@ -166,7 +166,7 @@ y marca ese conflicto en el archivo afectado:
 ~~~
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Cold and dry, but everything is my favorite color
@@ -196,7 +196,7 @@ Reemplacemos ambos de manera que el archivo quede así:
 ~~~
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Cold and dry, but everything is my favorite color
@@ -214,7 +214,7 @@ y luego hacemos 'commit':
 $ git add mars.txt
 $ git status
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 On branch master
@@ -231,19 +231,19 @@ Changes to be committed:
 ~~~
 $ git commit -m "Merge changes from GitHub"
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 [master 2abf2b1] Merge changes from GitHub
 ~~~
 {: .output}
 
-Ahora podemos hacer 'push' a nuestros cambios a GitHub:
+Ahora podemos hacer 'push' a nuestros cambios en GitHub:
 
 ~~~
 $ git push origin master
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Counting objects: 10, done.
@@ -263,7 +263,7 @@ cuando el colaborador que hizo el primer cambio hace **pull** de nuevo:
 ~~~
 $ git pull origin master
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 remote: Counting objects: 10, done.
@@ -284,7 +284,7 @@ Obtenemos el archivo unificado:
 ~~~
 $ cat mars.txt
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Cold and dry, but everything is my favorite color
@@ -296,7 +296,7 @@ We removed the conflict on this line
 
 No es necesario unificar el contenido nuevamente porque Git sabe que alguien ya ha hecho eso.
 
-La habilidad de Git de resolver conflictos es muy útil, pero la resolución de confilctos
+La habilidad de Git de resolver conflictos es muy útil, pero la resolución de conflictos
 cuesta tiempo y esfuerzo, y puede introducir errores si los conflictos no son resueltos
 correctamente. Si te encuentras resolviendo muchos conflictos en un proyecto
 ten en cuenta estas aproximaciones técnicas para reducirlas:
@@ -311,7 +311,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 
 - Aclarar con tus colaboradores quién es responsable de cada área
 - Discutir con tus colaboradores en qué orden deben realizarse las tareas para que 
-  las tareas que puedan cambiar las mismas lineas no se trabajen simultáneamente. 
+  las tareas que puedan cambiar las mismas líneas no se trabajen simultáneamente. 
 - Si los conflictos son de estilo (e.g. tabulaciones vs. espacios), establecer una
   convención que rija el proyecto y utilizar herramientas de estilo de código (e.g.
   `htmltidy`, `perltidy`, `rubocop`, etc.) para forzarlas, si es necesario
@@ -319,7 +319,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > ## Solucionando conflictos creados por ti
 >
 > Clona el repositorio creado por tu instructor
-> Agregarle un nuevo archivo 
+> Agrégale un nuevo archivo 
 > y modificar un archivo existente (tu instructor te dirá cuál).
 > Cuando tu instructor te lo pida, 
 > trae los cambios -haciendo 'pull'- desde el repositorio para crear un conflicto,
@@ -343,7 +343,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > $ head --bytes 1024 /dev/urandom > mars.jpg
 > > $ ls -lh mars.jpg
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > ~~~
 > > -rw-r--r-- 1 vlad 57095 1.0K Mar  8 20:24 mars.jpg
@@ -359,7 +359,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > $ git add mars.jpg
 > > $ git commit -m "Add picture of Martian surface"
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > ~~~
 > > [master 8e4115c] Add picture of Martian surface
@@ -375,7 +375,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > ~~~
 > > $ git push origin master
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > ~~~
 > > To https://github.com/vlad/planets.git
@@ -394,7 +394,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > ~~~
 > > $ git pull origin master
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > Cuando hay un conflicto en una imagen u otro archivo binario, git imprime
 > > un mensaje así:
@@ -423,12 +423,12 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > ~~~
 > > {: .output}
 > > 
-> > Git no puede insertar indicadores de conflicto en una imagen como sí lo hace en los
+> > Git no puede insertar indicadores de conflicto en una imagen como lo hace en los
 > > archivos de texto. Por lo tanto, en vez de editar la imagen, debemos revisar la versión que 
 > > queremos mantener. Luego podemos agregar y hacer **commit** a esta versión.
 > >
 > > En la línea agregada de arriba, Git convenientemente nos dió identificadores de **commit**
-> > para las dos versiones de `mars.jpg`. Nuestra version es  `HEAD`, y la de Wolfman
+> > para las dos versiones de `mars.jpg`. Nuestra versión es  `HEAD`, y la de Wolfman
 > > es `439dc8c0...`. Si queremos usar nuestra versión, podemos usar
 > > `git checkout`:
 > >
@@ -437,7 +437,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > $ git add mars.jpg
 > > $ git commit -m "Use image of surface instead of sky"
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > ~~~
 > > [master 21032c3] Use image of surface instead of sky
@@ -452,7 +452,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > $ git add mars.jpg
 > > $ git commit -m "Use image of sky instead of surface"
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > ~~~
 > > [master da21b34] Use image of sky instead of surface
@@ -461,7 +461,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > >
 > > También podemos mantener *ambas* imágenes. La clave es que no podemos mantenerlos con el mismo
 > > nombre. Pero podemos mirar cada versión de forma sucesiva y *renombrarla*, y luego agregar las versiones renombradas.
-> > Primero, revisar cada imagen y renombrarla:
+> > Primero, revisa cada imagen y renómbrala:
 > >
 > > ~~~
 > > $ git checkout HEAD mars.jpg
@@ -469,9 +469,9 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > $ git checkout 439dc8c0 mars.jpg
 > > $ mv mars.jpg mars-sky.jpg
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
-> > Luego, eliminar la vieja imagen `mars.jpg` y agregar los dos archivos nuevos:
+> > Luego, elimina la vieja imagen `mars.jpg` y agrega los dos archivos nuevos:
 > >
 > > ~~~
 > > $ git rm mars.jpg
@@ -479,7 +479,7 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > $ git add mars-sky.jpg
 > > $ git commit -m "Use two images: surface and sky"
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > ~~~
 > > [master 94ae08c] Use two images: surface and sky
@@ -537,3 +537,6 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > >
 > {: .solution}
 {: .challenge}
+
+
+{% include links.md %}
