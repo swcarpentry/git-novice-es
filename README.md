@@ -11,9 +11,7 @@ o tambi√©n puedes run `make` en este directorio para ver una lista de comandos √
 
 Maintainers:
 
-* [Ivan Gonzalez][gonzalez_ivan]
-* [Daisie Huang][huang_daisie]
+* Rayna Harris
 
-[gonzalez_ivan]: http://software-carpentry.org/team/#gonzalez_ivan
-[huang_daisie]: http://software-carpentry.org/team/#huang_daisie
+[harris_rayna]: http://software-carpentry.org/team/#harris_rayna
 [lesson-example]: https://swcarpentry.github.io/lesson-example
