@@ -34,17 +34,17 @@ $ cd ..
 {: .language-bash}
 
 Vamos a crear un archivo llamado `mars.txt` que contiene algunas notas
-sobre Red Planet's suitability como base.
-Usaremos `nano`para editar el archivo;
+sobre la aptitud del Planeta Rojo como base.
+Usaremos `nano` para editar el archivo;
 puedes usar el editor que prefieras.
-En particular, éste no tiene que ser el `core.editor` que definiste globalmente con anterioridad. Pero recuerda, los comandos **bash** para crear o editar un nuevo archivo van a depender del editor que tú escojas (podría no ser `nano`). Para una actualización sobre editores de texto, echa un vistazo  ["¿Cuál editor?"](https://swcarpentry.github.io/shell-novice/03-create/) en la lección [El Shell Unix](https://swcarpentry.github.io/shell-novice/) .
+En particular, éste no tiene que ser el `core.editor` que definiste globalmente con anterioridad. Pero recuerda, los comandos **bash** para crear o editar un nuevo archivo van a depender del editor que tú escojas (podría no ser `nano`). Para un repaso sobre editores de texto, echa un vistazo a ["¿Qué editor usar?"](https://swcarpentry.github.io/shell-novice-es/03-create/) en la lección [La terminal de Unix](https://swcarpentry.github.io/shell-novice-es) .
 
 ~~~
 $ nano mars.txt
 ~~~
 {: .language-bash}
 
-Teclea el texto siguiente en el archivo `mars.txt`:
+Ingresa el texto siguiente en el archivo `mars.txt`:
 
 ~~~
 Cold and dry, but everything is my favorite color
@@ -74,7 +74,7 @@ Cold and dry, but everything is my favorite color
 {: .output}
 
 Si revisamos el estatus de nuestro proyecto otra vez,
-Git nos dice que ha notado el nuevo archivo:
+Git nos dice que ha reconocido el nuevo archivo:
 
 ~~~
 $ git status
@@ -94,7 +94,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 ~~~
 {: .output}
 
-El mensaje de "untracked files" significa que hay un archivo en el directorio
+El mensaje de "untracked files" significa que hay un archivo en el directorio al
 que Git no le está siguiendo la pista. Podemos decirle a Git que le siga la pista a un archivo usando  `git add`: 
 
 ~~~
@@ -122,7 +122,7 @@ Changes to be committed:
 ~~~
 {: .output}
 
-Git ahora sabe que tiene que seguir la pista de `mars.tx`,
+Git ahora sabe que tiene que seguir la pista de `mars.txt`,
 pero no ha registrado los cambios con un **commit** aún.
 Para que lo haga,
 necesitamos ejecutar un comando más:
@@ -140,17 +140,17 @@ $ git commit -m "Start notes on Mars as a base"
 {: .output}
 
 Cuando ejecutamos `git commit`,
-Git toma todo lo que le hemos dicho para salvarlo usando `git add`
+Git toma todo lo que le hemos dicho que salve usando `git add`
 y almacena una copia permanentemente dentro del directorio especial `.git`.
 Esta copia permanente es llamada un [commit]({{ page.root }}/reference/#commit)
-(or [revision]({{ page.root }}/reference/#revision)) y su identificador corto es  `f22b25e`
+(o [revision]({{ page.root }}/reference/#revision)) y su identificador corto es  `f22b25e`
 (Tu **commit** podría tener otro identificador.)
 
-Usamos la bandera `-m` (de "message")
+Usamos la flag `-m` (por "message")
 para registrar un comentario corto, descriptivo y específico que nos ayudará a recordar más tarde lo que hicimos y por qué.
 Si ejecutamos `git commit` sin  la opción `-m`,
-Git ejecutará `nano` (o cualquier otro editor que configuremos como `core.editor`)
-así que podemos escribir un mensaje más largo.
+Git ejecutará `nano` (o cualquier otro editor que hayamos configurado como `core.editor`)
+para que podamos escribir un mensaje más largo.
 
 [Los Buenos mensajes en un **commit**][commit-messages] inician con un breve resumen (<50 caracteres) de los
 cambios hechos en el **commit**.  Si quieres entrar en más detalles, agrega
@@ -190,8 +190,8 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 `git log`  lista todos los **commits** hechos a un repositorio en orden cronológico inverso.
 El listado de cada **commit** incluye
 el identificador completo del **commit**
-(el cual inicia con el mismo caracter que
-el identificador corto que imprime el comando `git commit` anteriormente ),
+(el cual comienza con el mismo caracter que
+el identificador corto que imprime el comando `git commit` anterior),
 el autor del **commit**,
 cuándo fue creado,
 y el mensaje de registro que se le dio a Git cuando el **commit** fue creado.
@@ -206,7 +206,7 @@ y el mensaje de registro que se le dio a Git cuando el **commit** fue creado.
 {: .callout}
 
 Ahora supón que Dracula agrega más información al archivo.
-(Otra vez, editaremos con `nano` y luego con  `cat` mostraremos el contenido del archivo;
+(Otra vez, editaremos con `nano` y luego con `cat` mostraremos el contenido del archivo;
 podrías usar un editor diferente y no necesitar `cat`.)
 
 ~~~
@@ -246,7 +246,7 @@ La última línea es la frase clave:
 Hemos cambiado este archivo,
 pero no le hemos dicho a Git que queremos que guarde los cambios
 (lo cual hacemos con `git add`)
-ni lo hemos guardado (lo cual hacemos con `git commit`).
+ni los hemos guardado (lo cual hacemos con `git commit`).
 Así que hagamos eso ahora. Es una buena práctica revisar siempre
 nuestros cambios antes de guardarlos. Hacemos esto usando `git diff`.
 Esto nos muestra las diferencias entre el estado actual
@@ -269,17 +269,17 @@ index df0654a..315bf3a 100644
 {: .output}
 
 La salida es críptica porque 
-actualmente es una serie de comandos para herramientas como editores y `patch`
-que les dicen cómo reconstruir un archivo dado el otro.
-Si lo dividimos en pedazos:
+en realidad es una serie de comandos para herramientas como editores y `patch`
+que les dice cómo reconstruir un archivo a partir del otro.
+Si lo dividimos en secciones:
 
-1.  La primera línea nos dice que Git está produciendo una salida similar a la del comando Unix `diff`
+1.  La primera línea nos dice que Git está produciendo un output similar al del comando Unix `diff`
     comparando las versiones anterior y nueva del archivo.
 2.  La segunda línea dice exactamente qué versiones del archivo
     está comparando Git;
     `df0654a` y `315bf3a` son etiquetas únicas generadas por computadora para esas versiones.
 3.  Las líneas tercera y cuarta muestran una vez más el nombre del archivo que se está cambiando.
-4.  Las líneas restantes son las más interesantes, ellas nos muestran las diferencias actuales
+4.  Las líneas restantes son las más interesantes, ellas nos muestran las diferencias en cuestión
     y las líneas donde ellas ocurren.
     En particular,
     el marcador `+` en la primera columna muestra dónde agregamos una línea.
@@ -304,7 +304,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ~~~
 {: .output}
 
-Vaya:
+¡Vaya!:
 Git no hará **commit** porque no usamos `git add` primero.
 Arreglemos esto:
 
@@ -320,42 +320,40 @@ $ git commit -m "Add concerns about effects of Mars' moons on Wolfman"
 ~~~
 {: .output}
 
-Git insiste en que agreguemos el archivo para el conjunto de cambios que queremos hacer
+Git insiste en que agreguemos archivos al conjunto de cambios que queremos hacer
 antes de hacer **commit** de alguna cosa. Esto permite hacer **commit** de nuestros
 cambios en etapas y capturarlos en porciones lógicas en lugar de
 solo lotes grandes.
 Por ejemplo,
-supongamos que agregamos pocas citas para nuestro supervisor de trabajo
-de nuestra tesis.
+supongamos que agregamos algunas citas a una investigación relevante para nuestra tesis.
 Podríamos querer hacer **commit** a esas adiciones,
-y su correspondiente adición a la bibliografía,
-pero *no* hacer **commit** del trabajo que estamos haciendo en la conclusión
+y su correspondiente registro bibliográfico,
+pero *no* hacer **commit** del trabajo que estamos haciendo sobre la conclusión
 (el cual no hemos terminado aún).
 
 
 Para permitir esto,
 Git tiene un *staging area* especial
-donde mantiene registro de cosas que han sido agregadas a
-el actual [changeset]({{ page.root }}/reference/#changeset)
-pero aún no se hace **commit**.
+donde mantiene registro de cosas que han sido agregadas al actual [changeset]({{ page.root }}/reference/#changeset)
+pero aún no se han vuelto **commit**.
 
 > ## Staging Area
 >
-> Piensa en Git como si tomara instantáneas de cambios durante la vida de un proyecto,
+> Si piensas en Git como tomar instantáneas de cambios durante la vida de un proyecto,
 > `git add` especifica *qué* irá en una instantánea
 > (poniendo cosas en el **staging area**),
 > y `git commit` entonces *realmente toma* la instantánea, y
-> hace un registro permanente de esto (como un **commit**).
+> genera un registro permanente de esto (como un **commit**).
 > Si no tienes nada en el staging area cuando escribes  `git commit`,
 > Git te pedirá que uses `git commit -a` o `git commit --all`,
-> que es como reunir ¡*a todos* para la foto!
+> ¡Que es como reunir *a todos* para la foto!
 > Sin embargo, es casi siempre mejor
 > agregar explícitamente cosas al **staging area**, porque podrías
-> hacer **commit** de cambios que habías olvidado. (Ir atrás en las instantáneas,
-> podrías obtener el extra con maquillaje incompleto caminando sobre
-> la etapa de la instantánea porque usaste  `-a`!)
+> hacer **commit** de cambios que habías olvidado. (Volviendo a las instantáneas,
+> podrías capturar al extra con el maquillaje incompleto caminando en el escenario para la toma
+> porque usaste `-a`!)
 > Trata de organizar las cosas manualmente
-> o podrías verte buscando "git undo commit" más
+> o podrías encontrarte buscando "deshacer git commit" más
 > de lo que te gustaría!
 {: .callout}
 
@@ -363,7 +361,7 @@ pero aún no se hace **commit**.
 
 Veamos cómo nuestros cambios a un archivo se mueven de nuestro editor
 al **staging area**
-y  luego al almacenamiento de largo plazo.
+y luego al almacenamiento de largo plazo.
 Primero,
 agregamos otra línea al archivo:
 
@@ -410,9 +408,9 @@ $ git diff
 ~~~
 {: .language-bash}
 
-No hay salida:
-en lo que Git puede decir,
-no hay diferencia entre lo que se pidió guardar permanentemente
+No hay output:
+hasta donde Git puede decir,
+no hay diferencias entre lo que se pidió guardar permanentemente
 y lo que actualmente está en el directorio.
 Sin embargo,
 si hacemos esto:
@@ -491,23 +489,23 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 ~~~
 {: .output}
 
-> ## Diferencias basadas en palabra
+> ## Diferencias basadas en palabras
 >
-> A veces, en el caso de documentos de texto un diff en línea
-> es demasiado caótico. Es ahí donde la opción `--color-words` de
+> A veces, por ejemplo en el caso de documentos de texto, un diff por líneas
+> es demasiado caótico. Es en ese caso donde la opción `--color-words` de
 > `git diff` se vuelve muy útil ya que resalta las palabras
 > modificadas usando colores.
 {: .callout}
 
 > ## Paginación del Registro
 >
-> Cuando la salida de `git log` es demasiado larga para caber en tu pantalla,
-> `git` usa un programa para dividir en páginas del tamaño de tu pantalla.
+> Cuando el output de `git log` es demasiado largo para caber en tu pantalla,
+> `git` usa un programa para dividirlo en páginas del tamaño de tu pantalla.
 > Cuando este "paginador" es llamado, notarás que la última línea de tu
 > pantalla es un `:`, en lugar de tu prompt de siempre.
 >
 > *   Para salir del paginador, presiona `q`.
-> *   Para mover a la siguiente página, presiona la barra espaciadora.
+> *   Para moverte a la siguiente página, presiona la barra espaciadora.
 > *   Para buscar `alguna_palabra` en todas las páginas, escribe `/alguna_palabra`
 >     y navega entre las coincidencias presionando `n` (next).
 {: .callout}
@@ -547,7 +545,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ~~~
 > {: .output}
 >
-> Puedes combinar las opciones `--oneline` con otras. Una combinación
+> También puedes combinar las opciones `--oneline` con otras. Una combinación
 > útil es:
 >
 > ~~~
@@ -566,7 +564,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 >
 > Dos hechos importantes que deberías saber acerca de directorios en Git.
 >
-> 1. Git no rastrea directorios por su cuenta, sólo archivos dentro de ellos.
+> 1. Git no rastrea directorios por sí mismos, sólo los archivos dentro de ellos.
 > Inténtalo tú mismo:
 >
 > ~~~
@@ -577,19 +575,20 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ~~~
 > {: .language-bash}
 >
-> Nota, nuestro nuevo y vació directorio  `directory` no aparece en
+> Nota que, nuestro nuevo y vació directorio  `directory` no aparece en
 > la lista de archivos no rastreados aún si nosotros explícitamente lo agregamos(_via_ `git add`) a nuestro
 > repositorio. Esta es la razón por la que algunas veces verás archivos `.gitkeep`
-> en directorios vacíos. A diferencia de `.gitignore`, estos archivos no son especiales
+> en directorios que si no fuera por ello estarían vacíos. A diferencia de `.gitignore`, 
+> estos archivos no son especiales
 > y su único propósito es poblar un directorio para que Git lo agregue
 > al repositorio. En efecto, podrías nombrar estos archivos como quieras.
 >
 > {:start="2"}
-> 2. Si creas un directorio en tu repositorio Git y poblas éste con archivos,
+> 2. Si creas un directorio en tu repositorio Git y lo llenas con archivos,
 > podrás agregar todos los archivos en el directorio a la vez haciendo:
 >
 > ~~~
-> git add 1
+> git add <directory-with-files>
 > ~~~
 > {: .language-bash}
 >
@@ -604,7 +603,7 @@ repositorio (`git commit`):
 
 > ## Escogiendo un Mensaje para el **Commit**
 >
-> ¿Cuál de los siguientes mensajes de un **commit** debería ser más apropiado para el
+> ¿Cuál de los siguientes mensajes de **commit** sería el más apropiado para el
 > último **commit** hecho a `mars.txt`?
 >
 > 1. "Changes"
@@ -620,7 +619,7 @@ repositorio (`git commit`):
 
 > ## Haciendo Commit de Cambios a Git
 >
-> ¿Cuál comando(s) de abajo deberían guardar los cambios de `myfile.txt`
+> ¿Cuál comando(s) de abajo debería guardar los cambios de `myfile.txt`
 > a mi repositorio local Git?
 >
 > 1. `$ git commit -m "my recent changes"`
@@ -635,7 +634,7 @@ repositorio (`git commit`):
 >
 > > ## Solución
 > >
-> > 1. Debería crear solamente un **commit** si los archivos ya han sido organizados.
+> > 1. Debería crear un **commit** solamente si los archivos ya han sido agregados al **staging area**.
 > > 2. Trataría de crear un nuevo respositorio.
 > > 3. Es correcto: primero agrega el archivo al **staging area**, luego hace **commit**.
 > > 4. Intentaría hacer **commit** al archivo "my recent changes" con el mensaje myfile.txt.
@@ -645,10 +644,10 @@ repositorio (`git commit`):
 > ## Haciendo **Commit** a Multiples Archivos
 >
 > El **staging area** puede tener cambios de cualquier número de archivos
-> que quieras hacer **commit** como una sóla instantánea.
+> a los que quieras hacer **commit**, como una sóla instantánea.
 >
 > 1. Agrega algún texto a `mars.txt` anotando tu decisión
-> para considerar Venus como base
+> de considerar Venus como base
 > 2. Crea un nuevo archivo `venus.txt` con tus pensamientos iniciales
 > acerca de Venus como base para tí y tus amigos
 > 3. Agrega los cambios de ambos archivos al **staging area**,
@@ -687,7 +686,7 @@ repositorio (`git commit`):
 > > $ git add venus.txt
 > > ~~~
 > > {: .language-bash}
-> > Ahora los archivos están listos para hacer **commit**. Puedes verificar esto usando `git status`. Si estás listo para hacer **commit** usa:
+> > Ahora los archivos están listos para hacer **commit**. Puedes verificar esto usando `git status`. Si estás lista para hacer **commit** usa:
 > > ~~~
 > > $ git commit -m "Write plans to start a base on Venus"
 > > ~~~
@@ -701,6 +700,59 @@ repositorio (`git commit`):
 > > {: .output}
 > {: .solution}
 {: .challenge}
+
+## Repositorio `bio` 
+>
+> * Crea un nuevo repositorio Git en tu computadora, llamado `bio`.
+> * Escribe una autobiografía de tres líneas en un archivo llamado `me.txt`,
+> haz **commit** de tus cambios
+> * Modifica una línea, agrega una cuarta línea 
+> * Muestra las diferencias entre el estado actualizado y el original
+>
+> > ## Soluciónn
+> >
+> > Si es necesario, sal de la carpeta `planets`:
+> >
+> > ~~~
+> > $ cd ..
+> > ~~~
+> > {: .bash}
+> >
+> > Crea una nueva carpeta llamada `bio` y 'navega' a ella:
+> >
+> > ~~~
+> > $ mkdir bio
+> > $ cd bio
+> > ~~~
+> > {: .bash}
+> >
+> > Inicia git:
+> >
+> > ~~~
+> > $ git init
+> > ~~~
+> > {: .bash}
+> >
+> > Crea tu archivo de biografía `me.txt` usando `nano` u otro editor de texto.
+> > Una vez hecho, agrega y haz **commit** de tu cambio al repositorio:
+> >
+> > ~~~
+> > $ git add me.txt
+> > $ git commit -m'Adding biography file'
+> > ~~~
+> > {: .bash}
+> >
+> > Modifica el archivo como se describe arriba (modifica una línea, agrega una cuarta línea).
+> > Para mostrar las diferencias entre el estado actual y el original, usa `git diff`:
+> >
+> > ~~~
+> > $ git diff me.txt
+> > ~~~
+> > {: .bash}
+> >
+> {: .solution}
+{: .challenge}
+
 
 > ## Author y Committer
 > Para cada uno de los  **commits** que hayas hecho, Git almacenó tu nombre 2 veces.
@@ -722,8 +774,8 @@ repositorio (`git commit`):
 >
 > Crea un nuevo repositorio y crea dos **commits**: uno sin la
 > opción `--author` y uno nombrando a un colega tuyo como el
-> **author**. Ejecuta `git log` y `git log --format=full`.  Piensa acerca de formas de
-> cómo esto puede permitir colaborar con tus colegas.
+> **author**. Ejecuta `git log` y `git log --format=full`.  Piensa acerca de 
+> cómo esto puede permitirte colaborar con tus colegas.
 >
 > > ## Solución
 > >
