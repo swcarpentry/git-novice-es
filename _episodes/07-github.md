@@ -3,10 +3,10 @@ title: Repositorios remotos en GitHub
 teaching: 30
 exercises: 0
 questions:
-- "¿Cómo puedo compartir los cambios con otros en el web?"
+- "¿Cómo puedo compartir los cambios con otros en la web?"
 objectives:
 - "Explica qué es un repositorio remoto y por qué es útil."
-- "Poner y tomar de un repositorio remoto"
+- "Hacer **push** y **pull** en un repositorio remoto"
 keypoints:
 - "Un repositorio Git local puede ser conectado a uno o más repositorios remotos."
 - "Usa el protocolo HTTPS para conectarte a un repositorio remoto hasta que hayas aprendido como hacerlo con SSH."
@@ -47,7 +47,7 @@ El siguiente paso es conectar los dos repositorios. Ello se consigue convirtiend
 
 ![Dónde encontrar la URL del Repositorio en GitHub](../fig/github-find-repo-string.png)
 
-Haz click en el enlace 'HTTPS' para cambiar el [protocol0]({{ page.root }}/reference/#protocol) de SSH a HTTPS.
+Haz click en el enlace 'HTTPS' para cambiar el [protocolo]({{ page.root }}/reference/#protocol) de SSH a HTTPS.
 
 > ## HTTPS vs. SSH
 >
