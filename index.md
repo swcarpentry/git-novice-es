@@ -42,6 +42,8 @@ si alguna vez necesitan retomar el proyecto en un momento
 posterior (e.g. un año después, cuando se ha desvanecido el
 recuerdo de los detalles).
 
+![ejemplo](./fig/EjemploMotivador-01.png)
+
 El control de versiones es la bitácora de laboratorio del mundo
 digital: es lo que los profesionales utilizan para darle
 seguimiento a lo que han hecho y colaborar con otras personas.
