@@ -6,6 +6,7 @@ root: .
 El Hombre Lobo y Drácula han sido contratados por Universal Missions (una
 spinoff de servicios de Euphoric State University) para investigar si es
 posible enviar su próximo explorador planetario a Marte. Ellos quieren
+
 poder trabajar al mismo tiempo en el plan, pero ya han experimentado
 ciertos problemas en el pasado al hacer algo similar. Si rotan por
 turnos cada uno perderá mucho tiempo esperando a que el otro
@@ -37,9 +38,10 @@ para lidiar con el trabajo. El control de versiones es mejor que el intercambio 
 Los equipos de trabajo no son los únicos que se benefician del control de
 versiones: los investigadores independientes se pueden beneficiar
 en gran medida. Mantener un registro de qué ha cambiado,
-cuando y porqué es extremadamente útil para todos los investigadores
+cuándo y por qué es extremadamente útil para todos los investigadores
 si alguna vez necesitan retomar el proyecto en un momento
 posterior (e.g. un año después, cuando ya nos olvidamos los detalles).
+
 
 El control de versiones es la cuaderno de laboratorio del mundo
 digital: es lo que los profesionales utilizan para darle
