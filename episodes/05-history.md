@@ -316,7 +316,7 @@ aqui esta como Git trabaja, en forma de dibujo:
 
 > ## Simplificando el caso común
 >
-> Si lees el output de `git status` detenidamente,
+> Si lees el **output** de `git status` detenidamente,
 > verás que incluye esta sugerencia:
 >
 > ~~~
@@ -389,7 +389,7 @@ retroceder y avanzar en el tiempo se vuelve mucho más fácil.
 
 > ## Entendiendo Workflow y History
 >
-> ¿Cuál es el output de cat venus.txt al final de este conjunto de comandos?
+> ¿Cuál es el **output** de cat venus.txt al final de este conjunto de comandos?
 >
 > ~~~
 > $ cd planets
