@@ -146,7 +146,7 @@ Esta copia permanente es llamada un [commit]({{ page.root }}/reference/#commit)
 (o [revision]({{ page.root }}/reference/#revision)) y su identificador corto es  `f22b25e`
 (Tu **commit** podría tener otro identificador.)
 
-Usamos la flag `-m` (por "message")
+Usamos la **flag** `-m` (por "message")
 para registrar un comentario corto, descriptivo y específico que nos ayudará a recordar más tarde lo que hicimos y por qué.
 Si ejecutamos `git commit` sin  la opción `-m`,
 Git ejecutará `nano` (o cualquier otro editor que hayamos configurado como `core.editor`)
@@ -273,7 +273,7 @@ en realidad es una serie de comandos para herramientas como editores y `patch`
 que les dice cómo reconstruir un archivo a partir del otro.
 Si lo dividimos en secciones:
 
-1.  La primera línea nos dice que Git está produciendo un output similar al del comando Unix `diff`
+1.  La primera línea nos dice que Git está produciendo un **output** similar al del comando Unix `diff`
     comparando las versiones anterior y nueva del archivo.
 2.  La segunda línea dice exactamente qué versiones del archivo
     está comparando Git;
@@ -408,7 +408,7 @@ $ git diff
 ~~~
 {: .language-bash}
 
-No hay output:
+No hay **output**:
 hasta donde Git puede decir,
 no hay diferencias entre lo que se pidió guardar permanentemente
 y lo que actualmente está en el directorio.
@@ -499,7 +499,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 
 > ## Paginación del Registro
 >
-> Cuando el output de `git log` es demasiado largo para caber en tu pantalla,
+> Cuando el **output** de `git log` es demasiado largo para caber en tu pantalla,
 > `git` usa un programa para dividirlo en páginas del tamaño de tu pantalla.
 > Cuando este "paginador" es llamado, notarás que la última línea de tu
 > pantalla es un `:`, en lugar de tu prompt de siempre.
