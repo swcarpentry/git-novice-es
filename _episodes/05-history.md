@@ -18,7 +18,7 @@ keypoints:
 
 
 Como vimos en la lección anterior, podemos referirnos a los **commits** por sus
-identificadores. Puedes referirte a el _commit más reciente_ del directorio de trabajo 
+identificadores. Puedes referirte al _commit más reciente_ del directorio de trabajo 
 usando el identificador `HEAD`.
 
 Hemos estado agregando una línea a la vez a `mars.txt`, por lo que es fácil rastrear nuestro
@@ -60,8 +60,8 @@ index b36abfd..0848c8d 100644
 {: .output}
 
 Lo mismo obtendrías si omites `HEAD` (intentalo). 
-La verdadera bondad en todo esto es cuando puedes referirte a **commits** previos. Hacemos
-esto agregando `~1` para referirnos al **commit** anterior de `HEAD`.
+La verdadera ventaja en todo esto es cuando puedes referirte a **commits** previos. Hacemos
+esto agregando `~1` para referirnos al **commit** inmediatamente anterior a `HEAD`.
 
 ~~~
 $ git diff HEAD~1 mars.txt
@@ -120,13 +120,13 @@ El más reciente de la cadena es referido como `HEAD`;
 podemos referirnos a **commits** anteriores utilizando la notación `~`,
 así `HEAD~1` (pronunciado "head minus one")
 significa "el commit anterior",
-mientras que 'HEAD~123` regresa 123 **commits** desde donde estamos ahora.
+mientras que `HEAD~123` va 123 **commits** hacia atrás desde donde estamos ahora.
 
-También podemos referirnos a los commits usando
+También podemos referirnos a los **commits** usando
 esas largas cadenas de dígitos y letras
 que `git log` despliega.
-Estos son ID únicos para los cambios,
-y "unique" realmente significa único:
+Estos son IDs únicos para los cambios,
+y aquí "únicos" realmente significa únicos:
 cada cambio a cualquier conjunto de archivos en cualquier computadora
 tiene un identificador único de 40 caracteres.
 Nuestro primer **commit** recibió el ID
@@ -174,8 +174,8 @@ index df0654a..b36abfd 100644
 
 
 ¡Todo bien! Asi que
-podemos guardar cambios en los archivos y ver qué hemos cambiado ahora 
-¿cómo podemos restaurar versiones anteriores de las cosas?
+podemos guardar cambios en los archivos y ver qué hemos cambiado —ahora 
+¿Cómo podemos restaurar versiones anteriores de las cosas?
 Supongamos que accidentalmente sobrescribimos nuestro archivo:
 
 ~~~
@@ -191,7 +191,7 @@ We will need to manufacture our own oxygen
 
 
 `git status` ahora nos dice que el archivo ha sido cambiado,
-pero esos cambios no se han realizado:
+pero esos cambios no se han organizado:
 
 ~~~
 $ git status
@@ -290,9 +290,10 @@ $ git checkout -f master mars.txt
 > {: .language-bash}
 >
 > para revertir `mars.txt` a su estado después del **commit** `f22b25e`.
-> Si olvidas `mars.txt` en ese comando, Git te dirá que "You are in
-> 'detached HEAD' state". En este estado, no podrías hacer ningún cambio.
-> Puedes arreglar esto volviendo a conectar tu **head** usando ``git checkout master``
+> Pero ¡Ten cuidado! El comando `checkout` tiene otras funcionalidades importantes y Git puede malinterpretar tus intenciones si > no sos precisa a la hora de tipear. Por ejemplo, 
+> si olvidas `mars.txt` en ese comando, Git te dirá que "You are in
+> 'detached HEAD' state". En este estado, no deberías hacer ningún cambio.
+> Puedes arreglar esto volviendo a conectar tu **head** usando `git checkout master`
 {: .callout}
 
 
@@ -300,7 +301,7 @@ Es importante recordar que
 debemos usar el número de **commit** que identifica el estado del repositorio
 *antes* del cambio que intentamos deshacer.
 Un error común es usar el número de 
-**commit** en el cual hicimos el cambio del que estamos tratando de deshacer.
+**commit** en el cual hicimos el cambio del cual nos estamos tratando de deshacer.
 En el siguiente ejemplo, queremos recuperar el estado antes del más reciente
 **commit** (`HEAD~1`), que es **commit** `f22b25e`:
 
@@ -309,13 +310,13 @@ En el siguiente ejemplo, queremos recuperar el estado antes del más reciente
 
 
 Así que, para poner todo junto,
-aqui esta como Git trabaja en forma de dibujo:
+aqui esta como Git trabaja, en forma de dibujo:
 
 ![http://figshare.com/articles/How_Git_works_a_cartoon/1328266](../fig/git_staging.svg)
 
 > ## Simplificando el caso común
 >
-> Si lees la salida de `git status` detenidamente,
+> Si lees el output de `git status` detenidamente,
 > verás que incluye esta sugerencia:
 >
 > ~~~
@@ -326,7 +327,7 @@ aqui esta como Git trabaja en forma de dibujo:
 > Como deciamos,
 > `git checkout` sin un identificador de versión restaura los archivos al estado guardado en `HEAD`.
 > El doble guión `--` es necesario para separar los nombres de los archivos que se están recuperando
-> desde el comando mismo:
+> del comando mismo:
 > sin esto,
 > Git intentaría usar el nombre del archivo como el identificador del **commit**.
 {: .callout}
@@ -347,7 +348,7 @@ retroceder y avanzar en el tiempo se vuelve mucho más fácil.
 > modificaciones que hizo esta mañana "corrompieron" el **script**  y ya no funciona. Ella ha pasado
 > ~ 1hr tratando de solucionarlo, sin tener suerte...
 >
-> Por suerte, ella ha estado haciendo un seguimiento de las versiones de su proyecto usando Git! ¿Cuáles comandos 
+> Por suerte, ¡Ella ha estado haciendo un seguimiento de las versiones de su proyecto usando Git! ¿Cuáles comandos 
 > le permitirán recuperar la última versión estable de su **script**  Python llamado 
 > `data_cruncher.py`?
 >
@@ -365,19 +366,19 @@ retroceder y avanzar en el tiempo se vuelve mucho más fácil.
 
 > ## Revertir un commit
 >
-> Jennifer está colaborando en su **script**  de Python con sus colegas y
-> se da cuenta de que su último **commit** en el repositorio del grupo es incorrecto y quiere
+> Jennifer está colaborando en su **script** de Python con sus colegas y
+> se da cuenta que su último **commit** en el repositorio del grupo es incorrecto y quiere
 > deshacerlo. Jennifer necesita deshacer correctamente para que todos en el repositorio
 > del grupo tengan el cambio correcto. `git revert [ID de commit incorrecto]`
 > hará un nuevo **commit** que va a deshacer el commit anterior erroneo de Jennifer. 
 > Por lo tanto, `git revert` es diferente de `git checkout [commit
 > ID]` porque `checkout` es para cambios locales no comprometidos con el
 > repositorio de grupo. A continuación se encuentran los pasos correctos y explicaciones para
-> que Jennifer use `git revert`, ¿cuál es el comando que falta?
+> que Jennifer use `git revert`, ¿Cuál es el comando que falta?
 >
 > 1. ________ # Mira el historial de git del proyecto para encontrar el ID del **commit**
 >
-> 2. Copia el ID ( los primeros caracteres del ID, e.g. 0b1d055).
+> 2. Copia el ID (los primeros caracteres del ID, por ejemplo 0b1d055).
 >
 > 3. `git revert [commit ID]`
 >
@@ -388,7 +389,7 @@ retroceder y avanzar en el tiempo se vuelve mucho más fácil.
 
 > ## Entendiendo Workflow y History
 >
-> ¿Cuál es la salida de cat venus.txt al final de este conjunto de comandos?
+> ¿Cuál es el output de cat venus.txt al final de este conjunto de comandos?
 >
 > ~~~
 > $ cd planets
@@ -473,7 +474,7 @@ retroceder y avanzar en el tiempo se vuelve mucho más fácil.
 > > $ cat venus.txt #esto imprimirá el contenido de venus.txt a la pantalla
 > > ~~~
 > > {: .language-bash}
-> > Si imprimirmos venus.txt obtendremos la respuesta 2.
+> > Si imprimimos venus.txt obtendremos la respuesta 2.
 > >
 > {: .solution}
 {: .challenge}
@@ -490,8 +491,8 @@ retroceder y avanzar en el tiempo se vuelve mucho más fácil.
 > ## Deshacer los cambios almacenados
 >
 > `git checkout` puede usarse para restaurar un **commit** anterior cuando cambios no marcados se han 
-> hecho, pero también funcionará para los cambios que se han realizado pero no se han confirmado?
-> Haz un cambio a `mars.txt`, agrega un cambio y use` git checkout` para ver si
+> hecho, pero ¿También funcionará para los cambios que se han marcado pero no se han vuelto **commit**?
+> Haz un cambio a `mars.txt`, agrega el cambio y usa` git checkout` para ver si
 > puedes eliminar tu cambio.
 {: .challenge}
 
@@ -502,21 +503,21 @@ retroceder y avanzar en el tiempo se vuelve mucho más fácil.
 >
 > Imagina que el proyecto `planets` tiene más de 50 archivos.
 > Deseas encontrar un **commit** con texto específico en `mars.txt`.
-> Cuando escribes `git log`, apareció una lista muy larga,
-> ¿Cómo puede reducir la búsqueda?
+> Cuando escribes `git log`, aparece una lista muy larga,
+> ¿Cómo puede restringir la búsqueda?
 >
 > Recuerda que el comando `git diff` nos permite explorar un archivo específico,
-> p. ej. `git diff mars.txt`. Podemos aplicar la idea similar aquí.
+> por ejemplo `git diff mars.txt`. Podemos aplicar una idea similar aquí.
 >
 > ~~~
 > $ git log mars.txt
 > ~~~
 > {: .language-bash}
 >
-> Desafortunadamente, algunos de estos mensajes de los **commits** son muy ambiguos, p. Ej. `update files`.
+> Desafortunadamente, algunos de estos mensajes en los **commits** son muy ambiguos, por ejemplo `update files`.
 > ¿Cómo puedes buscar a través de estos archivos?
 >
-> Tanto `git diff` y` git log` son muy útiles y resumen una parte diferente del **history** para ti.
+> Tanto `git diff` como `git log` son muy útiles y resumen una parte diferente del **history** para ti.
 > ¿Es posible combinar ambos? Vamos a intentar lo siguiente:
 >
 > ~~~
@@ -524,7 +525,7 @@ retroceder y avanzar en el tiempo se vuelve mucho más fácil.
 > ~~~
 > {: .language-bash}
 >
-> Deberías obtener una larga lista de resultados, y deberías poder ver los dos mensajes del **commit** y la diferencia entre cada 
+> Deberías obtener una larga lista de output, y deberías poder ver tanto los dos mensajes del **commit** como la diferencia entre cada 
 > **commit**.
 >
 > Pregunta: ¿Qué hace el siguiente comando?
