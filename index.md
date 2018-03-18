@@ -10,10 +10,10 @@ poder trabajar al mismo tiempo en los planes, pero ya han experimentado
 ciertos problemas anteriormente al hacer algo similar. Si se rotan por
 turnos entonces cada uno gastará mucho tiempo esperando a que el otro
 termine, pero si trabajan en sus propias copias e intercambian los cambios
-por email las cosas se perderán, se sobreescribirán o se duplicarán.
+por email, las cosas se perderán, se sobreescribirán o se duplicarán.
 
 Un colega sugiere utilizar [control de versiones]({{ page.root }}/reference/#version-control)
-para lidiar con el trabajo. El control de versiones es mejor que el intercambio de ficheros:
+para lidiar con el trabajo. El control de versiones es mejor que el intercambio de ficheros por email:
 
 *   Nada se pierde una vez que se incluye bajo control de versiones,
     a no ser que se haga un esfuerzo sustancial. Como se van guardando
@@ -25,7 +25,7 @@ para lidiar con el trabajo. El control de versiones es mejor que el intercambio 
 *   Como se tienen estos registros de quién hizo qué y en qué momento,
     es posible saber a quién preguntar si se tiene una pregunta en un
     momento posterior y, si es necesario, revertir el contenido a una
-    versión anterior, de forma similar a como funciona el comando "undo"
+    versión anterior, de forma similar a como funciona el comando "deshacer"
     de los editores de texto.
 
 *   Cuando varias personas colaboran en el mismo proyecto, es posible
@@ -37,9 +37,9 @@ para lidiar con el trabajo. El control de versiones es mejor que el intercambio 
 Los equipos no son los únicos que se benefician del control de
 versiones: los investigadores independientes se pueden beneficiar
 en gran medida. Mantener un registro de qué ha cambiado,
-cuando y porqué es extremadamente útil para todos los investigadores
+cuándo y por qué es extremadamente útil para todos los investigadores
 si alguna vez necesitan retomar el proyecto en un momento
-posterior (e.g. un año después, cuando el se ha desvanecido el
+posterior (e.g. un año después, cuando se ha desvanecido el
 recuerdo de los detalles).
 
 El control de versiones es la bitácora de laboratorio del mundo
