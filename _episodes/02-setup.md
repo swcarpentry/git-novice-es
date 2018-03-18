@@ -6,7 +6,7 @@ questions:
 - "¿Cómo me preparo para utilizar Git?"
 objectives:
 - "Configurar `git` la primera vez que utilice la computadora."
-- "Comprender el significado de la bandera de configuración `--global`."
+- "Comprender el significado del flag de configuración `--global`."
 keypoints:
 -   "Use `git config` para configurar un nombre de usuario, email, editor, y otras preferencias."
 ---
@@ -16,13 +16,13 @@ es necesario configurar algunas cosas. A continuación se presentan algunos ejem
 de configuraciones que estableceremos a medida que trabajemos con Git:
 
 *   nombre y correo electrónico,
-*   color de nuestra salida,
+*   color de nuestro output,
 *   cuál es nuestro editor de texto preferido,
 *   y que queremos utilizar éstos ajustes globalmente (es decir, para cada proyecto)
 
-En línea de comandos, los comandos de Git se escriben como `git verb`, 
+En la línea de comandos, los comandos de Git se escriben como `git verb`, 
 donde` verb` es lo que queremos hacer. Así es como 
-Drácula configura su computadora:
+Drácula configura su nueva computadora:
 
 ~~~
 $ git config --global user.name "Vlad Dracula"
@@ -31,7 +31,7 @@ $ git config --global color.ui "auto"
 ~~~
 {: .language-bash}
 
-Utiliza tu propio nombre y dirección de correo electrónico en lugar del de Drácula. El nombre de usuario y el correo electrónico se asociarán con tu actividad posterior de Git, 
+Utiliza tu propio nombre y dirección de correo electrónico en lugar de los de Drácula. El nombre de usuario y el correo electrónico se asociarán con tu actividad posterior de Git, 
 lo que significa que cualquier cambio realizado en
 [GitHub] (http://github.com/), 
 [BitBucket] (http://bitbucket.org/), 
@@ -99,7 +99,7 @@ Es posible reconfigurar el editor de texto para Git siempre que quieras.
 >Ten en cuenta que `vim` es el editor por defecto para muchos programas, si no has utilizado` vim` antes y deseas salir de una sesión, presiona la tecla `Esc` y posteriormente escribe `: q!` y `Enter`.
 {: .callout}
 
-Los cuatro comandos que acabamos de ejecutar sólo se tienen que ejecutar una vez: la opción `--global` le dice a Git que use la configuración para cada proyecto, en tu cuenta de usuario, en esta computadora.
+Los cuatro comandos que acabamos de ejecutar sólo se tienen que ejecutar una vez: la flag `--global` le dice a Git que use la configuración para cada proyecto, en tu cuenta de usuario, en esta computadora.
 
 Puedes comprobar tu configuración en cualquier momento:
 
@@ -133,7 +133,7 @@ Puedes cambiar la configuración tantas veces como quieras: sólo usa los mismos
 
 > ## Ayuda y manual de Git
 >
-> Ten presente que si no recuerdas algún comando de  `git`, puedes acceder a la lista de comandos utilizando la opción `-h` y al manual de Git con la opción `--help` :
+> Ten presente que si no recuerdas algún comando de  `git`, puedes acceder a la lista de comandos utilizando la opción `-h` y al manual de Git con la flag `--help` :
 >
 > ~~~
 > $ git config -h
