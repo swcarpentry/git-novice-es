@@ -12,6 +12,8 @@ turnos entonces cada uno gastará mucho tiempo esperando a que el otro
 termine, pero si trabajan en sus propias copias e intercambian los cambios
 por email, las cosas se perderán, se sobreescribirán o se duplicarán.
 
+![ejemplo](./fig/EjemploMotivador-01.png)
+
 Un colega sugiere utilizar [control de versiones]({{ page.root }}/reference/#version-control)
 para lidiar con el trabajo. El control de versiones es mejor que el intercambio de ficheros por email:
 
@@ -41,6 +43,7 @@ cuándo y por qué es extremadamente útil para todos los investigadores
 si alguna vez necesitan retomar el proyecto en un momento
 posterior (e.g. un año después, cuando se ha desvanecido el
 recuerdo de los detalles).
+
 
 El control de versiones es la bitácora de laboratorio del mundo
 digital: es lo que los profesionales utilizan para darle
