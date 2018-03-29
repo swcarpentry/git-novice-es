@@ -1,4 +1,6 @@
 [![DOI](https://zenodo.org/badge/122202135.svg)](https://zenodo.org/badge/latestdoi/122202135)
+[![Create a Slack Account with us](https://img.shields.io/badge/Create_Slack_Account-The_Carpentries-071159.svg)](https://swc-slack-invite.herokuapp.com/) 
+ [![Slack Status](https://img.shields.io/badge/Slack_Channel-swc--git--es-E01563.svg)](https://swcarpentry.slack.com/messages/C9X42NTQC) 
 
 git-novice
 ==========
