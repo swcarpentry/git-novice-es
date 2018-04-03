@@ -13,7 +13,12 @@ o tambi√©n puedes run `make` en este directorio para ver una lista de comandos √
 
 Maintainers:
 
-* Rayna Harris
+* [Ivan Gonzalez][gonzalez_ivan]: [@iglpdc](https://github.com/iglpdc)
+* [Rayna Harris][harris_rayna]: [@raynamharris](https://github.com/raynamharris)
+* [Clara Llebot Lorente][llebot_clara]: [@clarallebot](https://github.com/clarallebot)
 
+[llebot_clara]: https://software-carpentry.org/team/#llebot_clara
+[gonzalez_ivan]: https://software-carpentry.org/team/#gonzalez_ivan
 [harris_rayna]: http://software-carpentry.org/team/#harris_rayna
 [lesson-example]: https://swcarpentry.github.io/lesson-example
+
