@@ -18,7 +18,7 @@ de configuraciones que estableceremos a medida que trabajemos con Git:
 *   nombre y correo electrónico,
 *   color de nuestro output,
 *   cuál es nuestro editor de texto preferido,
-*   y que queremos utilizar éstos ajustes globalmente (es decir, para cada proyecto)
+*   y que queremos utilizar estos ajustes globalmente (es decir, para cada proyecto).
 
 En la línea de comandos, los comandos de Git se escriben como `git verb`, 
 donde` verb` es lo que queremos hacer. Así es como 
@@ -46,10 +46,10 @@ en una lección posterior incluirá esta información.
 > Por razones que son demasiado largas para explicar aquí, diferentes sistemas operativos 
 > usan diferentes caracteres para representar el final de una línea.
 > (También son conocidas como *newlines* o *line breaks*.)
-> Como git usa éstos caracteres para comparar archivos,
+> Como Git usa éstos caracteres para comparar archivos,
 > esto puede causar problemas inesperados cuando se edita un archivo en máquinas diferentes. 
 > 
-> Puedes cambiar el modo en que git reconoce y codifica finales de línea
+> Puedes cambiar el modo en que Git reconoce y codifica finales de línea
 > usando el comando `core.autocrlf` con `git config`.
 > Se recomiendan las siguientes configuraciones:
 >
