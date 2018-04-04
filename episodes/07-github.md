@@ -233,19 +233,19 @@ En este caso, hacer **pull** no ha tenido ningún efecto porque los dos reposito
 > ¿Obtienes un error al añadir el repositorio remoto? ¿Se te ocurre algún
 > comando que hiciera obvio que la URL de tu repositorio remoto no es 
 > válida? ¿Se te ocurre cómo corregir la URL? (pista: usa `git remote
-> -h`). No olvides vaciar y eliminar este repositorio remoto una vez
+> -h`). No olvides eliminar este repositorio remoto una vez que
 > hayas terminado este ejercicio.
 >
 > > ## Solución
-> > No aparece ningún error cuando añadimos el repositorio remoto (añadir un repositorio remoto informa a git sobre dicho repositorio, pero no intenta usarlo todavía). Sí que veremos un error en cuanto intentemos usarlo con ```git push```. El comando ```git remote set-url``` nos permite cambiar la URL del repositorio remoto para corregirla.
+> > No aparece ningún error cuando añadimos el repositorio remoto (añadir un repositorio remoto informa a git sobre dicho repositorio, pero no intenta usarlo todavía). Sí veremos un error en cuanto intentemos usarlo con ```git push```. El comando ```git remote set-url``` nos permite cambiar la URL del repositorio remoto para corregirla.
 > {: .solution}
 {: .challenge}
 
 > ## Licencia GitHub y ficheros README
 >
 > En esta sección hemos aprendido cómo crear un repositorio remoto en GitHub, pero cuando lo hicimos
-> no añadimos ningún fichero README.md ni ningún fichero de licencia. Si lo hubiéramos hecho, ¿qué crees que hubiera sucedido cuando
-> intentaste enlazar tus repositorios local y remoto?
+> no añadimos ningún fichero README.md ni ningún fichero de licencia. Si lo hubiéramos hecho, ¿qué crees que habría sucedido
+> cuando intentaste enlazar tus repositorios local y remoto?
 >
 > > ## Solución
 > > En este caso, puesto que ya teníamos un fichero README en nuestro propio repositorio (local), habríamos visto un conficto de unión, conocido como **merge conflict** (que es cuando git se da cuenta de que hay dos versiones de un mismo fichero y nos pide que resolvamos las diferencias).
