@@ -64,7 +64,7 @@ $ git commit -m "Add notes about Pluto"
 ~~~
 {: .output}
 
-Luego enviar, **push**, los cambios hacia el *repositorio del dueño* en GitHub:
+Luego enviar los cambios hacia el *repositorio del dueño* en GitHub haciendo **push**:
 
 ~~~
 $ git push origin master
@@ -112,7 +112,7 @@ Ahora hay tres repositorios sincronizados (el local del dueño, el local del col
 
 > ## Un flujo de trabajo colaborativo básico
 > 
-> En la práctica, es bueno estar seguro que tienes una versión actualizada del repositorio en el que colaboras. Para ello, es bueno hacer un `git pull` antes de hacer cambios. El enfoque sería:
+> Es considerado buena práctica estar seguro de que tienes una versión actualizada del repositorio en el que colaboras. Para ello deberías hacer un `git pull` antes de hacer cambios. El enfoque sería:
 > 
 > 
 > * actualizar el repositorio local `git pull origin master`,
