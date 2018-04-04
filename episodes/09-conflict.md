@@ -6,14 +6,14 @@ questions:
 - "¿Qué hago cuando mis cambios entran en conflicto con los de otra persona?"
 objectives:
 - "Explicar qué son los conflictos y cuándo pueden ocurrir."
-- "Resolver conflictos resultado de una fusión."
+- "Resolver conflictos que resultan de una fusión."
 keypoints:
 - "Los conflictos ocurren cuando dos o más personas cambian el mismo archivo(s) al mismo tiempo."
 - "El sistema de control de versiones no permite a las personas sobreescribir ciegamente los
 cambios del otro, pero resalta los conflictos para poder resolverlos."
 ---
 
-Tan pronto como podemos trabajar en paralelo, es probable que alquien deshaga lo que otro hizo. Esto incluso es probable con una única persona: si estamos trabajando en un software al mismo tiempo en nuestra computadora portátil y un servidor en el laboratorio, podríamos hacer cambios diferentes a cada copia del trabajo. El control de versiones nos ayuda a manejar estos [confictos]({{ page.root }}/reference/#conflicts) al darnos herramientas para [resolver]({{ page.root }}/reference/#resolve) cambios que se hayan sobrelapado. 
+Tan pronto como podemos trabajar en paralelo, es probable que alquien deshaga lo que otro hizo. Esto incluso es probable con una única persona: si estamos trabajando en un software al mismo tiempo en nuestra computadora portátil y un servidor en el laboratorio, podríamos hacer cambios diferentes a cada copia del trabajo. El control de versiones nos ayuda a manejar estos [confictos]({{ page.root }}/reference/#conflicts) al darnos herramientas para [resolver]({{ page.root }}/reference/#resolve) cambios que se hayan solapado. 
 
 Para ver cómo podemos resolver conflictos, primero debemos crear uno. Actualmente, el archivo `mars.txt` se ve de la siguiente manera en dos copias de diferentes compañeros en nuestro repositorio `planetas`:
 
@@ -135,12 +135,12 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 ![The Conflicting Changes](../fig/conflict.svg)
 
-Git detecta que los cambios hechos en una copia se sobrelapan con los cambios hechos en la otra
+Git detecta que los cambios hechos en una copia se solapan con los cambios hechos en la otra
 y nos impide destruir nuestro trabajo previo.
 Lo que debemos hacer es traer -`pull`- los cambios desde GitHub,
 [unirlos]({{ page.root }}/reference/#merge) dentro de la copia en la que estamos trabajando actualmente,
-y luego hacer  `push` al resultado.
-Empecemos haciendo  `pull` a lo siguiente:
+y luego hacer `push` al resultado.
+Empecemos haciendo `pull` a lo siguiente:
 
 ~~~
 $ git pull origin master
@@ -184,12 +184,12 @@ Nuestro cambio —señalado en `HEAD`— es precedido por `<<<<<<<`.
 Luego, Git insertó `=======` como un separador entre los cambios conflictivos
 y marcó el fin del contenido descargado desde GitHub con `>>>>>>>`.
 (El código  de letras y números luego del marcador
-identifica el 'commit' que acabamos de descargar.)
+identifica el **commit** que acabamos de descargar.)
 
-Ahora nosotros debemos editar este archivo para eliminar estos marcadores
+Ahora debemos editar este archivo para eliminar estos marcadores
 y reconciliar los cambios.
-Podemos hacer lo que querramos: mantener el cambio hecho en el repositorio local, mantener
-el cambio hecho en el repositorio nuevo, redactar algo nuevo para reemplazar ambos,
+Podemos hacer lo que queramos: mantener el cambio hecho en el repositorio local, mantener
+el cambio hecho en el repositorio remoto, redactar algo nuevo para reemplazar ambos,
 o eliminar el cambio completamente.
 Reemplacemos ambos de manera que el archivo quede así:
 
@@ -207,8 +207,8 @@ We removed the conflict on this line
 {: .output}
 
 Para finalizar la unión,
-agregamos `mars.txt` a los cambios hechos por la unión
-y luego hacemos 'commit':
+agregamos `mars.txt` a los cambios hechos por el **merge**
+y luego hacemos **commit**:
 
 ~~~
 $ git add mars.txt
@@ -238,7 +238,7 @@ $ git commit -m "Merge changes from GitHub"
 ~~~
 {: .output}
 
-Ahora podemos hacer 'push' a nuestros cambios en GitHub:
+Ahora podemos hacer **push** a nuestros cambios en GitHub:
 
 ~~~
 $ git push origin master
@@ -301,7 +301,7 @@ cuesta tiempo y esfuerzo, y puede introducir errores si los conflictos no son re
 correctamente. Si te encuentras resolviendo muchos conflictos en un proyecto
 ten en cuenta estas aproximaciones técnicas para reducirlas:
 
-- Hacer 'pull' con mayor frecuencia, especialmente antes de empezar una nueva tarea
+- Hacer **pull** con mayor frecuencia, especialmente antes de empezar una nueva tarea
 - Usar ramas temáticas para separar trabajo, uniéndolas a la rama principal - `master`- cuando estén completas
 - Hacer comentarios mas cortos y concisos
 - Cuando sea apropiado, dividir archivos grandes en varios pequeños de manera que sea
@@ -318,11 +318,11 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 
 > ## Solucionando conflictos creados por ti
 >
-> Clona el repositorio creado por tu instructor
+> Clona el repositorio creado por tu instructor.
 > Agrégale un nuevo archivo 
 > y modificar un archivo existente (tu instructor te dirá cuál).
 > Cuando tu instructor te lo pida, 
-> trae los cambios -haciendo 'pull'- desde el repositorio para crear un conflicto,
+> trae los cambios -haciendo **pull**- desde el repositorio para crear un conflicto,
 > y luego resuélvelo.
 {: .challenge}
 
@@ -427,8 +427,8 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > archivos de texto. Por lo tanto, en vez de editar la imagen, debemos revisar la versión que 
 > > queremos mantener. Luego podemos agregar y hacer **commit** a esta versión.
 > >
-> > En la línea agregada de arriba, Git convenientemente nos dió identificadores de **commit**
-> > para las dos versiones de `mars.jpg`. Nuestra versión es  `HEAD`, y la de Wolfman
+> > En la línea agregada de arriba, Git convenientemente nos dio identificadores de **commit**
+> > para las dos versiones de `mars.jpg`. Nuestra versión es `HEAD`, y la de Wolfman
 > > es `439dc8c0...`. Si queremos usar nuestra versión, podemos usar
 > > `git checkout`:
 > >
@@ -459,8 +459,8 @@ Los conflictos también pueden ser minimizados con estrategias de administració
 > > ~~~
 > > {: .output}
 > >
-> > También podemos mantener *ambas* imágenes. La clave es que no podemos mantenerlos con el mismo
-> > nombre. Pero podemos mirar cada versión de forma sucesiva y *renombrarla*, y luego agregar las versiones renombradas.
+> > También podemos mantener *ambas* imágenes. La clave es que no podemos mantenerlas con el mismo
+> > nombre. Pero podemos verificar cada versión de forma sucesiva y *renombrarla*, y luego agregar las versiones renombradas.
 > > Primero, revisa cada imagen y renómbrala:
 > >
 > > ~~~
