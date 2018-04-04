@@ -21,7 +21,7 @@ para lidiar con el trabajo. El control de versiones es mejor que el intercambio 
     a no ser que se haga un esfuerzo sustancial. Como se van guardando
     todas las versiones precedentes de los ficheros, siempre es posible
     volver atrás en el tiempo y ver exactamente quién escribió qué en
-    un día en particular, o que versión de un programa fue utilizada
+    un día en particular, o qué versión de un programa fue utilizada
     para generar un conjunto de resultados en particular.
 
 *   Como se tienen estos registros de quién hizo qué y en qué momento,
