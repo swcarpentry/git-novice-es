@@ -158,7 +158,7 @@ Nuestros repositorios local y remoto se encuentran ahora en el siguiente estado:
 >
 > En la documentación puedes ver que en ocasiones se usa la opción `-u` con el comando `git push`.
 > Esta opción es sinónimo de la opción `--set-upstream-to` para el comando `git branch` y se usa
-> para asociar la rama actual con una rama remota, de modo que el comando `git pull`
+> para asociar el **branch** actual con un **branch** remoto, de modo que el comando `git pull`
 > pueda usarse sin argumentos. Para hacer esto simplemente ejecuta `git push -u origin master`
 > una vez que el repositorio remoto haya sido creado.
 {: .callout}
