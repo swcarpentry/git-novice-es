@@ -16,7 +16,6 @@ es necesario configurar algunas cosas. A continuación se presentan algunos ejem
 de configuraciones que estableceremos a medida que trabajemos con Git:
 
 *   nombre y correo electrónico,
-*   color de nuestro output,
 *   cuál es nuestro editor de texto preferido,
 *   y que queremos utilizar estos ajustes globalmente (es decir, para cada proyecto).
 
@@ -27,7 +26,6 @@ Drácula configura su nueva computadora:
 ~~~
 $ git config --global user.name "Vlad Dracula"
 $ git config --global user.email "vlad@tran.sylvan.ia"
-$ git config --global color.ui "auto"
 ~~~
 {: .language-bash}
 
