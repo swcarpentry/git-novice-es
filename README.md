@@ -20,5 +20,5 @@ Maintainers:
 [llebot_clara]: https://software-carpentry.org/team/#llebot_clara
 [gonzalez_ivan]: https://software-carpentry.org/team/#gonzalez_ivan
 [harris_rayna]: http://software-carpentry.org/team/#harris_rayna
-[lesson-example]: https://swcarpentry.github.io/lesson-example
+[lesson-example]: https://carpentries.github.io/lesson-example
 
