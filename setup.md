@@ -15,4 +15,4 @@ $ cd Desktop
 ~~~
 {: .language-bash}
 
-[workshop-setup]: https://swcarpentry.github.io/workshop-template/#git
+[workshop-setup]: https://carpentries.github.io/workshop-template/#git
