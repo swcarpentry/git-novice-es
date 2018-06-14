@@ -94,8 +94,9 @@ nothing added to commit but untracked files present (use "git add" to track)
 ~~~
 {: .output}
 
-El mensaje de "untracked files" significa que hay un archivo en el directorio al
-que Git no le está siguiendo la pista. Podemos decirle a Git que le siga la pista a un archivo usando  `git add`: 
+El mensaje de "untracked files" significa que 
+un archivo no está siendo rastreado por Git.
+Podemos poner los archivos en el **staging area** con `git add`.
 
 ~~~
 $ git add mars.txt
