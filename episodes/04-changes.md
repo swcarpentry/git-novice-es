@@ -717,7 +717,7 @@ repositorio (`git commit`):
 > > ~~~
 > > $ cd ..
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > Crea una nueva carpeta llamada `bio` y 'navega' a ella:
 > >
@@ -725,14 +725,14 @@ repositorio (`git commit`):
 > > $ mkdir bio
 > > $ cd bio
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > Inicia git:
 > >
 > > ~~~
 > > $ git init
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > Crea tu archivo de biografía `me.txt` usando `nano` u otro editor de texto.
 > > Una vez hecho, agrega y haz **commit** de tu cambio al repositorio:
@@ -741,7 +741,7 @@ repositorio (`git commit`):
 > > $ git add me.txt
 > > $ git commit -m'Adding biography file'
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > > Modifica el archivo como se describe arriba (modifica una línea, agrega una cuarta línea).
 > > Para mostrar las diferencias entre el estado actual y el original, usa `git diff`:
@@ -749,7 +749,7 @@ repositorio (`git commit`):
 > > ~~~
 > > $ git diff me.txt
 > > ~~~
-> > {: .bash}
+> > {: .language-bash}
 > >
 > {: .solution}
 {: .challenge}
