@@ -7,7 +7,8 @@ questions:
 objectives:
 - Clonar un repositorio remoto.
 - Colaborar en crear un repositorio común.
-keypoints: '`git clone` copia un repositorio remoto para crear un repositorio local llamado `origin` configurado automáticamente.'
+keypoints: 
+- '`git clone` copia un repositorio remoto para crear un repositorio local llamado `origin` configurado automáticamente.'
 ---
 
 Para el siguiente paso, formen parejas. Una persona será el "dueño" y la otra el "colaborador". El objetivo es que el colaborador agregue cambios al repositorio del dueño. Vamos a cambiar roles al final, de modo que ambas personas puedan participar como dueño y colaborador
