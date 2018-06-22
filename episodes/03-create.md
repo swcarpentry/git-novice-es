@@ -110,12 +110,15 @@ nothing to commit (create/copy files and use "git add" to track)
 > > $ git status
 > > ~~~
 > > {: .language-bash}
+> >
 > > ~~~
 > > fatal: Not a git repository (or any of the parent directories): .git
 > > ~~~
 > > {: .output}
 > >
->
+> {: .solution}
+{: .challenge}
+
 > ## Corrigiendo errores de `git init`
 >
 > Wolfman le explica a Dracula cómo un repositorio anidado es redudante y puede causar problemas ms adelante. 
