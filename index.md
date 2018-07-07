@@ -14,8 +14,6 @@ turnos entonces cada uno gastará mucho tiempo esperando a que el otro
 termine, pero si trabajan en sus propias copias e intercambian los cambios
 por email, las cosas se perderán, se sobreescribirán o se duplicarán.
 
-![ejemplo](./fig/EjemploMotivador-01.png){width=50%}
-
 Un colega sugiere utilizar [control de versiones]({{ page.root }}/reference/#version-control)
 para lidiar con el trabajo. El control de versiones es mejor que el intercambio de ficheros por email:
 
