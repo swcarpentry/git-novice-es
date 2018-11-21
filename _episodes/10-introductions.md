@@ -169,7 +169,7 @@ También establece una cultura de feedback. Házles saber a los alumnos que est�
 Déjales saber que pueden darte opiniones constructivas, incluso anónimamente. Pueden hacer esto particularmente con las 'minute cards'. No vas a adoptar cada sugerencia que tengan, pero vas a escucharlas y considerarlas. Esto comienza a crear una sociedad en el aprendizaje.
 
 
-### 6. Recabaar datos de referencia sobre el conocimiento de los asistentes y sus motivaciones
+### 6. Recabar datos de referencia sobre el conocimiento de los asistentes y sus motivaciones
 
 En base a la encuesta previa, tendrás información sobre el nivel de conocimiento de los participantes.
 
