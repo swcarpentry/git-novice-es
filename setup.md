@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Setup
+permalink: /setup/
 ---
 
 Por favor consulte [esta sección de la plantilla de los talleres][workshop-setup]
