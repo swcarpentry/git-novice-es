@@ -143,8 +143,8 @@ $ git commit -m "Start notes on Mars as a base"
 Cuando ejecutamos `git commit`,
 Git toma todo lo que le hemos dicho que salve usando `git add`
 y almacena una copia permanentemente dentro del directorio especial `.git`.
-Esta copia permanente es llamada un [commit]({{ page.root }}/reference/#commit)
-(o [revision]({{ page.root }}/reference/#revision)) y su identificador corto es  `f22b25e`
+Esta copia permanente es llamada un [commit]({{ page.root }}/reference#commit)
+(o [revision]({{ page.root }}/reference#revision)) y su identificador corto es  `f22b25e`
 (Tu **commit** podría tener otro identificador.)
 
 Usamos la **flag** `-m` (por "message")
@@ -335,7 +335,7 @@ pero *no* hacer **commit** del trabajo que estamos haciendo sobre la conclusión
 
 Para permitir esto,
 Git tiene un *staging area* especial
-donde mantiene registro de cosas que han sido agregadas al actual [changeset]({{ page.root }}/reference/#changeset)
+donde mantiene registro de cosas que han sido agregadas al actual [changeset]({{ page.root }}/reference#changeset)
 pero aún no se han vuelto **commit**.
 
 > ## Staging Area

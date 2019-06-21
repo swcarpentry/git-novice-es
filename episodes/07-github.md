@@ -43,11 +43,11 @@ Nuestro repositorio local contiene nuestro trabajo previo en `mars.txt`, pero el
 
 ![Repositorio en GitHub recién creado](../fig/git-freshly-made-github-repo.svg)
 
-El siguiente paso es conectar los dos repositorios. Ello se consigue convirtiendo al repositorio en GitHub en un [repositorio remoto]({{ page.root }}/reference/#remote) del repositorio local. La página de inicio del repositorio en GitHub incluye la secuencia de caracteres que necesitamos para identificarlo:
+El siguiente paso es conectar los dos repositorios. Ello se consigue convirtiendo al repositorio en GitHub en un [repositorio remoto]({{ page.root }}/reference#remote) del repositorio local. La página de inicio del repositorio en GitHub incluye la secuencia de caracteres que necesitamos para identificarlo:
 
 ![Dónde encontrar la URL del Repositorio en GitHub](../fig/github-find-repo-string.png)
 
-Haz click en el enlace 'HTTPS' para cambiar el [protocolo]({{ page.root }}/reference/#protocol) de SSH a HTTPS.
+Haz click en el enlace 'HTTPS' para cambiar el [protocolo]({{ page.root }}/reference#protocol) de SSH a HTTPS.
 
 > ## HTTPS vs. SSH
 >
@@ -201,7 +201,7 @@ En este caso, hacer **pull** no ha tenido ningún efecto porque los dos reposito
 > Crea un repositorio remoto en GitHub. Haz **push** de los contenidos de tu repositorio local
 > al remoto. Haz cambios en tu repositorio local y haz **push** de dichos cambios.
 > Ve al repo recién creado en GitHub y comprueba las fechas y horas, también llamadas
-> [timestamps]({{ page.root }}/reference/#timestamp) de los ficheros.  ¿Cómo registra
+> [timestamps]({{ page.root }}/reference#timestamp) de los ficheros.  ¿Cómo registra
 > GitHub los tiempos, y por qué?
 >
 > > ## Solución
