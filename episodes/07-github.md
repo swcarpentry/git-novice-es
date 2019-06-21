@@ -55,7 +55,7 @@ Haz click en el enlace 'HTTPS' para cambiar el [protocolo]({{ page.root }}/refer
 >Si en el curso quieres configurar el acceso mediante SSH, que es un poco más seguro,
 >puedes seguir cualquiera de los excelentes tutoriales que existen en
 >[GitHub](https://help.github.com/articles/generating-ssh-keys), 
->[Atlassian/BitBucket](https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git) y
+>[Atlassian/BitBucket](https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html) y
 >[GitLab](https://about.gitlab.com/2014/03/04/add-ssh-key-screencast/)
 >(este último con capturas animadas de pantalla).
 {: .callout}
