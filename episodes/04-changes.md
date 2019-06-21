@@ -144,7 +144,7 @@ Cuando ejecutamos `git commit`,
 Git toma todo lo que le hemos dicho que salve usando `git add`
 y almacena una copia permanentemente dentro del directorio especial `.git`.
 Esta copia permanente es llamada un [commit]({{ page.root }}/reference#commit)
-(o [revision]({{ page.root }}/reference#revision)) y su identificador corto es  `f22b25e`
+(o [revision]({{ page.root }}/reference#revisin)) y su identificador corto es  `f22b25e`
 (Tu **commit** podría tener otro identificador.)
 
 Usamos la **flag** `-m` (por "message")
