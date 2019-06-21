@@ -47,7 +47,7 @@ El siguiente paso es conectar los dos repositorios. Ello se consigue convirtiend
 
 ![Dónde encontrar la URL del Repositorio en GitHub](../fig/github-find-repo-string.png)
 
-Haz click en el enlace 'HTTPS' para cambiar el [protocolo]({{ page.root }}/reference#protocol) de SSH a HTTPS.
+Haz click en el enlace 'HTTPS' para cambiar el [protocolo]({{ page.root }}/reference#protocolo) de SSH a HTTPS.
 
 > ## HTTPS vs. SSH
 >

@@ -20,7 +20,7 @@ $ cd planets
 ~~~
 {: .language-bash}
 
-Después le indicamos a Git hacer de `planets` un [repository]({{ page.root }}/reference#repository)— un lugar donde
+Después le indicamos a Git hacer de `planets` un [repository]({{ page.root }}/reference#repositorio)— un lugar donde
 Git puede almacenar las versiones de nuestros archivos:
 
 ~~~
