@@ -13,7 +13,7 @@ keypoints:
 cambios del otro, pero resalta los conflictos para poder resolverlos."
 ---
 
-Tan pronto como podemos trabajar en paralelo, es probable que alquien deshaga lo que otro hizo. Esto incluso es probable con una única persona: si estamos trabajando en un software al mismo tiempo en nuestra computadora portátil y un servidor en el laboratorio, podríamos hacer cambios diferentes a cada copia del trabajo. El control de versiones nos ayuda a manejar estos [confictos]({{ page.root }}/reference/#conflicts) al darnos herramientas para [resolver]({{ page.root }}/reference/#resolve) cambios que se hayan solapado. 
+Tan pronto como podemos trabajar en paralelo, es probable que alquien deshaga lo que otro hizo. Esto incluso es probable con una única persona: si estamos trabajando en un software al mismo tiempo en nuestra computadora portátil y un servidor en el laboratorio, podríamos hacer cambios diferentes a cada copia del trabajo. El control de versiones nos ayuda a manejar estos [confictos]({{ page.root }}/reference#conflicto) al darnos herramientas para [resolver]({{ page.root }}/reference#resolver) cambios que se hayan solapado. 
 
 Para ver cómo podemos resolver conflictos, primero debemos crear uno. Actualmente, el archivo `mars.txt` se ve de la siguiente manera en dos copias de diferentes compañeros en nuestro repositorio `planetas`:
 
@@ -138,7 +138,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 Git detecta que los cambios hechos en una copia se solapan con los cambios hechos en la otra
 y nos impide destruir nuestro trabajo previo.
 Lo que debemos hacer es traer -`pull`- los cambios desde GitHub,
-[unirlos]({{ page.root }}/reference/#merge) dentro de la copia en la que estamos trabajando actualmente,
+[unirlos]({{ page.root }}/reference#mezclar) dentro de la copia en la que estamos trabajando actualmente,
 y luego hacer `push` al resultado.
 Empecemos haciendo `pull` a lo siguiente:
 

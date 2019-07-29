@@ -43,9 +43,9 @@ A menos que haya conflictos, se puede incluso tener dos conjuntos de cambios en 
 Un sistema de control de versiones es una herramienta que realiza un seguimiento de estos cambios para nosotros y
 nos ayuda a controlar la versión y fusionar nuestros archivos. Nos permite
 decidir qué cambios conforman la siguiente versión, a lo que llamamos hacer un
-[**commit**]({{ page.root }}/reference/#commit), y mantiene metadatos útiles sobre dichos cambios. El
+[**commit**]({{ page.root }}/reference#commit), y mantiene metadatos útiles sobre dichos cambios. El
 historial completo de **commits** para un proyecto en particular y sus metadatos forman un
-[repositorio]({{ page.root }}/reference/#repository). Los repositorios pueden mantenerse sincronizados
+[repositorio]({{ page.root }}/reference#repositorio). Los repositorios pueden mantenerse sincronizados
 en diferentes computadoras, facilitando así la colaboración entre diferentes personas.
 
 > ## La larga historia de los sistemas de control de versiones 

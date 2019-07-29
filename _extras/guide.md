@@ -193,6 +193,6 @@ Una preocupación común para los estudiantes es tener su trabajo a disposición
 [github]: https://github.com/
 [github-gui]: http://git-scm.com/downloads/guis
 [github-line-endings]: https://help.github.com/articles/dealing-with-line-endings/#platform-all
-[github-privacy]: https://help.github.com/articles/ keeping-your-email-address-private/
+[github-privacy]: https://help.github.com/articles/keeping-your-email-address-private/
 [repos-in-repos]: https://github.com/swcarpentry/git-novice/issues/272
 [try-git]: https://try.github.io
