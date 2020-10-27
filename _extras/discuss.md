@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Discussion
-permalink: /discuss/
 ---
 
 ## Preguntas frecuentes
@@ -455,4 +453,3 @@ El último paso, como antes, es comprometer nuestro cambio al repositorio:
 $ git commit -m 'Superman's home is Earth, told you before.'
 ~~~
 {: .language-bash}
-	

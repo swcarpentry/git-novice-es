@@ -1,14 +1,12 @@
 ---
-layout: page
 title: "Instructor Notes"
-permalink: /guide/
 ---
 
 Usar una herramienta de software para manejar las versiones de tus archivos de proyecto
 le permite enfocarse en los aspectos más interesantes / innovadores de su proyecto.
 
 * Ventajas del control de versiones
-    * Es fácil de configurar 
+    * Es fácil de configurar
     * Cada copia de un repositorio de Git es una copia de seguridad completa de un proyecto y su historial
     * Unos pocos comandos fáciles de recordar son todo lo que necesita para la mayoría de las tareas cotidianas de control de versiones
     * El servicio de alojamiento [GitHub][github] proporciona un servicio de colaboración basado en la web
