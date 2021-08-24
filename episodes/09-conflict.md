@@ -9,7 +9,7 @@ objectives:
 - "Resolver conflictos resultantes de una fusión."
 keypoints:
 - "Los conflictos ocurren cuando dos o más personas cambian el mismo archivo(s) al mismo tiempo."
-- "El sistema de control de versiones no permite a las personas escribir ciegamente los
+- "El sistema de control de versiones no permite a las personas sobreescribir ciegamente los
 cambios del otro, pero resalta los conflictos para poder resolverlos."
 ---
 
