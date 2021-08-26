@@ -89,6 +89,7 @@ Drácula también tiene que establecer su editor de texto favorito, siguiendo es
 | Scratch (Linux)       | `$ git config --global core.editor "scratch-text-editor"`  |
 | emacs              | `$ git config --global core.editor "emacs"`   |
 | vim                | `$ git config --global core.editor "vim"`   |
+| Visual Studio Code | `$ git config --global core.editor "code --wait"` |
 
 Es posible reconfigurar el editor de texto para Git siempre que quieras.
 
