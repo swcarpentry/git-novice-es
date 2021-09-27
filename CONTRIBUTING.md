@@ -82,13 +82,12 @@ En resumen:
 1. La copia publicada de la lección está en la rama `gh-pages` del repositorio (para que GitHub la regenere automáticamente). Por favor crea todas las ramas de eso, y fusiona la rama `gh-pages` del [repositorio maestro][repo] en la rama` gh-pages` antes de comenzar a trabajar. Por favor, *no* trabajes directamente en su rama `gh-pages`, ya que eso te dificultará trabajar en otras contribuciones.
 
 2. Usamos [GitHub flow] [github-flow] para gestionar los cambios:
-   1. Crea una nueva rama en tu copia de escritorio de este repositorio para cada cambio significativo.
-   2. Confirma (**commit**) el cambio en esa rama.
-   3. Empuja esa rama a su tenedor de este repositorio en GitHub.
-   4. Envía una solicitud de inserción (**pull request**) desde esa rama al [repositorio principal] [repo].
-   5. Si recibe comentarios,
-      haz cambios en tu escritorio y envíalos (**push**) a tu rama en GitHub:
-      la solicitud de inserción se actualizará automáticamente.
+    1. Crea una nueva rama en tu copia de escritorio de este repositorio para cada cambio significativo.
+    2. Confirma (**commit**) el cambio en esa rama.
+    3. Empuja esa rama a su tenedor de este repositorio en GitHub.
+    4. Envía una solicitud de inserción (**pull request**) desde esa rama al [repositorio principal] [repo].
+    5. Si recibe comentarios, haz cambios en tu escritorio y envíalos (**push**) a tu rama en GitHub:
+    la solicitud de inserción se actualizará automáticamente.
 
 Cada lección tiene dos mantenedores que revisan problemas y solicitudes 
 inserción o animan a otros a hacerlos. Los mantenedores son 
