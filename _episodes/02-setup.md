@@ -31,9 +31,9 @@ $ git config --global user.email "vlad@tran.sylvan.ia"
 
 Utiliza tu propio nombre y dirección de correo electrónico en lugar de los de Drácula. El nombre de usuario y el correo electrónico se asociarán con tu actividad posterior de Git, 
 lo que significa que cualquier cambio realizado en
-[GitHub] (http://github.com/), 
-[BitBucket] (http://bitbucket.org/), 
-[ GitLab] (http://gitlab.com/) u
+[GitHub](http://github.com/), 
+[BitBucket](http://bitbucket.org/), 
+[GitLab](http://gitlab.com/) u
 otro servidor de Git 
 en una lección posterior incluirá esta información.
 
@@ -69,7 +69,7 @@ en una lección posterior incluirá esta información.
 > [en esta página de GitHub](https://help.github.com/articles/dealing-with-line-endings/).
 {: .callout}
 
-Para estas lecciones, estaremos interactuando con [GitHub] (http://github.com/), por lo tanto la dirección de correo electrónico utilizada debe ser la misma que utilizaste al configurar tu cuenta de GitHub. Si te preocupa la privacidad, revisa [las instrucciones de GitHub para mantener tu dirección de correo electrónico privada] [git-privacy].
+Para estas lecciones, estaremos interactuando con [GitHub](http://github.com/), por lo tanto la dirección de correo electrónico utilizada debe ser la misma que utilizaste al configurar tu cuenta de GitHub. Si te preocupa la privacidad, revisa [las instrucciones de GitHub para mantener tu dirección de correo electrónico privada][git-privacy].
 Si eliges utilizar una dirección de correo electrónico privada con GitHub, usa la misma dirección de correo electrónico para el valor `user.email`, por ejemplo, `username@users.noreply.github.com`  reemplazando` username` con tu nombre de usuario de GitHub. Puedes cambiar la dirección de correo electrónico posteriormente utilizando el comando `git config` nuevamente.
 
 Drácula también tiene que establecer su editor de texto favorito, siguiendo esta tabla:
