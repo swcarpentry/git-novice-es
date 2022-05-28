@@ -104,7 +104,7 @@ RStudio crea algunos archivos que le ayudan a mantener un control de los cambios
 > > Esto puede ser realizado con los comandos de linea:
 > > ```		
 > > $ mkdir graphs		
-> > $ echo "graphs/"> > .gitignore		
+> > $ echo "graphs/" >> .gitignore		
 > > ```		
 > > {: . shell}		
 > {: .solution}		
