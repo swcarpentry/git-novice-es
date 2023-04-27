@@ -11,17 +11,16 @@ Tenga en cuenta que dado que este material no es esencial para el uso básico de
 
 ## Más configuración avanzada de Git
 
-En [Configuración de Git]({{page.root}}/02-setup/),
+En [Configuración de Git](../episodes/02-setup.md),
 usamos `git config --global` para establecer algunas opciones predeterminadas para Git.
 Resulta que estas opciones de configuración se almacenan en su directorio de inicio
 en un archivo de texto sin formato llamado `.gitconfig`.
 
-~~~
+```bash
 $ cat ~/.gitconfig
-~~~
-{: .language-bash}
+```
 
-~~~
+```output
 [user]
 	name = Vlad Dracula
 	email = vlad@tran.sylvan.ia
@@ -29,8 +28,7 @@ $ cat ~/.gitconfig
 	ui = true
 [core]
 	editor = nano
-~~~
-{: .output}
+```
 
 Este archivo se puede abrir en su editor de texto preferido.
 (Tenga en cuenta que se recomienda continuar usando el comando `git config`,
@@ -40,34 +38,30 @@ Eventualmente, querrás comenzar a personalizar el comportamiento de Git.
 Esto se puede hacer agregando más entradas a su `.gitconfig`.
 Las opciones disponibles se describen en el manual:
 
-~~~
+```bash
 $ git config --help
-~~~
-{: .language-bash}
+```
 
 En particular, puede resultarle útil agregar alias.
 Estos son como accesos directos para comandos de git más largos.
 Por ejemplo, si te cansas de escribir `git checkout` todo el tiempo,
 podrías ejecutar el comando:
 
-~~~
+```bash
 $ git config --global alias.co checkout
-~~~
-{: .language-bash}
+```
 
-Ahora, si volvemos al ejemplo de [Explorando el historial]({{ page.root }}/05-history/) where we ran:
+Ahora, si volvemos al ejemplo de [Explorando el historial](../episodes/05-history.md) where we ran:
 
-~~~
+```bash
 $ git checkout f22b25e mars.txt
-~~~
-{: .language-bash}
+```
 
 ahora podríamos escribir:
 
-~~~
+```bash
 $ git co f22b25e mars.txt
-~~~
-{: .language-bash}
+```
 
 ## Diseñando el registro de Git
 
@@ -80,41 +74,43 @@ Puede usar `git log --help` y` git config --help` para buscar diferentes formas 
 la salida de registro.
 Pruebe los siguientes comandos y vea qué efecto tienen:
 
-~~~
+```bash
 $ git config --global alias.lg "log --graph"
 $ git config --global log.abbrevCommit true
 $ git config --global format.pretty oneline
 $ git lg
-~~~
-{: .language-bash}
+```
 
 Si no te gustan los efectos,
 puedes deshacerlos con:
 
-~~~
+```bash
 $ git config --global --unset alias.lg
 $ git config --global --unset log.abbrevCommit
 $ git config --global --unset format.pretty
-~~~
-{: .language-bash}
+```
 
-> ## Deshacer cambios en la configuración de Git
->
-> Puede usar el indicador `--unset` para eliminar las opciones no deseadas de` .gitconfig`.
-> Otra forma de deshacer los cambios es almacenar su `.gitconfig` usando Git.
->
-> Para sugerencias sobre lo que puede querer configurar,
-> vaya a GitHub y busque "gitconfig".
-> Encontrará cientos de repositorios en los que las personas han almacenado
-> sus propios archivos de configuración de Git.
-> Ordenarlos por el número de estrellas y echar un vistazo a los mejores.
-> Si encuentras alguno que te guste,
-> compruebe que estén cubiertos por una licencia de código abierto antes de clonarlos.
-{: .callout}
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## Deshacer cambios en la configuración de Git
+
+Puede usar el indicador `--unset` para eliminar las opciones no deseadas de` .gitconfig`.
+Otra forma de deshacer los cambios es almacenar su `.gitconfig` usando Git.
+
+Para sugerencias sobre lo que puede querer configurar,
+vaya a GitHub y busque "gitconfig".
+Encontrará cientos de repositorios en los que las personas han almacenado
+sus propios archivos de configuración de Git.
+Ordenarlos por el número de estrellas y echar un vistazo a los mejores.
+Si encuentras alguno que te guste,
+compruebe que estén cubiertos por una licencia de código abierto antes de clonarlos.
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Archivos sin texto
 
-Recordar cuando discutimos [Conflictos]({{page.root}}/09-conflict/)
+Recordar cuando discutimos [Conflictos](../episodes/09-conflict.md)
 hubo un desafío que preguntó,
 "¿Qué hace Git?
 cuando hay un conflicto en una imagen o algún otro archivo no textual
@@ -140,56 +136,50 @@ utilizando salidas de un procesador de texto en lugar de texto sin formato.
 
 Crea un nuevo directorio y entra en él:
 
-~~~
+```bash
 $ mkdir planets-nontext
 $ cd planets-nontext
-~~~
-{: .language-bash}
+```
 
 Use un programa como Microsoft Word o LibreOffice Writer para crear un documento nuevo.
 Ingrese el mismo texto con el que comenzamos antes:
 
-~~~
+```output
 Cold and dry, but everything is my favorite color
-~~~
-{: .output}
+```
 
 Guarde el documento en el directorio `planets-nontext` con el nombre de `mars.doc`.
 De vuelta en la terminal, ejecute los comandos habituales para configurar un nuevo repositorio de Git:
 
-~~~
+```bash
 $ git init
 $ git add mars.doc
 $ git commit -m "Starting to think about Mars"
-~~~
-{: .language-bash}
+```
 
 Luego haga los mismos cambios a `mars.doc` que nosotros (o Vlad) previamente hicimos a `mars.txt`.
 
-~~~
+```output
 Cold and dry, but everything is my favorite color
 The two moons may be a problem for Wolfman
-~~~
-{: .output}
+```
 
 Guarde y cierre el procesador de texto.
 Ahora mira lo que Git piensa de tus cambios:
 
-~~~
+```bash
 $ git diff
-~~~
-{: .language-bash}
+```
 
-~~~
+```output
 diff --git a/mars.doc b/mars.doc
 index 53a66fd..6e988e9 100644
 Binary files a/mars.doc and b/mars.doc differ
-~~~
-{: .output}
+```
 
 Compare esto con el anterior `git diff` obtenido al usar archivos de texto:
 
-~~~
+```output
 diff --git a/mars.txt b/mars.txt
 index df0654a..315bf3a 100644
 --- a/mars.txt
@@ -197,8 +187,7 @@ index df0654a..315bf3a 100644
 @@ -1 +1,2 @@
  Cold and dry, but everything is my favorite color
 +The two moons may be a problem for Wolfman
-~~~
-{: .output}
+```
 
 Observe cómo los archivos de texto plano dan una diferencia mucho más informativa.
 Puede ver exactamente qué líneas cambiaron y cuáles fueron los cambios.
@@ -225,54 +214,48 @@ del repositorio.
 
 Crea un nuevo archivo para el planeta Nibiru:
 
-~~~
+```bash
 $ echo "This is another name for fake planet X" > nibiru.txt
-~~~
-{: .language-bash}
+```
 
 Ahora agregue al repositorio como lo aprendió anteriormente:
 
-~~~
+```bash
 $ git add nibiru.txt
 $ git commit -m 'adding info on nibiru'
 $ git status
-~~~
-{: .language-bash}
+```
 
-~~~
+```output
 On branch master
 nothing to commit, working directory clean
-~~~
-{: .output}
+```
 
 Nibiru no es un planeta real. Esa fue una idea tonta. Vamos a eliminar
 desde el disco y deja que Git lo sepa:
 
-~~~
+```bash
 $ git rm nibiru.txt
 $ git status
-~~~
-{: .language-bash}
+```
 
-~~~
+```output
 On branch master
 Changes to be committed:
    (use "git reset HEAD <file>..." to unstage)
 
    deleted:    nibiru.txt
 
-~~~
-{: .output}
+```
 
 El cambio ha sido organizado. Ahora comprometa la eliminación y elimine
 archivo del propio repositorio. Tenga en cuenta que el archivo se eliminará
 en el nuevo compromiso La confirmación anterior seguirá
 tener el archivo, si fueras a recuperar esa confirmación específica.
 
-~~~
+```bash
 $ git commit -m 'Removing info on Nibiru.  It is not a real planet!'
-~~~
-{: .language-bash}
+```
 
 ## Eliminar un archivo con Unix
 
@@ -281,22 +264,20 @@ archivo con Unix `rm` en lugar de usar` git rm`, sin preocupaciones,
 Git es lo suficientemente inteligente como para notar el archivo perdido. Vamos a recrear el archivo y
 cometerlo de nuevo.
 
-~~~
+```bash
 $ echo "This is another name for fake planet X" > nibiru.txt
 $ git add nibiru.txt
 $ git commit -m 'adding nibiru again'
-~~~
-{: .language-bash}
+```
 
 Ahora eliminamos el archivo con Unix `rm`:
 
-~~~
+```bash
 $ rm nibiru.txt
 $ git status
-~~~
-{: .language-bash}
+```
 
-~~~
+```output
 On branch master
 Changes not staged for commit:
    (use "git add/rm <file>..." to update what will be committed)
@@ -305,37 +286,33 @@ Changes not staged for commit:
     deleted:    nibiru.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-~~~
-{: .output}
+```
 
 Vea cómo Git ha notado que el archivo `nibiru.txt` ha sido eliminado
 del disco. El siguiente paso es "escenificar" la eliminación del archivo
 del repositorio. Esto se hace con el comando `git rm` igual que
 antes de.
 
-~~~
+```bash
 $ git rm nibiru.txt
 $ git status
-~~~
-{: .language-bash}
+```
 
-~~~
+```output
 On branch master
 Changes to be committed:
    (use "git reset HEAD <file>..." to unstage)
 
    deleted:    nibiru.txt
 
-~~~
-{: .output}
+```
 
 El cambio que se hizo en Unix ahora se ha organizado y debe ser
 comprometido.
 
-~~~
+```bash
 $ git commit -m 'Removing info on Nibiru, again!'
-~~~
-{: .language-bash}
+```
 
 ## Renombrar un archivo
 
@@ -343,46 +320,41 @@ Otro cambio común cuando se trabaja en un proyecto es cambiar el nombre de un a
 
 Crea un archivo para el planeta Krypton:
 
-~~~
+```bash
 $ echo "Superman's home planet" > krypton.txt
-~~~
-{: .language-bash}
+```
 
 Añádalo al repositorio:
 
-~~~
+```bash
 $ git add krypton.txt
 $ git commit -m 'Adding planet Krypton'
-~~~
-{: .language-bash}
+```
 
 Todos sabemos que Superman se mudó a la Tierra. No es que tuviera mucho
 elección. Ahora su planeta de origen es la Tierra.
 
 Cambie el nombre del archivo `krypton.txt` a` earth.txt` con Git:
 
-~~~
+```bash
 $ git mv krypton.txt earth.txt
 $ git status
-~~~
-{: .language-bash}
+```
 
-~~~
+```output
 # On branch master
 # Changes to be committed:
 #   (use "git reset HEAD <file>..." to unstage)
 #
 #	renamed:    krypton.txt -> earth.txt
 #
-~~~
-{: .output}
+```
 
 El último paso es comprometer nuestro cambio al repositorio:
 
-~~~
+```bash
 $ git commit -m 'Superman's home is now Earth'
-~~~
-{: .language-bash}
+```
 
 ## Renombrar un archivo con Unix
 
@@ -392,21 +364,20 @@ ser capaz de lidiar con eso. Intentemos nuevamente cambiar el nombre del archivo
 esta vez con Unix `mv`. Primero, necesitamos recrear el
 archivo `krypton.txt`:
 
-~~~
+```bash
 $ echo "Superman's home planet" > krypton.txt
 $ git add krypton.txt
 $ git commit -m 'Adding planet Krypton again.'
-~~~
-{: .language-bash}
+```
 
 Vamos a renombrar el archivo y ver lo que Git puede descifrar por sí mismo:
-~~~
+
+```bash
 $ mv krypton.txt earth.txt
 $ git status
-~~~
-{: .language-bash}
+```
 
-~~~
+```output
 On branch master
 Changes not staged for commit:
   (use "git add/rm <file>..." to update what will be committed)
@@ -420,36 +391,34 @@ Untracked files:
     earth.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-~~~
-{: .output}
+```
 
 Git notó que el archivo `krypton.txt` ha desaparecido del
 sistema de archivos y un nuevo archivo `earth.txt` ha aparecido.
 
 Agregue esos cambios al área de ensayo:
 
-~~~
+```bash
 $ git add krypton.txt earth.txt
 $ git status
-~~~
-{: .language-bash}
+```
 
-~~~
+```output
 On branch master
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
     renamed:    krypton.txt -> earth.txt
 
-~~~
-{: .output}
+```
 
 Observe cómo Git ahora ha descubierto que el `krypton.txt` no tiene
 desapareció simplemente ha sido renombrado.
 
 El último paso, como antes, es comprometer nuestro cambio al repositorio:
 
-~~~
+```bash
 $ git commit -m 'Superman's home is Earth, told you before.'
-~~~
-{: .language-bash}
+```
+
+

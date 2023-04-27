@@ -2,20 +2,26 @@
 title: Ejemplo de Referencia o cita
 teaching: 2
 exercises: 0
-questions:
-- "¿Cómo puedo hacer que mi trabajo sea más fácil de citar?"
-objectives:
-- "Haz que tu trabajo sea más fácil de citar"
-keypoints:
-- "Agrega un archivo CITATION al repositorio y explica cómo quieres que tu trabajo sea citado."
 ---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Haz que tu trabajo sea más fácil de citar
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- ¿Cómo puedo hacer que mi trabajo sea más fácil de citar?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Te recomendamos que incluyas un archivo llamado `CITATION` o `CITATION.txt`
 que describa cómo citar o referenciar tu proyecto.
-La siguiente cita es de 
+La siguiente cita es de
 [Software Carpentry](https://github.com/swcarpentry/website/blob/gh-pages/CITATION):
 
-~~~
+```source
 To reference Software Carpentry in publications, please cite both of the following:
 
 Greg Wilson: "Software Carpentry: Getting Scientists to Write Better
@@ -41,8 +47,14 @@ July 2013.
   eprinttype  = {arxiv},
   eprint      = {1307.5448}
 }
-~~~
-{: .source}
+```
 
 
-{% include links.md %}
+
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- Agrega un archivo CITATION al repositorio y explica cómo quieres que tu trabajo sea citado.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
