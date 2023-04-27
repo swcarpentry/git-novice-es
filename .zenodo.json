@@ -1,1 +1,73 @@
-{"contributors":[{"type":"Editor","name":"Rayna M Harris"}],"creators":[{"name":"Paula Andrea"},{"name":"Veronica Jimenez"},{"name":"Hely Salgado"},{"name":"LauCIFASIS"},{"name":"Javier Forment"},{"name":"Francisco Palm"},{"name":"Silvana Pereyra"},{"name":"Dani Ledezma"},{"name":"Romualdo Zayas-Lagunas"},{"name":"Alejandra Gonzalez-Beltran"},{"name":"Kevin Alquicira"},{"name":"Nelly Sélem"},{"name":"Olemis Lang"},{"name":"Rayna M Harris"},{"name":"Kevin MF"},{"name":"Leticia Vega"},{"name":"Matias Andina"},{"name":"Nohemi Huanca Nunez"},{"name":"Shirley Alquicira"},{"name":"Ivan Gonzalez"},{"name":"Katrin Leinweber"},{"name":"Amy Olex"},{"name":"K.E. Koziar"},{"name":"Lex Nederbragt"},{"name":"Nima Hejazi"},{"name":"Bradford Condon"},{"name":"Casey Youngflesh"},{"name":"Daisie Huang"},{"name":"Garrett Bachant"},{"name":"James E McClure"},{"name":"Jimmy O'Donnell"},{"name":"Jonah Duckles"},{"name":"Kurt Glaesemann"},{"name":"P. L. Lim"},{"name":"Saskia Hiltemann"},{"name":"Belinda Weaver"},{"name":"butterflyskip"},{"name":"dounia"},{"name":"Heather Nunn"},{"name":"Ian Lee"},{"name":"Katherine Koziar"},{"name":"Mark Woodbridge"},{"name":"Matt Critchlow"},{"name":"Mingsheng Zhang"},{"name":"Peace Ossom Williamson"},{"name":"Sarah Stevens"},{"name":"Tom Morrell"},{"name":"Valentina Bonetti"},{"name":"Veronica Ikeshoji-Orlati"}]}
+{
+  "contributors": [
+    {
+      "type": "Editor",
+      "name": "Clara Llebot",
+      "orcid": "0000-0003-3211-7396"
+    },
+    {
+      "type": "Editor",
+      "name": "j-p-courneya"
+    },
+    {
+      "type": "Editor",
+      "name": "mgomezn",
+      "orcid": "0000-0002-2587-5255"
+    }
+  ],
+  "creators": [
+    {
+      "name": "Rayna M Harris",
+      "orcid": "0000-0002-7943-5650"
+    },
+    {
+      "name": "Cynthia Monastirsky"
+    },
+    {
+      "name": "Jake Lever"
+    },
+    {
+      "name": "Silvana Pereyra"
+    },
+    {
+      "name": "juli arancio"
+    },
+    {
+      "name": "Agustina Pesce"
+    },
+    {
+      "name": "Francisco Palm",
+      "orcid": "0000-0002-1293-0868"
+    },
+    {
+      "name": "Ivan Gonzalez",
+      "orcid": "0000-0002-6451-6909"
+    },
+    {
+      "name": "Clara Llebot",
+      "orcid": "0000-0003-3211-7396"
+    },
+    {
+      "name": "Car Villarpando"
+    },
+    {
+      "name": "j-p-courneya"
+    },
+    {
+      "name": "Juan Pablo Narváez Gómez"
+    },
+    {
+      "name": "Nicolas Palopoli",
+      "orcid": "0000-0001-7925-6436"
+    },
+    {
+      "name": "Olemis Lang"
+    },
+    {
+      "name": "Shirley Alquicira Hernandez"
+    }
+  ],
+  "license": {
+    "id": "CC-BY-4.0"
+  }
+}
