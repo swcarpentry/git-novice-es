@@ -91,5 +91,5 @@ profiles:
 
 url: https://preview.carpentries.org/git-novice-es
 analytics: carpentries
-lang: en
+lang: 'es'
 workbench-beta: 'true'
