@@ -19,7 +19,7 @@ el control automatizado de versiones es mucho mejor que la siguiente situación:
 
 [![Piled Higher and Deeper by Jorge Cham, http://www.phdcomics.com/comics/archive_print.php?comicid=1531](../fig/phd101212s.png)](http://www.phdcomics.com)
 
-"La pila mas alta y mas profunda" por Jorge Cham, http://www.phdcomics.com
+"Piled Higher and Deeper" por Jorge Cham, http://www.phdcomics.com
 
 Todos hemos estado en esta situación alguna vez: parece ridículo tener 
 varias versiones casi idénticas del mismo documento. Algunos procesadores de texto 
@@ -43,9 +43,9 @@ A menos que haya conflictos, se puede incluso tener dos conjuntos de cambios en 
 Un sistema de control de versiones es una herramienta que realiza un seguimiento de estos cambios para nosotros y
 nos ayuda a controlar la versión y fusionar nuestros archivos. Nos permite
 decidir qué cambios conforman la siguiente versión, a lo que llamamos hacer un
-[**commit**]({{ page.root }}/reference/#commit), y mantiene metadatos útiles sobre dichos cambios. El
+[**commit**]({{ page.root }}/reference#commit), y mantiene metadatos útiles sobre dichos cambios. El
 historial completo de **commits** para un proyecto en particular y sus metadatos forman un
-[repositorio]({{ page.root }}/reference/#repository). Los repositorios pueden mantenerse sincronizados
+[repositorio]({{ page.root }}/reference#repositorio). Los repositorios pueden mantenerse sincronizados
 en diferentes computadoras, facilitando así la colaboración entre diferentes personas.
 
 > ## La larga historia de los sistemas de control de versiones 
@@ -59,7 +59,7 @@ en diferentes computadoras, facilitando así la colaboración entre diferentes p
 > los mismos archivos simultáneamente.
 {:.callout}
   
-> ## Paper Writing
+> ## ¿Qué harías en las siguientes situaciones?
 >
 > Imagina que has redactado un excelente párrafo para un artículo que estás escribiendo, pero más tarde lo estropeas. ¿Cómo recuperarías 
 > aquella *excelente* versión de la conclusión? ¿Es esto posible?
@@ -68,3 +68,6 @@ en diferentes computadoras, facilitando así la colaboración entre diferentes p
 > Si usas LibreOffice Writer o Microsoft Word, ¿qué sucede si aceptas los cambios realizados con la opción 
 > ` Track Changes`? ¿Tienes un historial de esos cambios? 
 {: .challenge}
+
+
+{% include links.md %}

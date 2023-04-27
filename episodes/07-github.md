@@ -3,10 +3,10 @@ title: Repositorios remotos en GitHub
 teaching: 30
 exercises: 0
 questions:
-- "¿Cómo puedo compartir los cambios con otros en el web?"
+- "¿Cómo puedo compartir los cambios con otros en la web?"
 objectives:
 - "Explica qué es un repositorio remoto y por qué es útil."
-- "Poner y tomar de un repositorio remoto"
+- "Hacer **push** y **pull** en un repositorio remoto"
 keypoints:
 - "Un repositorio Git local puede ser conectado a uno o más repositorios remotos."
 - "Usa el protocolo HTTPS para conectarte a un repositorio remoto hasta que hayas aprendido como hacerlo con SSH."
@@ -37,17 +37,17 @@ $ mkdir planets
 $ cd planets
 $ git init
 ~~~
-{: .bash}
+{: .language-bash}
 
 Nuestro repositorio local contiene nuestro trabajo previo en `mars.txt`, pero el repositorio remoto en GitHub todavía no contiene ningún archivo:
 
 ![Repositorio en GitHub recién creado](../fig/git-freshly-made-github-repo.svg)
 
-El siguiente paso es conectar los dos repositorios. Ello se consigue convirtiendo al repositorio en GitHub en un [repositorio remoto]({{ page.root }}/reference/#remote) del repositorio local. La página de inicio del repositorio en GitHub incluye la secuencia de caracteres que necesitamos para identificarlo:
+El siguiente paso es conectar los dos repositorios. Ello se consigue convirtiendo al repositorio en GitHub en un [repositorio remoto]({{ page.root }}/reference#remote) del repositorio local. La página de inicio del repositorio en GitHub incluye la secuencia de caracteres que necesitamos para identificarlo:
 
 ![Dónde encontrar la URL del Repositorio en GitHub](../fig/github-find-repo-string.png)
 
-Haz click en el enlace 'HTTPS' para cambiar el [protocol0]({{ page.root }}/reference/#protocol) de SSH a HTTPS.
+Haz click en el enlace 'HTTPS' para cambiar el [protocolo]({{ page.root }}/reference#protocolo) de SSH a HTTPS.
 
 > ## HTTPS vs. SSH
 >
@@ -55,7 +55,7 @@ Haz click en el enlace 'HTTPS' para cambiar el [protocol0]({{ page.root }}/refer
 >Si en el curso quieres configurar el acceso mediante SSH, que es un poco más seguro,
 >puedes seguir cualquiera de los excelentes tutoriales que existen en
 >[GitHub](https://help.github.com/articles/generating-ssh-keys), 
->[Atlassian/BitBucket](https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git) y
+>[Atlassian/BitBucket](https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html) y
 >[GitLab](https://about.gitlab.com/2014/03/04/add-ssh-key-screencast/)
 >(este último con capturas animadas de pantalla).
 {: .callout}
@@ -67,7 +67,7 @@ Copia dicha URL desde el navegador, ve al repositorio local `planets` y ejecuta 
 ~~~
 $ git remote add origin https://github.com/vlad/planets.git
 ~~~
-{: .bash}
+{: .language-bash}
 
 Asegúrate de usar la URL de tu repositorio en lugar de la de vlad: la única diferencia debería ser tu nombre de usuario en lugar de `vlad`.
 
@@ -76,7 +76,7 @@ Podemos comprobar que el comando ha funcionado bien ejecutando `git remote -v`:
 ~~~
 $ git remote -v
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 origin   https://github.com/vlad/planets.git (push)
@@ -91,7 +91,7 @@ Una vez seleccionado el apodo local `origin`, el siguiente comando enviará los 
 ~~~
 $ git push origin master
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 Counting objects: 9, done.
@@ -115,7 +115,7 @@ Branch master set up to track remote branch master from origin.
 > $ git config --global http.proxy http://user:password@proxy.url
 > $ git config --global https.proxy http://user:password@proxy.url
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > Si después te conectas a otra red que no usa un proxy es necesario decirle
 > a Git que deshabilite el proxy:
@@ -124,14 +124,14 @@ Branch master set up to track remote branch master from origin.
 > $ git config --global --unset http.proxy
 > $ git config --global --unset https.proxy
 > ~~~
-> {: .bash}
+> {: .language-bash}
 {: .callout}
 
 > ## Gestores de contraseñas
 >
 > Si tu sistema operativo tiene un gestor de contraseñas configurado, `git push`
 > intentará usarlo cuando necesite un nombre de usuario y contraseña. Al menos
-> ese es el comportamiento por defecto para Git Bash en Windows.
+> ese es el comportamiento por defecto para Git.language-bash en Windows.
 > Si quieres que haya que introducir el nombre de usuario y contraseña en la terminal,
 > en lugar de usar el gestor de contraseñas, hay que ejecutar el siguiente
 > comando en la terminal antes de lanzar `git push`:
@@ -139,7 +139,7 @@ Branch master set up to track remote branch master from origin.
 > ~~~
 > $ unset SSH_ASKPASS
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > A pesar de lo que se podría deducir por el nombre, [git usa `SSH_ASKPASS`
 > para todas las peticiones de credenciales](http://git-scm.com/docs/gitcredentials#_requesting_credentials),
@@ -158,7 +158,7 @@ Nuestros repositorios local y remoto se encuentran ahora en el siguiente estado:
 >
 > En la documentación puedes ver que en ocasiones se usa la opción `-u` con el comando `git push`.
 > Esta opción es sinónimo de la opción `--set-upstream-to` para el comando `git branch` y se usa
-> para asociar la rama actual con una rama remota, de modo que el comando `git pull`
+> para asociar el **branch** actual con un **branch** remoto, de modo que el comando `git pull`
 > pueda usarse sin argumentos. Para hacer esto simplemente ejecuta `git push -u origin master`
 > una vez que el repositorio remoto haya sido creado.
 {: .callout}
@@ -168,7 +168,7 @@ También podemos hacer **pull**, es decir, traernos cambios desde el repositorio
 ~~~
 $ git pull origin master
 ~~~
-{: .bash}
+{: .language-bash}
 
 ~~~
 From https://github.com/vlad/planets
@@ -201,7 +201,7 @@ En este caso, hacer **pull** no ha tenido ningún efecto porque los dos reposito
 > Crea un repositorio remoto en GitHub. Haz **push** de los contenidos de tu repositorio local
 > al remoto. Haz cambios en tu repositorio local y haz **push** de dichos cambios.
 > Ve al repo recién creado en GitHub y comprueba las fechas y horas, también llamadas
-> [timestamps]({{ page.root }}/reference/#timestamp) de los ficheros.  ¿Cómo registra
+> [timestamps]({{ page.root }}/reference#timestamp) de los ficheros.  ¿Cómo registra
 > GitHub los tiempos, y por qué?
 >
 > > ## Solución
@@ -228,26 +228,29 @@ En este caso, hacer **pull** no ha tenido ningún efecto porque los dos reposito
 > ~~~
 > git remote add broken https://github.com/this/url/is/invalid
 > ~~~
-> {: .bash}
+> {: .language-bash}
 >
 > ¿Obtienes un error al añadir el repositorio remoto? ¿Se te ocurre algún
 > comando que hiciera obvio que la URL de tu repositorio remoto no es 
 > válida? ¿Se te ocurre cómo corregir la URL? (pista: usa `git remote
-> -h`). No olvides vaciar y eliminar este repositorio remoto una vez
+> -h`). No olvides eliminar este repositorio remoto una vez que
 > hayas terminado este ejercicio.
 >
 > > ## Solución
-> > No aparece ningún error cuando añadimos el repositorio remoto (añadir un repositorio remoto informa a git sobre dicho repositorio, pero no intenta usarlo todavía). Sí que veremos un error en cuanto intentemos usarlo con ```git push```. El comando ```git remote set-url``` nos permite cambiar la URL del repositorio remoto para corregirla.
+> > No aparece ningún error cuando añadimos el repositorio remoto (añadir un repositorio remoto informa a git sobre dicho repositorio, pero no intenta usarlo todavía). Sí veremos un error en cuanto intentemos usarlo con ```git push```. El comando ```git remote set-url``` nos permite cambiar la URL del repositorio remoto para corregirla.
 > {: .solution}
 {: .challenge}
 
 > ## Licencia GitHub y ficheros README
 >
 > En esta sección hemos aprendido cómo crear un repositorio remoto en GitHub, pero cuando lo hicimos
-> no añadimos ningún fichero README.md ni ningún fichero de licencia. Si lo hubiéramos hecho, ¿qué crees que hubiera sucedido cuando
-> intentaste enlazar tus repositorios local y remoto?
+> no añadimos ningún fichero README.md ni ningún fichero de licencia. Si lo hubiéramos hecho, ¿qué crees que habría sucedido
+> cuando intentaste enlazar tus repositorios local y remoto?
 >
 > > ## Solución
 > > En este caso, puesto que ya teníamos un fichero README en nuestro propio repositorio (local), habríamos visto un conficto de unión, conocido como **merge conflict** (que es cuando git se da cuenta de que hay dos versiones de un mismo fichero y nos pide que resolvamos las diferencias).
 > {: .solution}
 {: .challenge}
+
+
+{% include links.md %}
