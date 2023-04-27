@@ -1,14 +1,12 @@
 ---
-layout: page
 title: "Instructor Notes"
-permalink: /guide/
 ---
 
 Usar una herramienta de software para manejar las versiones de tus archivos de proyecto
 le permite enfocarse en los aspectos más interesantes / innovadores de su proyecto.
 
 * Ventajas del control de versiones
-    * Es fácil de configurar 
+    * Es fácil de configurar
     * Cada copia de un repositorio de Git es una copia de seguridad completa de un proyecto y su historial
     * Unos pocos comandos fáciles de recordar son todo lo que necesita para la mayoría de las tareas cotidianas de control de versiones
     * El servicio de alojamiento [GitHub][github] proporciona un servicio de colaboración basado en la web
@@ -89,7 +87,7 @@ trabajando en equipo o no, porque es
 $ mv .git temp_git
 $ rm -rf temp_git
 ~~~
-{: .bash}
+{: .language-bash}
 
     El desafío sugiere que es una mala idea crear un repositorio de Git dentro de otro repositorio.
     Para obtener más información sobre este tema, consulte [este número][repos-in-repos].
@@ -133,7 +131,7 @@ Solo recuerda que puedes usar comodines y expresiones regulares para ignorar un 
 ~~~
 $ git clone https://github.com/vlad/planets.git planets-at-work
 ~~~
-{: .bash}
+{: .language-bash}
 
 * Es muy común que los alumnos escriban mal el alias remoto o la URL remota cuando se agrega un control remoto, entonces no pueden 'presionar'. Puedes diagnosticar esto con `git remote -v` y comprobando cuidadosamente si hay errores tipográficos.
     - Para arreglar un alias incorrecto, puedes hacer `git remote rename <old><new>`.
@@ -146,7 +144,7 @@ $ git clone https://github.com/vlad/planets.git planets-at-work
 ~~~
 $ git clone https://github.com/vlad/planets.git vlad-planet
 ~~~
-{: .bash}
+{: .language-bash}
 
 * El error más común es que los estudiantes "empujan" antes de "tirar". Si ellos `pull` después, pueden tener un conflicto.
 
@@ -184,7 +182,7 @@ Enseñamos sobre licencias porque preguntas sobre quién posee qué o qué puede
 
 Una preocupación común para los estudiantes es tener su trabajo a disposición del público en GitHub. Si bien fomentamos la ciencia abierta, a veces los repos privados son única opción. Siempre es interesante mencionar las opciones para tener repositorios privados alojados en la web.
 
-[escuela de código]: https://www.codeschool.com/
+[code-school]: https://www.codeschool.com/
 [diffmerge]: https://sourcegear.com/diffmerge/
 [dibujos]: https://marklodato.github.io/visual-git-guide/index-en.html
 [git-it]: https://github.com/jlord/git-it
@@ -193,6 +191,6 @@ Una preocupación común para los estudiantes es tener su trabajo a disposición
 [github]: https://github.com/
 [github-gui]: http://git-scm.com/downloads/guis
 [github-line-endings]: https://help.github.com/articles/dealing-with-line-endings/#platform-all
-[github-privacy]: https://help.github.com/articles/ keeping-your-email-address-private/
+[github-privacy]: https://help.github.com/articles/keeping-your-email-address-private/
 [repos-in-repos]: https://github.com/swcarpentry/git-novice/issues/272
 [try-git]: https://try.github.io

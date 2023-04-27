@@ -43,7 +43,7 @@ mismo servicio.
 
 Como un ejemplo, Software Carpentry [está en 
 GitHub]({{ swc_github }}), donde puedes encontrar el [código fuente para esta
-página]({{page.root}}/_episodes/13-hosting.md).
+página](https://github.com/swcarpentry/git-novice-es/blob/gh-pages/_episodes/13-hosting.md).
 Cualquiera con una cuenta de GitHub puede sugerir cambios a este texto.
 
 Usando servicios grandes y bien establecidos puede también ayudarte a tomar
@@ -83,3 +83,5 @@ disponibles para repositorios privados por una cuota.
 > artículos, datos y software? ¿Cómo los repositorios institucionales
 > difieren de servicios como [arXiV](http://arxiv.org/), [figshare](http://figshare.com/) y [GitHub](http://github.com/)?
 {: .challenge}
+
+{% include links.md %}
