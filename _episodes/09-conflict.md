@@ -8,7 +8,7 @@ objectives:
 - "Explicar qué son los conflictos y cuándo pueden ocurrir."
 - "Resolver conflictos que resultan de una fusión."
 keypoints:
-- "Los conflictos ocurren cuando dos o más personas cambian el mismo archivo(s) al mismo tiempo."
+- "Los conflictos ocurren cuando dos o más personas cambian el mismo archivo(s) al mism/o tiempo."
 - "El sistema de control de versiones no permite a las personas sobreescribir ciegamente los
 cambios del otro, pero resalta los conflictos para poder resolverlos."
 ---
@@ -174,11 +174,11 @@ $ cat mars.txt
 Cold and dry, but everything is my favorite color
 The two moons may be a problem for Wolfman
 But the Mummy will appreciate the lack of humidity
-<<<<<< HEAD
+<<<<<<< HEAD
 We added a different line in the other copy
 =======
 This line added to Wolfman's copy
->>>>>> dabb4c8c450e8475aee9b14b4383acc99f42af1d
+>>>>>>> dabb4c8c450e8475aee9b14b4383acc99f42af1d
 ~~~
 {: .output}
 
