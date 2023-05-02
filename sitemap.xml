@@ -52,7 +52,13 @@
     <loc>https://swcarpentry.github.io/git-novice-es/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice-es/aio.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice-es/discuss.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice-es/images.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice-es/index.html</loc>
@@ -109,16 +115,34 @@
     <loc>https://swcarpentry.github.io/git-novice-es/instructor/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice-es/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice-es/instructor/discuss.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice-es/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice-es/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice-es/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice-es/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice-es/instructor/profiles.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice-es/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice-es/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice-es/key-points.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice-es/profiles.html</loc>
