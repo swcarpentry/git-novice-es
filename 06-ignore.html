@@ -475,12 +475,12 @@ Ignored files:
 
 nothing to commit, working directory clean</code></pre>
 </div>
-<div id="challenge1" class="callout challenge">
+<div id="ignorar-archivos-anidados" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="ignorar-archivos-anidados" class="callout-inner">
-<h3 class="callout-title">Ignorar archivos anidados<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Ignorar archivos anidados<a class="anchor" aria-label="anchor" href="#ignorar-archivos-anidados"></a>
 </h3>
 <div class="callout-content">
 <p>Dado un directorio con la siguiente estructura:</p>
@@ -502,7 +502,7 @@ nothing to commit, working directory clean</code></pre>
   Solución
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Como ocurre con la mayoría de los problemas de programación, hay
 varias maneras de resolver esto. Si sólo deseas ignorar el contenido de
@@ -523,12 +523,12 @@ cualquier directorio raíz.</p>
 </div>
 </div>
 </div>
-<div id="challenge2" class="callout challenge">
+<div id="incluyendo-archivos-específicos" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="incluyendo-archivos-específicos" class="callout-inner">
-<h3 class="callout-title">Incluyendo archivos específicos<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+<h3 class="callout-title">Incluyendo archivos específicos<a class="anchor" aria-label="anchor" href="#incluyendo-archivos-espec%C3%ADficos"></a>
 </h3>
 <div class="callout-content">
 <p>¿Cómo ignorarías todos los archivos <code>.data</code> en tu
@@ -544,7 +544,7 @@ que <code>!</code> (el signo de exclamación) hace</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Agrega las siguientes dos líneas a tu archivo .gitignore:</p>
 <div class="codewrapper sourceCode" id="cb15">
@@ -559,13 +559,13 @@ excluida.</p>
 </div>
 </div>
 </div>
-<div id="challenge3" class="callout challenge">
+<div id="ignorando-todos-los-archivos-de-datos-en-un-directorio" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="ignorando-todos-los-archivos-de-datos-en-un-directorio" class="callout-inner">
 <h3 class="callout-title">Ignorando todos los archivos de datos en un
-directorio<a class="anchor" aria-label="anchor" href="#challenge3"></a>
+directorio<a class="anchor" aria-label="anchor" href="#ignorando-todos-los-archivos-de-datos-en-un-directorio"></a>
 </h3>
 <div class="callout-content">
 <p>Dado un directorio con la siguiente estructura:</p>
@@ -592,7 +592,7 @@ todos los archivos <code>.data</code> en
   Solución
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Agregando <code>results/data/position/gps/*.data</code> coincidirá
 con cada archivo en <code>results/data/position/gps</code> que termine
@@ -602,12 +602,12 @@ con <code>.data</code>. El archivo
 </div>
 </div>
 </div>
-<div id="challenge4" class="callout challenge">
+<div id="el-orden-de-las-reglas" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="el-orden-de-las-reglas" class="callout-inner">
-<h3 class="callout-title">El orden de las reglas<a class="anchor" aria-label="anchor" href="#challenge4"></a>
+<h3 class="callout-title">El orden de las reglas<a class="anchor" aria-label="anchor" href="#el-orden-de-las-reglas"></a>
 </h3>
 <div class="callout-content">
 <p>Dado un archivo <code>.gitignore</code> con el siguiente
@@ -629,7 +629,7 @@ contenido:</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>El modificador <code>!</code> anulará algún patrón ignorado
 previamente definido. Debido a que la entrada <code>!*.data</code> anula
@@ -640,12 +640,12 @@ archivos<code>.data</code> serán rastreados.</p>
 </div>
 </div>
 </div>
-<div id="challenge5" class="callout challenge">
+<div id="archivos-de-bitácora" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="archivos-de-bitácora" class="callout-inner">
-<h3 class="callout-title">Archivos de bitácora<a class="anchor" aria-label="anchor" href="#challenge5"></a>
+<h3 class="callout-title">Archivos de bitácora<a class="anchor" aria-label="anchor" href="#archivos-de-bit%C3%A1cora"></a>
 </h3>
 <div class="callout-content">
 <p>Supón que escribiste un <strong>script</strong> que crea muchos
@@ -673,7 +673,7 @@ excluir a través de <code>.gitignore</code>.</p></li>
   Solución
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Agrega <code>log_*</code> o <code>log*</code> como nueva entrada en
 tu archivo .gitignore</li>
@@ -730,7 +730,7 @@ ignorar.</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -754,7 +754,7 @@ ignorar.</li>
   "identifier": "https://swcarpentry.github.io/git-novice-es/06-ignore.html",
   "dateCreated": "2018-02-20",
   "dateModified": "2023-04-27",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-23"
 }
 
   </script><script>

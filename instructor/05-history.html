@@ -604,12 +604,12 @@ cosas tal como estaban usando <code>git checkout</code>:</p>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git checkout <span class="at">-f</span> master mars.txt</span></code></pre>
 </div>
-<div id="callout1" class="callout callout">
+<div id="no-pierdas-tu-head" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="no-pierdas-tu-head" class="callout-inner">
-<h3 class="callout-title">No pierdas tu HEAD<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<h3 class="callout-title">No pierdas tu HEAD<a class="anchor" aria-label="anchor" href="#no-pierdas-tu-head"></a>
 </h3>
 <div class="callout-content">
 <p>Arriba usamos</p>
@@ -640,12 +640,12 @@ queremos recuperar el estado antes del más reciente
 <strong>commit</strong> <code>f22b25e</code>:</p>
 <figure><img src="../fig/git-checkout.svg" alt="Git Checkout" class="figure mx-auto d-block"></figure><p>Así que, para poner todo junto, aqui esta como Git trabaja, en forma
 de dibujo:</p>
-<figure><img src="../fig/git_staging.svg" alt="" class="figure mx-auto d-block"><figcaption><a href="http://figshare.com/articles/How%5C_Git%5C_works%5C_a%5C_cartoon/1328266" class="external-link uri">http://figshare.com/articles/How\_Git\_works\_a\_cartoon/1328266</a></figcaption></figure><div id="callout2" class="callout callout">
+<figure><img src="../fig/git_staging.svg" alt="" class="figure mx-auto d-block"><figcaption><a href="http://figshare.com/articles/How%5C_Git%5C_works%5C_a%5C_cartoon/1328266" class="external-link uri">http://figshare.com/articles/How\_Git\_works\_a\_cartoon/1328266</a></figcaption></figure><div id="simplificando-el-caso-común" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="simplificando-el-caso-común" class="callout-inner">
-<h3 class="callout-title">Simplificando el caso común<a class="anchor" aria-label="anchor" href="#callout2"></a>
+<h3 class="callout-title">Simplificando el caso común<a class="anchor" aria-label="anchor" href="#simplificando-el-caso-com%C3%BAn"></a>
 </h3>
 <div class="callout-content">
 <p>Si lees el <strong>output</strong> de <code>git status</code>
@@ -671,13 +671,13 @@ a la introducción sin deshacer los cambios posteriores a la conclusión.
 Si la introducción y la conclusión se almacenan en archivos separados,
 por otra parte, retroceder y avanzar en el tiempo se vuelve mucho más
 fácil.</p>
-<div id="discussion1" class="callout discussion">
+<div id="recuperando-versiones-anteriores-de-un-archivo" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="recuperando-versiones-anteriores-de-un-archivo" class="callout-inner">
 <h3 class="callout-title">Recuperando versiones anteriores de un
-archivo<a class="anchor" aria-label="anchor" href="#discussion1"></a>
+archivo<a class="anchor" aria-label="anchor" href="#recuperando-versiones-anteriores-de-un-archivo"></a>
 </h3>
 <div class="callout-content">
 <p>Jennifer ha realizado cambios en el <strong>script</strong> de Python
@@ -697,12 +697,12 @@ de su proyecto usando Git! ¿Cuáles comandos le permitirán recuperar la
 </ol></div>
 </div>
 </div>
-<div id="discussion2" class="callout discussion">
+<div id="revertir-un-commit" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="revertir-un-commit" class="callout-inner">
-<h3 class="callout-title">Revertir un commit<a class="anchor" aria-label="anchor" href="#discussion2"></a>
+<h3 class="callout-title">Revertir un commit<a class="anchor" aria-label="anchor" href="#revertir-un-commit"></a>
 </h3>
 <div class="callout-content">
 <p>Jennifer está colaborando en su <strong>script</strong> de Python con
@@ -727,12 +727,12 @@ el ID del <strong>commit</strong></p></li>
 </ol></div>
 </div>
 </div>
-<div id="challenge1" class="callout challenge">
+<div id="entendiendo-workflow-y-history" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="entendiendo-workflow-y-history" class="callout-inner">
-<h3 class="callout-title">Entendiendo Workflow y History<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Entendiendo Workflow y History<a class="anchor" aria-label="anchor" href="#entendiendo-workflow-y-history"></a>
 </h3>
 <div class="callout-content">
 <p>¿Cuál es el <strong>output</strong> de cat venus.txt al final de este
@@ -783,7 +783,7 @@ Venus is too hot to be suitable as a base</code></pre>
   Solución
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Vamos línea por línea</p>
 <div class="codewrapper sourceCode" id="cb33">
@@ -841,13 +841,13 @@ misma que nuestra HEAD, el más reciente <strong>commit</strong>.</p>
 </div>
 </div>
 </div>
-<div id="discussion3" class="callout discussion">
+<div id="comprobando-lo-que-entendiste-de-git-diff" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="comprobando-lo-que-entendiste-de-git-diff" class="callout-inner">
 <h3 class="callout-title">Comprobando lo que entendiste de
-<code>git diff</code><a class="anchor" aria-label="anchor" href="#discussion3"></a>
+<code>git diff</code><a class="anchor" aria-label="anchor" href="#comprobando-lo-que-entendiste-de-git-diff"></a>
 </h3>
 <div class="callout-content">
 <p>Considera este comando: <code>git diff HEAD~3 mars.txt</code>. ¿Qué
@@ -859,12 +859,12 @@ tú que sucederá, y qué es lo que pasa?</p>
 </div>
 </div>
 </div>
-<div id="discussion4" class="callout discussion">
+<div id="deshacer-los-cambios-almacenados" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="deshacer-los-cambios-almacenados" class="callout-inner">
-<h3 class="callout-title">Deshacer los cambios almacenados<a class="anchor" aria-label="anchor" href="#discussion4"></a>
+<h3 class="callout-title">Deshacer los cambios almacenados<a class="anchor" aria-label="anchor" href="#deshacer-los-cambios-almacenados"></a>
 </h3>
 <div class="callout-content">
 <p><code>git checkout</code> puede usarse para restaurar un
@@ -876,12 +876,12 @@ para ver si puedes eliminar tu cambio.</p>
 </div>
 </div>
 </div>
-<div id="discussion5" class="callout discussion">
+<div id="explorar-y-resumir-el-history" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="explorar-y-resumir-el-history" class="callout-inner">
-<h3 class="callout-title">Explorar y resumir el History<a class="anchor" aria-label="anchor" href="#discussion5"></a>
+<h3 class="callout-title">Explorar y resumir el History<a class="anchor" aria-label="anchor" href="#explorar-y-resumir-el-history"></a>
 </h3>
 <div class="callout-content">
 <p>Explorar el <strong>history</strong> es una parte importante de git,
@@ -974,7 +974,7 @@ archivos.</li>
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -998,7 +998,7 @@ archivos.</li>
   "identifier": "https://swcarpentry.github.io/git-novice-es/instructor/05-history.html",
   "dateCreated": "2018-02-20",
   "dateModified": "2023-04-27",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-23"
 }
 
   </script><script>

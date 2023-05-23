@@ -541,12 +541,12 @@ identificador corto que imprime el comando <code>git commit</code>
 anterior), el autor del <strong>commit</strong>, cuándo fue creado, y el
 mensaje de registro que se le dio a Git cuando el
 <strong>commit</strong> fue creado.</p>
-<div id="callout1" class="callout callout">
+<div id="dónde-están-mis-cambios" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="dónde-están-mis-cambios" class="callout-inner">
-<h3 class="callout-title">¿Dónde están mis cambios?<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<h3 class="callout-title">¿Dónde están mis cambios?<a class="anchor" aria-label="anchor" href="#d%C3%B3nde-est%C3%A1n-mis-cambios"></a>
 </h3>
 <div class="callout-content">
 <p>Si ejecutamos <code>ls</code> en este punto, aún veremos un solo
@@ -680,12 +680,12 @@ terminado aún).</p>
 <p>Para permitir esto, Git tiene un <em>staging area</em> especial donde
 mantiene registro de cosas que han sido agregadas al actual <a href="reference.html#changeset">changeset</a> pero aún no se han vuelto
 <strong>commit</strong>.</p>
-<div id="callout2" class="callout callout">
+<div id="staging-area" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="staging-area" class="callout-inner">
-<h3 class="callout-title">Staging Area<a class="anchor" aria-label="anchor" href="#callout2"></a>
+<h3 class="callout-title">Staging Area<a class="anchor" aria-label="anchor" href="#staging-area"></a>
 </h3>
 <div class="callout-content">
 <p>Si piensas en Git como tomar instantáneas de cambios durante la vida
@@ -824,12 +824,12 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 
     Start notes on Mars as a base</code></pre>
 </div>
-<div id="callout3" class="callout callout">
+<div id="diferencias-basadas-en-palabras" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="diferencias-basadas-en-palabras" class="callout-inner">
-<h3 class="callout-title">Diferencias basadas en palabras<a class="anchor" aria-label="anchor" href="#callout3"></a>
+<h3 class="callout-title">Diferencias basadas en palabras<a class="anchor" aria-label="anchor" href="#diferencias-basadas-en-palabras"></a>
 </h3>
 <div class="callout-content">
 <p>A veces, por ejemplo en el caso de documentos de texto, un diff por
@@ -839,12 +839,12 @@ ya que resalta las palabras modificadas usando colores.</p>
 </div>
 </div>
 </div>
-<div id="callout4" class="callout callout">
+<div id="paginación-del-registro" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="paginación-del-registro" class="callout-inner">
-<h3 class="callout-title">Paginación del Registro<a class="anchor" aria-label="anchor" href="#callout4"></a>
+<h3 class="callout-title">Paginación del Registro<a class="anchor" aria-label="anchor" href="#paginaci%C3%B3n-del-registro"></a>
 </h3>
 <div class="callout-content">
 <p>Cuando el <strong>output</strong> de <code>git log</code> es
@@ -861,12 +861,12 @@ presionando <code>n</code> (next).</li>
 </ul></div>
 </div>
 </div>
-<div id="callout5" class="callout callout">
+<div id="tamaño-límite-del-registro" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="tamaño-límite-del-registro" class="callout-inner">
-<h3 class="callout-title">Tamaño Límite del Registro<a class="anchor" aria-label="anchor" href="#callout5"></a>
+<h3 class="callout-title">Tamaño Límite del Registro<a class="anchor" aria-label="anchor" href="#tama%C3%B1o-l%C3%ADmite-del-registro"></a>
 </h3>
 <div class="callout-content">
 <p>Para evitar que <code>git log</code> cubra toda la pantalla de tu
@@ -919,12 +919,12 @@ otras. Una combinación útil es:</p>
 </div>
 </div>
 </div>
-<div id="callout6" class="callout callout">
+<div id="directorios" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="directorios" class="callout-inner">
-<h3 class="callout-title">Directorios<a class="anchor" aria-label="anchor" href="#callout6"></a>
+<h3 class="callout-title">Directorios<a class="anchor" aria-label="anchor" href="#directorios"></a>
 </h3>
 <div class="callout-content">
 <p>Dos hechos importantes que deberías saber acerca de directorios en
@@ -964,13 +964,13 @@ primero necesitamos agregar los archivos cambiados al <strong>staging
 area</strong> (<code>git add</code>) y luego hacer un
 <strong>commit</strong> de los cambios al repositorio
 (<code>git commit</code>):</p>
-<figure><img src="../fig/git-committing.svg" alt="The Git Commit Workflow" class="figure mx-auto d-block"></figure><div id="challenge1" class="callout challenge">
+<figure><img src="../fig/git-committing.svg" alt="The Git Commit Workflow" class="figure mx-auto d-block"></figure><div id="escogiendo-un-mensaje-para-el-commit" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="escogiendo-un-mensaje-para-el-commit" class="callout-inner">
 <h3 class="callout-title">Escogiendo un Mensaje para el
-<strong>Commit</strong><a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<strong>Commit</strong><a class="anchor" aria-label="anchor" href="#escogiendo-un-mensaje-para-el-commit"></a>
 </h3>
 <div class="callout-content">
 <p>¿Cuál de los siguientes mensajes de <strong>commit</strong> sería el
@@ -990,7 +990,7 @@ mars.txt”</li>
   Solución
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>La respuesta 1 no es suficientemente descriptiva, y la respuesta 2 es
 demasiado descriptiva y redundante, pero la respuesta 3 es buena: corta
@@ -999,12 +999,12 @@ pero descriptiva.</p>
 </div>
 </div>
 </div>
-<div id="challenge2" class="callout challenge">
+<div id="haciendo-commit-de-cambios-a-git" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="haciendo-commit-de-cambios-a-git" class="callout-inner">
-<h3 class="callout-title">Haciendo Commit de Cambios a Git<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+<h3 class="callout-title">Haciendo Commit de Cambios a Git<a class="anchor" aria-label="anchor" href="#haciendo-commit-de-cambios-a-git"></a>
 </h3>
 <div class="callout-content">
 <p>¿Cuál comando(s) de abajo debería guardar los cambios de
@@ -1025,7 +1025,7 @@ pero descriptiva.</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Debería crear un <strong>commit</strong> solamente si los archivos
 ya han sido agregados al <strong>staging area</strong>.</li>
@@ -1038,13 +1038,13 @@ changes” con el mensaje myfile.txt.</li>
 </div>
 </div>
 </div>
-<div id="challenge3" class="callout challenge">
+<div id="haciendo-commit-a-multiples-archivos" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="haciendo-commit-a-multiples-archivos" class="callout-inner">
 <h3 class="callout-title">Haciendo <strong>Commit</strong> a Multiples
-Archivos<a class="anchor" aria-label="anchor" href="#challenge3"></a>
+Archivos<a class="anchor" aria-label="anchor" href="#haciendo-commit-a-multiples-archivos"></a>
 </h3>
 <div class="callout-content">
 <p>El <strong>staging area</strong> puede tener cambios de cualquier
@@ -1066,7 +1066,7 @@ area</strong>, y haz un <strong>commit</strong> de esos cambios.</li>
   Solución
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Primero haremos nuestros cambios a los archivos <code>mars.txt</code>
 y <code>venus.txt</code>:</p>
@@ -1153,7 +1153,7 @@ original</li>
   Soluciónn
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Si es necesario, sal de la carpeta <code>planets</code>:</p>
 <div class="codewrapper sourceCode" id="cb59">
@@ -1196,12 +1196,12 @@ actual y el original, usa <code>git diff</code>:</p>
 </div>
 </div>
 </div>
-<div id="challenge5" class="callout challenge">
+<div id="author-y-committer" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="author-y-committer" class="callout-inner">
-<h3 class="callout-title">Author y Committer<a class="anchor" aria-label="anchor" href="#challenge5"></a>
+<h3 class="callout-title">Author y Committer<a class="anchor" aria-label="anchor" href="#author-y-committer"></a>
 </h3>
 <div class="callout-content">
 <p>Para cada uno de los <strong>commits</strong> que hayas hecho, Git
@@ -1236,7 +1236,7 @@ permitirte colaborar con tus colegas.</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb66">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1332,7 +1332,7 @@ local.</li>
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -1356,7 +1356,7 @@ local.</li>
   "identifier": "https://swcarpentry.github.io/git-novice-es/instructor/04-changes.html",
   "dateCreated": "2018-02-20",
   "dateModified": "2023-04-27",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-23"
 }
 
   </script><script>

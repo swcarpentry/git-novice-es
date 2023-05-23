@@ -388,12 +388,12 @@ convirtiendo al repositorio en GitHub en un <a href="reference.html#remote">repo
 local. La página de inicio del repositorio en GitHub incluye la
 secuencia de caracteres que necesitamos para identificarlo:</p>
 <figure><img src="fig/github-find-repo-string.png" alt="Dónde encontrar la URL del Repositorio en GitHub" class="figure mx-auto d-block"></figure><p>Haz click en el enlace ‘HTTPS’ para cambiar el <a href="reference.html#protocolo">protocolo</a> de SSH a HTTPS.</p>
-<div id="callout1" class="callout callout">
+<div id="https-vs.-ssh" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="https-vs.-ssh" class="callout-inner">
-<h3 class="callout-title">HTTPS vs. SSH<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<h3 class="callout-title">HTTPS vs. SSH<a class="anchor" aria-label="anchor" href="#https-vs.-ssh"></a>
 </h3>
 <div class="callout-content">
 <p>Usamos aquí HTTPS porque no necesita ninguna configuración adicional.
@@ -452,12 +452,12 @@ To https://github.com/vlad/planets
  * [new branch]      master -&gt; master
 Branch master set up to track remote branch master from origin.</code></pre>
 </div>
-<div id="callout2" class="callout callout">
+<div id="proxy" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="proxy" class="callout-inner">
-<h3 class="callout-title">Proxy<a class="anchor" aria-label="anchor" href="#callout2"></a>
+<h3 class="callout-title">Proxy<a class="anchor" aria-label="anchor" href="#proxy"></a>
 </h3>
 <div class="callout-content">
 <p>Si la red a la que estás conectado usa un proxy es posible que tu
@@ -481,12 +481,12 @@ decirle a Git que deshabilite el proxy:</p>
 </div>
 </div>
 </div>
-<div id="callout3" class="callout callout">
+<div id="gestores-de-contraseñas" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="gestores-de-contraseñas" class="callout-inner">
-<h3 class="callout-title">Gestores de contraseñas<a class="anchor" aria-label="anchor" href="#callout3"></a>
+<h3 class="callout-title">Gestores de contraseñas<a class="anchor" aria-label="anchor" href="#gestores-de-contrase%C3%B1as"></a>
 </h3>
 <div class="callout-content">
 <p>Si tu sistema operativo tiene un gestor de contraseñas configurado,
@@ -514,12 +514,12 @@ los nombres de usuario y las contraseñas.</p>
 </div>
 <p>Nuestros repositorios local y remoto se encuentran ahora en el
 siguiente estado:</p>
-<figure><img src="fig/github-repo-after-first-push.svg" alt="Repositorio en GitHub después del primer envío" class="figure mx-auto d-block"></figure><div id="callout4" class="callout callout">
+<figure><img src="fig/github-repo-after-first-push.svg" alt="Repositorio en GitHub después del primer envío" class="figure mx-auto d-block"></figure><div id="la-opción--u" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="la-opción--u" class="callout-inner">
-<h3 class="callout-title">La opción ‘-u’<a class="anchor" aria-label="anchor" href="#callout4"></a>
+<h3 class="callout-title">La opción ‘-u’<a class="anchor" aria-label="anchor" href="#la-opci%C3%B3n--u"></a>
 </h3>
 <div class="callout-content">
 <p>En la documentación puedes ver que en ocasiones se usa la opción
@@ -552,12 +552,12 @@ porque los dos repositorios están ya sincronizados. Por el contrario, si
 alguien antes hubiera subido con <strong>push</strong> algunos cambios
 al repositorio en GitHub, este comando los habría incorporado a nuestro
 repositorio local.</p>
-<div id="challenge1" class="callout challenge">
+<div id="interfaz-gráfica-de-github" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="interfaz-gráfica-de-github" class="callout-inner">
-<h3 class="callout-title">Interfaz gráfica de GitHub<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Interfaz gráfica de GitHub<a class="anchor" aria-label="anchor" href="#interfaz-gr%C3%A1fica-de-github"></a>
 </h3>
 <div class="callout-content">
 <p>Navega hasta tu repositorio <code>planets</code> en GitHub. En la
@@ -576,7 +576,7 @@ obtendrías la misma información en la terminal?</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>El botón más a la izquierda (con el dibujo de un portapapeles) sirve
 para copiar en el portapapeles el identificador completo del
@@ -603,12 +603,12 @@ el estado correcto!</p>
 </div>
 </div>
 </div>
-<div id="challenge2" class="callout challenge">
+<div id="fecha-y-hora-en-github" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="fecha-y-hora-en-github" class="callout-inner">
-<h3 class="callout-title">Fecha y Hora en GitHub<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+<h3 class="callout-title">Fecha y Hora en GitHub<a class="anchor" aria-label="anchor" href="#fecha-y-hora-en-github"></a>
 </h3>
 <div class="callout-content">
 <p>Crea un repositorio remoto en GitHub. Haz <strong>push</strong> de
@@ -627,7 +627,7 @@ ficheros. ¿Cómo registra GitHub los tiempos, y por qué?</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Github muestra los tiempos en formato relativo legible para los
 humanos (i.e. “22 hours ago” or “three weeks ago”). Sin embargo, si
@@ -637,12 +637,12 @@ tiempo exacto en el que se realizó el último cambio al fichero.</p>
 </div>
 </div>
 </div>
-<div id="challenge3" class="callout challenge">
+<div id="push-vs.-commit" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="push-vs.-commit" class="callout-inner">
-<h3 class="callout-title">Push vs. Commit<a class="anchor" aria-label="anchor" href="#challenge3"></a>
+<h3 class="callout-title">Push vs. Commit<a class="anchor" aria-label="anchor" href="#push-vs.-commit"></a>
 </h3>
 <div class="callout-content">
 <p>En esta lección hemos introducido el comando “git push”. ¿En qué se
@@ -657,7 +657,7 @@ diferencia “git push” de “git commit”?</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Cuando enviamos cambios con <strong>push</strong>, estamos
 interaccionando con un repositorio remoto para actualizarlo con los
@@ -668,13 +668,13 @@ otros los cambios realizados). Por el contrario, <strong>commit</strong>
 </div>
 </div>
 </div>
-<div id="challenge4" class="callout challenge">
+<div id="corrigiendo-ajustes-en-el-repositorio-remoto" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="corrigiendo-ajustes-en-el-repositorio-remoto" class="callout-inner">
 <h3 class="callout-title">Corrigiendo ajustes en el repositorio
-remoto<a class="anchor" aria-label="anchor" href="#challenge4"></a>
+remoto<a class="anchor" aria-label="anchor" href="#corrigiendo-ajustes-en-el-repositorio-remoto"></a>
 </h3>
 <div class="callout-content">
 <p>Es muy frecuente cometer un error al especificar la URL del
@@ -701,7 +701,7 @@ una vez que hayas terminado este ejercicio.</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>No aparece ningún error cuando añadimos el repositorio remoto (añadir
 un repositorio remoto informa a git sobre dicho repositorio, pero no
@@ -712,12 +712,12 @@ nos permite cambiar la URL del repositorio remoto para corregirla.</p>
 </div>
 </div>
 </div>
-<div id="challenge5" class="callout challenge">
+<div id="licencia-github-y-ficheros-readme" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="licencia-github-y-ficheros-readme" class="callout-inner">
-<h3 class="callout-title">Licencia GitHub y ficheros README<a class="anchor" aria-label="anchor" href="#challenge5"></a>
+<h3 class="callout-title">Licencia GitHub y ficheros README<a class="anchor" aria-label="anchor" href="#licencia-github-y-ficheros-readme"></a>
 </h3>
 <div class="callout-content">
 <p>En esta sección hemos aprendido cómo crear un repositorio remoto en
@@ -735,7 +735,7 @@ remoto?</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>En este caso, puesto que ya teníamos un fichero README en nuestro
 propio repositorio (local), habríamos visto un conficto de unión,
@@ -800,7 +800,7 @@ a un repositorio local.</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -824,7 +824,7 @@ a un repositorio local.</li>
   "identifier": "https://swcarpentry.github.io/git-novice-es/07-github.html",
   "dateCreated": "2018-02-20",
   "dateModified": "2023-04-27",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-23"
 }
 
   </script><script>
