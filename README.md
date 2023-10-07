@@ -12,14 +12,14 @@ o tambi√©n puedes run `make` en este directorio para ver una lista de comandos √
 
 Maintainers:
 
-- [Ivan Gonzalez][gonzalez_ivan]: [@iglpdc](https://github.com/iglpdc)
-- [Rayna Harris][harris_rayna]: [@raynamharris](https://github.com/raynamharris)
+- [Jean-Paul Courneya][courneya_jeanpaul]: [@j-p-courneya](https://github.com/j-p-courneya)
 - [Clara Llebot Lorente][llebot_clara]: [@clarallebot](https://github.com/clarallebot)
+- [Mariana Patricia Gomez Nicolas][gomeznicolas_mariana]: [@MGomezN](https://github.com/MGomezN)
 
 [lesson-example]: https://carpentries.github.io/lesson-example
-[gonzalez_ivan]: https://software-carpentry.org/team/#gonzalez_ivan
-[harris_rayna]: https://software-carpentry.org/team/#harris_rayna
+[courneya_jeanpaul]: https://carpentries.org/instructors/
 [llebot_clara]: https://software-carpentry.org/team/#llebot_clara
+[gomeznicolas_mariana]: https://carpentries.org/instructors/
 
 
 
