@@ -17,9 +17,8 @@ Maintainers:
 - [Mariana Patricia Gomez Nicolas][gomeznicolas_mariana]: [@MGomezN](https://github.com/MGomezN)
 
 [lesson-example]: https://carpentries.github.io/lesson-example
-[courneya_jeanpaul]: https://carpentries.org/instructors/
-[llebot_clara]: https://software-carpentry.org/team/#llebot_clara
-[gomeznicolas_mariana]: https://carpentries.org/instructors/
-
+[courneya_jeanpaul]: https://carpentries.org/maintainers/#j-p-courneya
+[llebot_clara]: https://carpentries.org/maintainers/#clarallebot
+[gomeznicolas_mariana]: https://carpentries.org/maintainers/#MGomezN
 
 
