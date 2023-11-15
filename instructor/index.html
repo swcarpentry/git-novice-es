@@ -513,10 +513,52 @@ Finish
 </tr></tbody></table><p>
       The actual schedule may vary slightly depending on the topics and exercises chosen by the instructor.
       </p>
-      </section><section id="setup"><p>Por favor consulte <a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">esta
+      </section><section id="setup"><section id="instalación-de-git"><h2 class="section-heading">Instalación de Git<a class="anchor" aria-label="anchor" href="#instalaci%C3%B3n-de-git"></a>
+</h2>
+<hr class="half-width"><p>Por favor consulte <a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">esta
 sección de la plantilla de los talleres</a> para conocer más
 instrucciones de instalación de Git.</p>
-<p>Haremos nuestro trabajo en la carpeta <code>Desktop</code>. Por favor
+</section><section id="crear-una-cuenta-de-github"><h2 class="section-heading">Crear una cuenta de GitHub<a class="anchor" aria-label="anchor" href="#crear-una-cuenta-de-github"></a>
+</h2>
+<hr class="half-width"><p>Necesitarás una cuenta de <a href="https://github.com" class="external-link">GitHub</a>
+para seguir esta lección.</p>
+<ol style="list-style-type: decimal"><li>Ve a <a href="https://github.com" class="external-link uri">https://github.com</a>
+y sigue el enlace “Regístrate” en la parte superior derecha de la
+ventana.</li>
+<li>Sigue las instrucciones para crear una cuenta.</li>
+<li>Verifica tu dirección de correo electrónico con GitHub.</li>
+<li>Configura la autenticación multifactor (ver más abajo).</li>
+</ol><div class="section level3">
+<h3 id="autenticación-multifactor">Autenticación multifactor<a class="anchor" aria-label="anchor" href="#autenticaci%C3%B3n-multifactor"></a></h3>
+<p>En 2023, GitHub introdujo el requisito de que todas las cuentas
+tuvieran configurada la <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication" class="external-link">autenticación
+multifactor (2FA)</a> para mayor seguridad. Existen varias opciones para
+configurar 2FA, que se resumen aquí:</p>
+<ol style="list-style-type: decimal"><li>Si ya utilizas una aplicación de autenticación, como <a href="https://support.google.com/accounts/answer/1066447?hl=en&amp;co=GENIE.Platform%3DiOS&amp;oco=0" class="external-link">Google
+Authenticator</a> o <a href="https://duo.com/product/multi-factor-authentication-mfa/duo-mobile-app" class="external-link">Duo
+Mobile</a> en tu smartphone, por ejemplo, <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-mobile-app" class="external-link">añade
+GitHub a esa aplicación</a>.</li>
+<li>Si tienes acceso a un smartphone pero aún no utilizas una aplicación
+de autenticación, instala una y <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-mobile-app" class="external-link">añade
+GitHub a la aplicación</a>.</li>
+<li>Si no tienes acceso a un smartphone o no quieres instalar una
+aplicación de autenticación, tienes dos opciones:
+<ol style="list-style-type: decimal"><li>
+<a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages" class="external-link">configurar
+2FA mediante mensaje de texto</a> (<a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/countries-where-sms-authentication-is-supported" class="external-link">lista
+de países donde se admite la autenticación por SMS</a>), o</li>
+<li>
+<a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-security-key" class="external-link">utilizar
+una llave de seguridad de hardware</a> como <a href="https://www.yubico.com/products/yubikey-5-overview/" class="external-link">Youbikey</a>
+o la <a href="https://store.google.com/us/product/titan_security_key?hl=en-US&amp;pli=1" class="external-link">llave
+Titan de Google</a>.</li>
+</ol></li>
+</ol><p>La documentación de GitHub proporciona <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication" class="external-link">más
+detalles sobre la configuración de 2FA</a>.</p>
+</div>
+</section><section id="preparar-el-directorio-de-trabajo"><h2 class="section-heading">Preparar el directorio de trabajo<a class="anchor" aria-label="anchor" href="#preparar-el-directorio-de-trabajo"></a>
+</h2>
+<hr class="half-width"><p>Haremos nuestro trabajo en la carpeta <code>Desktop</code>. Por favor
 asegúrese de cambiar su directorio de trabajo con:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -524,9 +566,7 @@ asegúrese de cambiar su directorio de trabajo con:</p>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd Desktop</span></code></pre>
 </div>
-
-
-      </section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
+</section></section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link float-end" href="../instructor/01-basics.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
