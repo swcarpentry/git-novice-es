@@ -365,13 +365,12 @@ personas?</li>
 la otra el “colaborador”. El objetivo es que el colaborador agregue
 cambios al repositorio del dueño. Vamos a cambiar roles al final, de
 modo que ambas personas puedan participar como dueño y colaborador</p>
-<div id="practicando-por-tu-cuenta" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="practicando-por-tu-cuenta" class="callout-inner">
-<h3 class="callout-title">Practicando por tu cuenta<a class="anchor" aria-label="anclaje" href="#practicando-por-tu-cuenta"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="practicando-por-tu-cuenta">Practicando por tu cuenta<a class="anchor" aria-label="anchor" href="#practicando-por-tu-cuenta"></a></h3>
 <div class="callout-content">
 <p>Si estás trabajando en esta lección por tu cuenta, puedes hacerlo
 abriendo una segunda sesión en la ventana de la terminal. Esta ventana
@@ -393,7 +392,7 @@ el colaborador debe ejecutar las siguientes líneas:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git clone https://github.com/vlad/planets.git ~/Desktop/vlad-planets</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> git clone https://github.com/vlad/planets.git ~/Desktop/vlad-planets</span></code></pre>
 </div>
 <p>Reemplaza ‘vlad’ con el nombre de usuario del dueño.</p>
 <figure><img src="../fig/github-collaboration.svg" alt="After Creating Clone of Repository" class="figure mx-auto d-block"></figure><p>El colaborador puede ahora hacer cambios en la versión clonada del
@@ -402,9 +401,9 @@ previamente:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd ~/Desktop/vlad-planets</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> nano pluto.txt</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cat pluto.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">$</span> cd ~/Desktop/vlad-planets</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="ex">$</span> nano pluto.txt</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="ex">$</span> cat pluto.txt</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">SALIDA<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -414,8 +413,8 @@ previamente:</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git add pluto.txt</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add notes about Pluto"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="ex">$</span> git add pluto.txt</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add notes about Pluto"</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">SALIDA<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -428,7 +427,7 @@ GitHub haciendo <strong>push</strong>:</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git push origin master</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="ex">$</span> git push origin master</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">SALIDA<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -454,7 +453,7 @@ dueño debe correr las siguientes líneas:</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git pull origin master</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="ex">$</span> git pull origin master</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">SALIDA<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -473,13 +472,12 @@ Fast-forward
 </div>
 <p>Ahora hay tres repositorios sincronizados (el local del dueño, el
 local del colaborador y el del dueño en GitHub).</p>
-<div id="un-flujo-de-trabajo-colaborativo-básico" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="un-flujo-de-trabajo-colaborativo-básico" class="callout-inner">
-<h3 class="callout-title">Un flujo de trabajo colaborativo básico<a class="anchor" aria-label="anclaje" href="#un-flujo-de-trabajo-colaborativo-b%C3%A1sico"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="un-flujo-de-trabajo-colaborativo-básico">Un flujo de trabajo colaborativo básico<a class="anchor" aria-label="anchor" href="#un-flujo-de-trabajo-colaborativo-b%C3%A1sico"></a></h3>
 <div class="callout-content">
 <p>Es considerado buena práctica estar seguro de que tienes una versión
 actualizada del repositorio en el que colaboras. Para ello deberías
@@ -666,7 +664,7 @@ automáticamente.</li>
   "identifier": "https://swcarpentry.github.io/git-novice-es/instructor/08-collab.html",
   "dateCreated": "2018-02-20",
   "dateModified": "2023-04-27",
-  "datePublished": "2024-02-27"
+  "datePublished": "2024-03-05"
 }
 
   </script><script>
