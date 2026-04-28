@@ -690,64 +690,64 @@ siguiendo esta tabla:</p>
 <col width="52%">
 <col width="48%">
 </colgroup>
-<thead><tr>
+<thead><tr class="header">
 <th align="left">Editor</th>
 <th align="left">Comando de configuración</th>
 </tr></thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="left">Atom</td>
 <td align="left"><code>$ git config --global core.editor "atom --wait"</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">nano</td>
 <td align="left"><code>$ git config --global core.editor "nano -w"</code></td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">TextWrangler (Mac)</td>
 <td align="left"><code>$ git config --global core.editor "edit -w"</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">Sublime Text (Mac)</td>
 <td align="left"><code>$ git config --global core.editor "subl -n -w"</code></td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">Sublime Text (Win, 32-bit)</td>
 <td align="left"><code>$ git config --global core.editor "'c:/program files (x86)/sublime text 3/sublime_text.exe' -w"</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">Sublime Text (Win, 64-bit)</td>
 <td align="left"><code>$ git config --global core.editor "'c:/program files/sublime text 3/sublime_text.exe' -w"</code></td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">Notepad++ (Win, 32-bitl)</td>
 <td align="left"><code>$ git config --global core.editor "'c:/program files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">Notepad++ (Win, 64-bit)</td>
 <td align="left"><code>$ git config --global core.editor "'c:/program files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"</code></td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">Kate (Linux)</td>
 <td align="left"><code>$ git config --global core.editor "kate"</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">Gedit (Linux)</td>
 <td align="left"><code>$ git config --global core.editor "gedit --wait --new-window"</code></td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">Scratch (Linux)</td>
 <td align="left"><code>$ git config --global core.editor "scratch-text-editor"</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">emacs</td>
 <td align="left"><code>$ git config --global core.editor "emacs"</code></td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">vim</td>
 <td align="left"><code>$ git config --global core.editor "vim"</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">Visual Studio Code</td>
 <td align="left"><code>$ git config --global core.editor "code --wait"</code></td>
 </tr>
@@ -1735,7 +1735,7 @@ mars.txt”</li>
   Solución
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>La respuesta 1 no es suficientemente descriptiva, y la respuesta 2 es
 demasiado descriptiva y redundante, pero la respuesta 3 es buena: corta
@@ -1772,7 +1772,7 @@ pero descriptiva.</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Debería crear un <strong>commit</strong> solamente si los archivos
@@ -1817,7 +1817,7 @@ area</strong>, y haz un <strong>commit</strong> de esos cambios.</li>
   Solución
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Primero haremos nuestros cambios a los archivos <code>mars.txt</code>
 y <code>venus.txt</code>:</p>
@@ -1908,7 +1908,7 @@ original</li>
   Soluciónn
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Si es necesario, sal de la carpeta <code>planets</code>:</p>
 <div class="codewrapper sourceCode" id="cb59">
@@ -1991,7 +1991,7 @@ permitirte colaborar con tus colegas.</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb66">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2534,7 +2534,7 @@ Venus is too hot to be suitable as a base</code></pre>
   Solución
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Vamos línea por línea</p>
 <div class="codewrapper sourceCode" id="cb33">
@@ -2880,7 +2880,7 @@ nothing to commit, working directory clean</code></pre>
   Solución
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Como ocurre con la mayoría de los problemas de programación, hay
 varias maneras de resolver esto. Si sólo deseas ignorar el contenido de
@@ -2922,7 +2922,7 @@ que <code>!</code> (el signo de exclamación) hace</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Agrega las siguientes dos líneas a tu archivo .gitignore:</p>
 <div class="codewrapper sourceCode" id="cb15">
@@ -2970,7 +2970,7 @@ todos los archivos <code>.data</code> en
   Solución
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Agregando <code>results/data/position/gps/*.data</code> coincidirá
 con cada archivo en <code>results/data/position/gps</code> que termine
@@ -3007,7 +3007,7 @@ contenido:</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>El modificador <code>!</code> anulará algún patrón ignorado
 previamente definido. Debido a que la entrada <code>!*.data</code> anula
@@ -3053,7 +3053,7 @@ excluir a través de <code>.gitignore</code>.</p></li>
   Solución
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Agrega <code>log_*</code> o <code>log*</code> como nueva entrada en
@@ -3340,7 +3340,7 @@ obtendrías la misma información en la terminal?</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>El botón más a la izquierda (con el dibujo de un portapapeles) sirve
 para copiar en el portapapeles el identificador completo del
@@ -3391,7 +3391,7 @@ ficheros. ¿Cómo registra GitHub los tiempos, y por qué?</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Github muestra los tiempos en formato relativo legible para los
 humanos (i.e. “22 hours ago” or “three weeks ago”). Sin embargo, si
@@ -3421,7 +3421,7 @@ diferencia “git push” de “git commit”?</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Cuando enviamos cambios con <strong>push</strong>, estamos
 interaccionando con un repositorio remoto para actualizarlo con los
@@ -3465,7 +3465,7 @@ una vez que hayas terminado este ejercicio.</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>No aparece ningún error cuando añadimos el repositorio remoto (añadir
 un repositorio remoto informa a git sobre dicho repositorio, pero no
@@ -3499,7 +3499,7 @@ remoto?</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>En este caso, puesto que ya teníamos un fichero README en nuestro
 propio repositorio (local), habríamos visto un conficto de unión,
@@ -4382,38 +4382,38 @@ ayudarte a comenzar.</p>
 <col width="47%">
 <col width="44%">
 </colgroup>
-<thead><tr>
+<thead><tr class="header">
 <th>orden</th>
 <th>acción . . . . . . . . . .</th>
 <th>comando . . . . . . . . . .</th>
 </tr></thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>1</td>
 <td></td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>2</td>
 <td></td>
 <td><code>echo 100 &gt;&gt; numbers.txt</code></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>3</td>
 <td></td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>4</td>
 <td></td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>5</td>
 <td></td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>6</td>
 <td>¡Celebrar!</td>
 <td><code>AFK</code></td>
@@ -4438,38 +4438,38 @@ ayudarte a comenzar.</p>
 <col width="47%">
 <col width="44%">
 </colgroup>
-<thead><tr>
+<thead><tr class="header">
 <th>orden</th>
 <th>acción . . . . . . . . . .</th>
 <th>comando . . . . . . . . . .</th>
 </tr></thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>1</td>
 <td>Actualizar repositorio local</td>
 <td><code>git pull origin master</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td>2</td>
 <td>Hacer cambios</td>
 <td><code>echo 100 &gt;&gt; numbers.txt</code></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>3</td>
 <td>Realizar cambios</td>
 <td><code>git add numbers.txt</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td>4</td>
 <td>Hacer commit a los cambios</td>
 <td><code>git commit -m "Agregar 100 a numbers.txt"</code></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>5</td>
 <td>Actualizar repositorio remoto</td>
 <td><code>git push origin master</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td>6</td>
 <td>¡Celebrar!</td>
 <td><code>AFK</code></td>
@@ -5219,7 +5219,7 @@ interface de Git.</p>
   Solucion del Challenge
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Esto puede ser realizado con los comandos de linea:</p>
 <pre class="shell"><code>$ mkdir graphs		
@@ -5269,7 +5269,7 @@ RStudio, pero las que hemos visto son suficientes para comenzar.</p>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Plantilla compartida bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> por <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Construido con <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a> y <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.0)</a></p>
+        <p>Construido con <a href="https://github.com/carpentries/sandpaper/tree/0.20.1" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a> y <a href="https://github.com/carpentries/varnish/tree/1.1.0" class="external-link">varnish (1.1.0)</a></p>
 		</div>
 		</footer>
 </div> <!-- / div.container -->
