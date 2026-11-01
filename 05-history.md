@@ -283,7 +283,7 @@ En el siguiente ejemplo, queremos recuperar el estado antes del más reciente
 Así que, para poner todo junto,
 aqui esta como Git trabaja, en forma de dibujo:
 
-![http://figshare.com/articles/How\_Git\_works\_a\_cartoon/1328266](fig/git_staging.svg)
+![http://figshare.com/articles/How\_Git\_works\_a\_cartoon/1328266](fig/git_staging.svg){alt='Dibujo de cómo trabaja Git: git add file1.txt y git add file2.txt llevan los cambios al área de preparación (staging area), git commit los guarda como un nuevo commit en la rama master del repositorio .git, y git checkout HEAD file1.txt recupera un archivo desde los commits HEAD, HEAD~1 y HEAD~2.'}
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 

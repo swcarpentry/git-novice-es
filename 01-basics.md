@@ -22,7 +22,7 @@ para hacer un seguimiento de lo que hizo una persona y cuándo.
 Incluso si no se está colaborando con otras personas,
 el control automatizado de versiones es mucho mejor que la siguiente situación:
 
-[![Piled Higher and Deeper by Jorge Cham, http://www.phdcomics.com/comics/archive\_print.php?comicid=1531](fig/phd101212s.png)](https://www.phdcomics.com)
+[![Piled Higher and Deeper by Jorge Cham, http://www.phdcomics.com/comics/archive\_print.php?comicid=1531](fig/phd101212s.png){alt='Tira cómica titulada "FINAL".doc: un estudiante guarda una tesis como FINAL.doc y, tras rondas de comentarios del director, los nombres de archivo crecen hasta FINAL_rev.22.comments49.corrections.10.#@$%WHYDIDICOMETOGRADSCHOOL????.doc.'}](https://www.phdcomics.com)
 
 "Piled Higher and Deeper" por Jorge Cham, [http://www.phdcomics.com](https://www.phdcomics.com)
 
