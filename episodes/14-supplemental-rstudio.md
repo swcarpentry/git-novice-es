@@ -20,14 +20,14 @@ Ya que el uso de control de versiones es muy útil cuando escribimos **scripts**
 
 RStudio te permite crear un proyecto [project][rstudio-projects] asociado a un directorio determinado. Esta es una manera de hacer un seguimiento de los archivos asociados al proyecto. Una manera de tener control de archivos es mediante el uso de un programa de control de versiones. Para empezar a usar RStudio para el control de versiones, comencemos por crear un nuevo proyecto:
 
-![](fig/RStudio_screenshot_newproject.png)
+![](fig/RStudio_screenshot_newproject.png){alt='Ventana de RStudio con el menú File abierto y la opción New Project resaltada.'}
 
 Una nueva ventana se abrirá y preguntará cómo queremos crear el proyecto. Tenemos
 aquí varias opciones. Supongamos que queremos usar RStudio con el repositorio de planetas
 que ya hemos creado. Como ese repositorio ya está en una carpeta en tu computadora,
 podemos escoger la opción "Existing Directory":
 
-![](fig/RStudio_screenshot_existingdirectory.png)
+![](fig/RStudio_screenshot_existingdirectory.png){alt='Diálogo New Project de RStudio con tres opciones, New Directory, Existing Directory y Version Control; Existing Directory está resaltada.'}
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -49,19 +49,19 @@ En el siguiente paso, RStudio va a preguntar cuál es la carpeta existente que q
 click en el navegador de archivos para navegar a la carpeta correcta en tu computadora, y luego haremos click en
 "Create Project":
 
-![](fig/RStudio_screenshot_navigateexisting.png)
+![](fig/RStudio_screenshot_navigateexisting.png){alt='Diálogo Create Project from Existing Directory de RStudio con la ruta ~/Desktop/planets en el campo del directorio, el botón Browse y el botón Create Project.'}
 
 ¡Y ya está! Ahora tenemos un proyecto en R que contiene tu propio repositorio. Fíjate que ahora en el menú aparece un botón con "Git" en letras verticales. Esto significa que RStudio ha reconocido que ésta carpeta es un repositorio de Git, así que te proporcionará las herramientas para usar Git:
 
-![](fig/RStudio_screenshot_afterclone.png)
+![](fig/RStudio_screenshot_afterclone.png){alt='RStudio con el proyecto planets abierto; una flecha verde señala el botón de Git en la barra de herramientas y el panel Files muestra .gitignore, mars.txt, planets.Rproj y pluto.txt.'}
 
 Para editar los archivos en tu repositorio, puedes hacer click en el archivo desde el panel inferior izquierdo. Ahora vamos a añadir más información sobre Plutón:
 
-![](fig/RStudio_screenshot_editfiles.png)
+![](fig/RStudio_screenshot_editfiles.png){alt='RStudio con pluto.txt abierto en el editor tras añadir una segunda línea sobre Plutón, abierto desde el panel Files.'}
 
 Una vez que hemos guardado nuestros archivos editados, ahora podemos usar RStudio para hacer permanentes los cambios. Usa el botón y haz clik a "Commit":
 
-![](fig/RStudio_screenshot_commit.png)
+![](fig/RStudio_screenshot_commit.png){alt='RStudio con el menú del botón Git desplegado y la opción Commit resaltada, junto a Pull Branches, Push Branch e History.'}
 
 Esto abrirá una ventana donde puedes seleccionar qué archivos quieres hacer **commit** (marca
 las casillas en la columna "Staged") y luego escribe un mensaje para el **commit** (en el panel
@@ -69,13 +69,13 @@ superior derecho). Los iconos en la columna "Status" indican el estado actual de
 archivo. También puedes ver los cambios de cada archivo haciendo click en su nombre. Una vez
 que todo esté de la forma que quieres, haz click en "Commit":
 
-![](fig/RStudio_screenshot_review.png)
+![](fig/RStudio_screenshot_review.png){alt='Ventana Review Changes de RStudio: pluto.txt marcado en la columna Staged, el mensaje de commit Added another thought about pluto arriba a la derecha y abajo la línea añadida en verde.'}
 
 Puedes subir los cambios seleccionando "Push" en el menú de Git. Allí hay también
 opciones para traer los cambios (hacer **pull**) desde una versión remota de este repositorio, y ver
 el historial de cambios realizados:
 
-![](fig/RStudio_screenshot_history.png)
+![](fig/RStudio_screenshot_history.png){alt='RStudio con el menú del botón Git desplegado mostrando Commit, Pull Branches, Push Branch e History; el cursor está sobre History.'}
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -92,11 +92,11 @@ Para solucionar esto, abre una terminal, sitúate en el repositorio y luego lanz
 Si hacemos click en el historial de cambios "History", podemos ver una versión gráfica de lo
 que obtendríamos con el comando `git log`:
 
-![](fig/RStudio_screenshot_viewhistory.png)
+![](fig/RStudio_screenshot_viewhistory.png){alt='Pestaña History de la ventana Review Changes de RStudio con la lista de cinco commits y, debajo, los detalles y el diff del commit seleccionado Added notes on pluto.'}
 
 RStudio crea algunos archivos que le ayudan a mantener un control de los cambios en el proyecto. Normalmente no deseamos que Git los incluya en el control de versiones, así que es una buena idea agregar sus nombres al `.gitignore`:
 
-![](fig/RStudio_screenshot_gitignore.png)
+![](fig/RStudio_screenshot_gitignore.png){alt='RStudio con el archivo .gitignore abierto, que incluye las entradas .Rproj.user, .Rhistory, .RData y *.Rproj.'}
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
