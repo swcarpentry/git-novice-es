@@ -398,7 +398,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Usando Git desde RStudio</h1>
-        <p>Última actualización: 2023-04-27 |
+        <p>Última actualización: 2026-11-01 |
 
         <a href="https://github.com/swcarpentry/git-novice-es/edit/main/episodes/14-supplemental-rstudio.md" class="external-link">Mejora esta página <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -445,12 +445,12 @@ seguimiento de los archivos asociados al proyecto. Una manera de tener
 control de archivos es mediante el uso de un programa de control de
 versiones. Para empezar a usar RStudio para el control de versiones,
 comencemos por crear un nuevo proyecto:</p>
-<figure><img src="../fig/RStudio_screenshot_newproject.png" class="figure mx-auto d-block"></figure><p>Una nueva ventana se abrirá y preguntará cómo queremos crear el
+<figure><img src="../fig/RStudio_screenshot_newproject.png" alt="Ventana de RStudio con el menú File abierto y la opción New Project resaltada." class="figure mx-auto d-block"></figure><p>Una nueva ventana se abrirá y preguntará cómo queremos crear el
 proyecto. Tenemos aquí varias opciones. Supongamos que queremos usar
 RStudio con el repositorio de planetas que ya hemos creado. Como ese
 repositorio ya está en una carpeta en tu computadora, podemos escoger la
 opción “Existing Directory”:</p>
-<figure><img src="../fig/RStudio_screenshot_existingdirectory.png" class="figure mx-auto d-block"></figure><div id="puedes-ver-la-opción-de-version-control" class="callout">
+<figure><img src="../fig/RStudio_screenshot_existingdirectory.png" alt="Diálogo New Project de RStudio con tres opciones, New Directory, Existing Directory y Version Control; Existing Directory está resaltada." class="figure mx-auto d-block"></figure><div id="puedes-ver-la-opción-de-version-control" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -475,29 +475,29 @@ que aceptar la licencia de XCode</p>
 existente que queremos usar. Haremos click en el navegador de archivos
 para navegar a la carpeta correcta en tu computadora, y luego haremos
 click en “Create Project”:</p>
-<figure><img src="../fig/RStudio_screenshot_navigateexisting.png" class="figure mx-auto d-block"></figure><p>¡Y ya está! Ahora tenemos un proyecto en R que contiene tu propio
+<figure><img src="../fig/RStudio_screenshot_navigateexisting.png" alt="Diálogo Create Project from Existing Directory de RStudio con la ruta ~/Desktop/planets en el campo del directorio, el botón Browse y el botón Create Project." class="figure mx-auto d-block"></figure><p>¡Y ya está! Ahora tenemos un proyecto en R que contiene tu propio
 repositorio. Fíjate que ahora en el menú aparece un botón con “Git” en
 letras verticales. Esto significa que RStudio ha reconocido que ésta
 carpeta es un repositorio de Git, así que te proporcionará las
 herramientas para usar Git:</p>
-<figure><img src="../fig/RStudio_screenshot_afterclone.png" class="figure mx-auto d-block"></figure><p>Para editar los archivos en tu repositorio, puedes hacer click en el
+<figure><img src="../fig/RStudio_screenshot_afterclone.png" alt="RStudio con el proyecto planets abierto; una flecha verde señala el botón de Git en la barra de herramientas y el panel Files muestra .gitignore, mars.txt, planets.Rproj y pluto.txt." class="figure mx-auto d-block"></figure><p>Para editar los archivos en tu repositorio, puedes hacer click en el
 archivo desde el panel inferior izquierdo. Ahora vamos a añadir más
 información sobre Plutón:</p>
-<figure><img src="../fig/RStudio_screenshot_editfiles.png" class="figure mx-auto d-block"></figure><p>Una vez que hemos guardado nuestros archivos editados, ahora podemos
+<figure><img src="../fig/RStudio_screenshot_editfiles.png" alt="RStudio con pluto.txt abierto en el editor tras añadir una segunda línea sobre Plutón, abierto desde el panel Files." class="figure mx-auto d-block"></figure><p>Una vez que hemos guardado nuestros archivos editados, ahora podemos
 usar RStudio para hacer permanentes los cambios. Usa el botón y haz clik
 a “Commit”:</p>
-<figure><img src="../fig/RStudio_screenshot_commit.png" class="figure mx-auto d-block"></figure><p>Esto abrirá una ventana donde puedes seleccionar qué archivos quieres
+<figure><img src="../fig/RStudio_screenshot_commit.png" alt="RStudio con el menú del botón Git desplegado y la opción Commit resaltada, junto a Pull Branches, Push Branch e History." class="figure mx-auto d-block"></figure><p>Esto abrirá una ventana donde puedes seleccionar qué archivos quieres
 hacer <strong>commit</strong> (marca las casillas en la columna
 “Staged”) y luego escribe un mensaje para el <strong>commit</strong> (en
 el panel superior derecho). Los iconos en la columna “Status” indican el
 estado actual de cada archivo. También puedes ver los cambios de cada
 archivo haciendo click en su nombre. Una vez que todo esté de la forma
 que quieres, haz click en “Commit”:</p>
-<figure><img src="../fig/RStudio_screenshot_review.png" class="figure mx-auto d-block"></figure><p>Puedes subir los cambios seleccionando “Push” en el menú de Git. Allí
+<figure><img src="../fig/RStudio_screenshot_review.png" alt="Ventana Review Changes de RStudio: pluto.txt marcado en la columna Staged, el mensaje de commit Added another thought about pluto arriba a la derecha y abajo la línea añadida en verde." class="figure mx-auto d-block"></figure><p>Puedes subir los cambios seleccionando “Push” en el menú de Git. Allí
 hay también opciones para traer los cambios (hacer
 <strong>pull</strong>) desde una versión remota de este repositorio, y
 ver el historial de cambios realizados:</p>
-<figure><img src="../fig/RStudio_screenshot_history.png" class="figure mx-auto d-block"></figure><div id="callout2" class="callout">
+<figure><img src="../fig/RStudio_screenshot_history.png" alt="RStudio con el menú del botón Git desplegado mostrando Commit, Pull Branches, Push Branch e History; el cursor está sobre History." class="figure mx-auto d-block"></figure><div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -517,11 +517,11 @@ luego lanza el siguiente comando:
 <p>Si hacemos click en el historial de cambios “History”, podemos ver
 una versión gráfica de lo que obtendríamos con el comando
 <code>git log</code>:</p>
-<figure><img src="../fig/RStudio_screenshot_viewhistory.png" class="figure mx-auto d-block"></figure><p>RStudio crea algunos archivos que le ayudan a mantener un control de
+<figure><img src="../fig/RStudio_screenshot_viewhistory.png" alt="Pestaña History de la ventana Review Changes de RStudio con la lista de cinco commits y, debajo, los detalles y el diff del commit seleccionado Added notes on pluto." class="figure mx-auto d-block"></figure><p>RStudio crea algunos archivos que le ayudan a mantener un control de
 los cambios en el proyecto. Normalmente no deseamos que Git los incluya
 en el control de versiones, así que es una buena idea agregar sus
 nombres al <code>.gitignore</code>:</p>
-<figure><img src="../fig/RStudio_screenshot_gitignore.png" class="figure mx-auto d-block"></figure><div id="tip-control-de-versiones-del-output-desechable-versioning-disposable-output" class="callout">
+<figure><img src="../fig/RStudio_screenshot_gitignore.png" alt="RStudio con el archivo .gitignore abierto, que incluye las entradas .Rproj.user, .Rhistory, .RData y *.Rproj." class="figure mx-auto d-block"></figure><div id="tip-control-de-versiones-del-output-desechable-versioning-disposable-output" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -647,8 +647,8 @@ RStudio, pero las que hemos visto son suficientes para comenzar.</p>
   "url": "https://swcarpentry.github.io/git-novice-es/instructor/14-supplemental-rstudio.html",
   "identifier": "https://swcarpentry.github.io/git-novice-es/instructor/14-supplemental-rstudio.html",
   "dateCreated": "2018-02-20",
-  "dateModified": "2023-04-27",
-  "datePublished": "2026-10-27"
+  "dateModified": "2026-11-01",
+  "datePublished": "2026-11-01"
 }
 
   </script><script>
