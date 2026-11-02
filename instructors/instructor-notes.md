@@ -55,7 +55,8 @@ trabajando en equipo o no, porque es
 - Recursos adicionales:
   
   - [git-it] es una demostración de Git de línea de comandos a tu propio ritmo, con [git-it-electron] su sucesor de GitHub Desktop.
-  - [Code School][code-school] tiene un curso interactivo gratuito, [Try Git][try-git].
+  - [El Git playground de Coddy][coddy-git] ejecuta comandos reales de Git en el navegador
+    y dibuja el grafo de commits mientras escribes.
   - para instructores, [la parábola de Git][git-parábola] es una lectura de fondo útil
 
 ## [Control automatizado de versiones](../episodes/01-basics.md)
@@ -191,8 +192,7 @@ Una preocupación común para los estudiantes es tener su trabajo a disposición
 [diffmerge]: https://sourcegear.com/diffmerge/
 [git-it]: https://github.com/jlord/git-it
 [git-it-electron]: https://github.com/jlord/git-it-electron
-[code-school]: https://www.codeschool.com/
-[try-git]: https://try.github.io
+[coddy-git]: https://coddy.tech/playground/es/git
 [git-parábola]: https://tom.preston-werner.com/2009/05/19/the-git-parable.html
 [repos-in-repos]: https://github.com/swcarpentry/git-novice/issues/272
 
